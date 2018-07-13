@@ -1,0 +1,27 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon May 21 02:46:08 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "A<0>" LOCATE = SITE "U7" LEVEL 1;
+COMP "A<1>" LOCATE = SITE "V7" LEVEL 1;
+COMP "B<0>" LOCATE = SITE "T4" LEVEL 1;
+COMP "B<1>" LOCATE = SITE "V4" LEVEL 1;
+COMP "C<0>" LOCATE = SITE "U5" LEVEL 1;
+COMP "C<1>" LOCATE = SITE "V5" LEVEL 1;
+COMP "Input<0>" LOCATE = SITE "F17" LEVEL 1;
+COMP "Input<1>" LOCATE = SITE "F18" LEVEL 1;
+COMP "Input<2>" LOCATE = SITE "E16" LEVEL 1;
+COMP "Input<3>" LOCATE = SITE "E18" LEVEL 1;
+COMP "Input<4>" LOCATE = SITE "D18" LEVEL 1;
+COMP "Input<5>" LOCATE = SITE "D17" LEVEL 1;
+COMP "Input<6>" LOCATE = SITE "C18" LEVEL 1;
+COMP "Input<7>" LOCATE = SITE "C17" LEVEL 1;
+COMP "H<0>" LOCATE = SITE "H17" LEVEL 1;
+COMP "H<1>" LOCATE = SITE "H18" LEVEL 1;
+COMP "H<2>" LOCATE = SITE "J16" LEVEL 1;
+COMP "RST" LOCATE = SITE "M18" LEVEL 1;
+COMP "CLK" LOCATE = SITE "D9" LEVEL 1;
+NET "CLK_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
+SCHEMATIC END;
+

@@ -1,0 +1,28 @@
+Command line:
+   RX_Test_isim_par.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52596
+
+Thu May 24 13:51:22 2018
+
+
+ Elaboration Time: 0.765625 sec
+
+ Current Memory Usage: 1569.98 Meg
+
+ Total Signals          : 2748
+ Total Nets             : 1995
+ Total Signal Drivers   : 2004
+ Total Blocks           : 346
+ Total Primitive Blocks : 214
+ Total Processes        : 2531
+ Total Traceable Variables  : 1031
+ Total Scalar Nets and Variables : 27614
+
+ Total Simulation Time: 139.906 sec
+
+ Current Memory Usage: 940.835 Meg
+
+Thu May 24 13:54:07 2018
+
