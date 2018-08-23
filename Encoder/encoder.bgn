@@ -2,10 +2,10 @@ Release 14.7 - Bitgen P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Loading device for application Rf_Device from file '6slx9.nph' in environment
 E:\Xilinx\14.7\ISE_DS\ISE\.
-   "Encoder" is an NCD, version 3.2, device xc6slx9, package csg324, speed -3
+   "Encoder" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -3
 Opened constraints file Encoder.pcf.
 
-Tue May 22 20:54:12 2018
+Thu Aug 16 22:38:15 2018
 
 E:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\bitgen.exe -intstyle ise -w -g DebugBitstream:No -g Binary:yes -g CRC:Enable -g Reset_on_err:No -g ConfigRate:2 -g ProgPin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g ExtMasterCclk_en:No -g SPI_buswidth:1 -g TIMER_CFG:0xFFFF -g multipin_wakeup:No -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:Yes -g DriveDone:No -g en_sw_gsr:No -g drive_awake:No -g sw_clk:Startupclk -g sw_gwe_cycle:5 -g sw_gts_cycle:4 Encoder.ncd 
 
@@ -124,12 +124,15 @@ Summary of Bitgen Options:
  *  Default setting.
  ** The specified setting matches the default setting.
 
-There were 1 CONFIG constraint(s) processed from Encoder.pcf.
+There were 0 CONFIG constraint(s) processed from Encoder.pcf.
 
-   CONFIG VCCAUX = "3.3"
 
 Running DRC.
-DRC detected 0 errors and 0 warnings.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net CD/OUT is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+DRC detected 0 errors and 1 warnings.  Please see the previously displayed
+individual error or warning messages for more details.
 Creating bit map...
 Saving bit stream in "encoder.bit".
 Saving bit stream in "encoder.bin".

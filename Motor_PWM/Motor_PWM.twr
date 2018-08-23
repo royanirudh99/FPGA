@@ -8,7 +8,7 @@ E:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
 
 Design file:              Motor_PWM.ncd
 Physical constraint file: Motor_PWM.pcf
-Device,package,speed:     xc6slx9,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
 Report level:             verbose report
 
 Environment Variable      Effect 
@@ -16,6 +16,7 @@ Environment Variable      Effect
 NONE                      No environment variables were set
 --------------------------------------------------------------------------------
 
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
 INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
 INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
    option. All paths that are not constrained will be reported in the 
@@ -25,418 +26,66 @@ INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on
    and for more information on accounting for different loading conditions, 
    please see the device datasheet.
 
-================================================================================
-Timing constraint: NET "CLK_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
-For more information, see Period Analysis in the Timing Closure User Guide (UG612).
-
- 49 paths analyzed, 29 endpoints analyzed, 0 failing endpoints
- 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   1.994ns.
---------------------------------------------------------------------------------
-
-Paths for end point pwm/output_val (SLICE_X19Y47.A6), 2 paths
---------------------------------------------------------------------------------
-Slack (setup path):     81.339ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               pwm/Counter_val_3 (FF)
-  Destination:          pwm/output_val (FF)
-  Requirement:          83.333ns
-  Data Path Delay:      1.951ns (Levels of Logic = 2)
-  Clock Path Skew:      -0.008ns (0.155 - 0.163)
-  Source Clock:         CLK_BUFGP rising at 0.000ns
-  Destination Clock:    CLK_BUFGP rising at 83.333ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: pwm/Counter_val_3 to pwm/output_val
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X18Y46.DQ      Tcko                  0.408   pwm/Counter_val<3>
-                                                       pwm/Counter_val_3
-    SLICE_X19Y49.A3      net (fanout=3)        0.654   pwm/Counter_val<3>
-    SLICE_X19Y49.A       Tilo                  0.259   N4
-                                                       pwm/Counter_val[7]_Input[7]_LessThan_1_o1_SW1
-    SLICE_X19Y47.A6      net (fanout=1)        0.308   N4
-    SLICE_X19Y47.CLK     Tas                   0.322   pwm/output_val
-                                                       pwm/Counter_val[7]_Input[7]_LessThan_1_o21
-                                                       pwm/output_val
-    -------------------------------------------------  ---------------------------
-    Total                                      1.951ns (0.989ns logic, 0.962ns route)
-                                                       (50.7% logic, 49.3% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     81.672ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               pwm/Counter_val_4 (FF)
-  Destination:          pwm/output_val (FF)
-  Requirement:          83.333ns
-  Data Path Delay:      1.617ns (Levels of Logic = 2)
-  Clock Path Skew:      -0.009ns (0.155 - 0.164)
-  Source Clock:         CLK_BUFGP rising at 0.000ns
-  Destination Clock:    CLK_BUFGP rising at 83.333ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: pwm/Counter_val_4 to pwm/output_val
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X18Y47.AQ      Tcko                  0.408   pwm/Counter_val<7>
-                                                       pwm/Counter_val_4
-    SLICE_X19Y49.A6      net (fanout=3)        0.320   pwm/Counter_val<4>
-    SLICE_X19Y49.A       Tilo                  0.259   N4
-                                                       pwm/Counter_val[7]_Input[7]_LessThan_1_o1_SW1
-    SLICE_X19Y47.A6      net (fanout=1)        0.308   N4
-    SLICE_X19Y47.CLK     Tas                   0.322   pwm/output_val
-                                                       pwm/Counter_val[7]_Input[7]_LessThan_1_o21
-                                                       pwm/output_val
-    -------------------------------------------------  ---------------------------
-    Total                                      1.617ns (0.989ns logic, 0.628ns route)
-                                                       (61.2% logic, 38.8% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point pwm/output_val (SLICE_X19Y47.A4), 2 paths
---------------------------------------------------------------------------------
-Slack (setup path):     81.374ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               pwm/Counter_val_3 (FF)
-  Destination:          pwm/output_val (FF)
-  Requirement:          83.333ns
-  Data Path Delay:      1.916ns (Levels of Logic = 2)
-  Clock Path Skew:      -0.008ns (0.155 - 0.163)
-  Source Clock:         CLK_BUFGP rising at 0.000ns
-  Destination Clock:    CLK_BUFGP rising at 83.333ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: pwm/Counter_val_3 to pwm/output_val
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X18Y46.DQ      Tcko                  0.408   pwm/Counter_val<3>
-                                                       pwm/Counter_val_3
-    SLICE_X19Y48.A3      net (fanout=3)        0.493   pwm/Counter_val<3>
-    SLICE_X19Y48.A       Tilo                  0.259   N3
-                                                       pwm/Counter_val[7]_Input[7]_LessThan_1_o1_SW0
-    SLICE_X19Y47.A4      net (fanout=1)        0.434   N3
-    SLICE_X19Y47.CLK     Tas                   0.322   pwm/output_val
-                                                       pwm/Counter_val[7]_Input[7]_LessThan_1_o21
-                                                       pwm/output_val
-    -------------------------------------------------  ---------------------------
-    Total                                      1.916ns (0.989ns logic, 0.927ns route)
-                                                       (51.6% logic, 48.4% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     81.572ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               pwm/Counter_val_4 (FF)
-  Destination:          pwm/output_val (FF)
-  Requirement:          83.333ns
-  Data Path Delay:      1.717ns (Levels of Logic = 2)
-  Clock Path Skew:      -0.009ns (0.155 - 0.164)
-  Source Clock:         CLK_BUFGP rising at 0.000ns
-  Destination Clock:    CLK_BUFGP rising at 83.333ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: pwm/Counter_val_4 to pwm/output_val
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X18Y47.AQ      Tcko                  0.408   pwm/Counter_val<7>
-                                                       pwm/Counter_val_4
-    SLICE_X19Y48.A6      net (fanout=3)        0.294   pwm/Counter_val<4>
-    SLICE_X19Y48.A       Tilo                  0.259   N3
-                                                       pwm/Counter_val[7]_Input[7]_LessThan_1_o1_SW0
-    SLICE_X19Y47.A4      net (fanout=1)        0.434   N3
-    SLICE_X19Y47.CLK     Tas                   0.322   pwm/output_val
-                                                       pwm/Counter_val[7]_Input[7]_LessThan_1_o21
-                                                       pwm/output_val
-    -------------------------------------------------  ---------------------------
-    Total                                      1.717ns (0.989ns logic, 0.728ns route)
-                                                       (57.6% logic, 42.4% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point pwm/output_val (SLICE_X19Y47.A2), 3 paths
---------------------------------------------------------------------------------
-Slack (setup path):     81.400ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               pwm/Counter_val_6 (FF)
-  Destination:          pwm/output_val (FF)
-  Requirement:          83.333ns
-  Data Path Delay:      1.889ns (Levels of Logic = 2)
-  Clock Path Skew:      -0.009ns (0.155 - 0.164)
-  Source Clock:         CLK_BUFGP rising at 0.000ns
-  Destination Clock:    CLK_BUFGP rising at 83.333ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: pwm/Counter_val_6 to pwm/output_val
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X18Y47.CQ      Tcko                  0.408   pwm/Counter_val<7>
-                                                       pwm/Counter_val_6
-    SLICE_X19Y47.C3      net (fanout=3)        0.463   pwm/Counter_val<6>
-    SLICE_X19Y47.C       Tilo                  0.259   pwm/output_val
-                                                       pwm/Counter_val[7]_Input[7]_LessThan_1_o1_SW2
-    SLICE_X19Y47.A2      net (fanout=1)        0.437   N6
-    SLICE_X19Y47.CLK     Tas                   0.322   pwm/output_val
-                                                       pwm/Counter_val[7]_Input[7]_LessThan_1_o21
-                                                       pwm/output_val
-    -------------------------------------------------  ---------------------------
-    Total                                      1.889ns (0.989ns logic, 0.900ns route)
-                                                       (52.4% logic, 47.6% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     81.556ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               pwm/Counter_val_5 (FF)
-  Destination:          pwm/output_val (FF)
-  Requirement:          83.333ns
-  Data Path Delay:      1.733ns (Levels of Logic = 2)
-  Clock Path Skew:      -0.009ns (0.155 - 0.164)
-  Source Clock:         CLK_BUFGP rising at 0.000ns
-  Destination Clock:    CLK_BUFGP rising at 83.333ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: pwm/Counter_val_5 to pwm/output_val
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X18Y47.BQ      Tcko                  0.408   pwm/Counter_val<7>
-                                                       pwm/Counter_val_5
-    SLICE_X19Y47.C4      net (fanout=3)        0.307   pwm/Counter_val<5>
-    SLICE_X19Y47.C       Tilo                  0.259   pwm/output_val
-                                                       pwm/Counter_val[7]_Input[7]_LessThan_1_o1_SW2
-    SLICE_X19Y47.A2      net (fanout=1)        0.437   N6
-    SLICE_X19Y47.CLK     Tas                   0.322   pwm/output_val
-                                                       pwm/Counter_val[7]_Input[7]_LessThan_1_o21
-                                                       pwm/output_val
-    -------------------------------------------------  ---------------------------
-    Total                                      1.733ns (0.989ns logic, 0.744ns route)
-                                                       (57.1% logic, 42.9% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     81.732ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               pwm/Counter_val_7 (FF)
-  Destination:          pwm/output_val (FF)
-  Requirement:          83.333ns
-  Data Path Delay:      1.557ns (Levels of Logic = 2)
-  Clock Path Skew:      -0.009ns (0.155 - 0.164)
-  Source Clock:         CLK_BUFGP rising at 0.000ns
-  Destination Clock:    CLK_BUFGP rising at 83.333ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: pwm/Counter_val_7 to pwm/output_val
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X18Y47.DQ      Tcko                  0.408   pwm/Counter_val<7>
-                                                       pwm/Counter_val_7
-    SLICE_X19Y47.C6      net (fanout=3)        0.131   pwm/Counter_val<7>
-    SLICE_X19Y47.C       Tilo                  0.259   pwm/output_val
-                                                       pwm/Counter_val[7]_Input[7]_LessThan_1_o1_SW2
-    SLICE_X19Y47.A2      net (fanout=1)        0.437   N6
-    SLICE_X19Y47.CLK     Tas                   0.322   pwm/output_val
-                                                       pwm/Counter_val[7]_Input[7]_LessThan_1_o21
-                                                       pwm/output_val
-    -------------------------------------------------  ---------------------------
-    Total                                      1.557ns (0.989ns logic, 0.568ns route)
-                                                       (63.5% logic, 36.5% route)
-
---------------------------------------------------------------------------------
-
-Hold Paths: NET "CLK_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
---------------------------------------------------------------------------------
-
-Paths for end point pwm/Counter_val_7 (SLICE_X18Y47.D6), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      0.466ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               pwm/Counter_val_7 (FF)
-  Destination:          pwm/Counter_val_7 (FF)
-  Requirement:          0.000ns
-  Data Path Delay:      0.466ns (Levels of Logic = 1)
-  Clock Path Skew:      0.000ns
-  Source Clock:         CLK_BUFGP rising at 83.333ns
-  Destination Clock:    CLK_BUFGP rising at 83.333ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path at Fast Process Corner: pwm/Counter_val_7 to pwm/Counter_val_7
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X18Y47.DQ      Tcko                  0.200   pwm/Counter_val<7>
-                                                       pwm/Counter_val_7
-    SLICE_X18Y47.D6      net (fanout=3)        0.029   pwm/Counter_val<7>
-    SLICE_X18Y47.CLK     Tah         (-Th)    -0.237   pwm/Counter_val<7>
-                                                       pwm/Counter_val<7>_rt
-                                                       pwm/Mcount_Counter_val_xor<7>
-                                                       pwm/Counter_val_7
-    -------------------------------------------------  ---------------------------
-    Total                                      0.466ns (0.437ns logic, 0.029ns route)
-                                                       (93.8% logic, 6.2% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point pwm/Counter_val_1 (SLICE_X18Y46.B5), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      0.509ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               pwm/Counter_val_1 (FF)
-  Destination:          pwm/Counter_val_1 (FF)
-  Requirement:          0.000ns
-  Data Path Delay:      0.509ns (Levels of Logic = 1)
-  Clock Path Skew:      0.000ns
-  Source Clock:         CLK_BUFGP rising at 83.333ns
-  Destination Clock:    CLK_BUFGP rising at 83.333ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path at Fast Process Corner: pwm/Counter_val_1 to pwm/Counter_val_1
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X18Y46.BQ      Tcko                  0.200   pwm/Counter_val<3>
-                                                       pwm/Counter_val_1
-    SLICE_X18Y46.B5      net (fanout=2)        0.075   pwm/Counter_val<1>
-    SLICE_X18Y46.CLK     Tah         (-Th)    -0.234   pwm/Counter_val<3>
-                                                       pwm/Counter_val<1>_rt
-                                                       pwm/Mcount_Counter_val_cy<3>
-                                                       pwm/Counter_val_1
-    -------------------------------------------------  ---------------------------
-    Total                                      0.509ns (0.434ns logic, 0.075ns route)
-                                                       (85.3% logic, 14.7% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point pwm/Counter_val_5 (SLICE_X18Y47.B5), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      0.515ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               pwm/Counter_val_5 (FF)
-  Destination:          pwm/Counter_val_5 (FF)
-  Requirement:          0.000ns
-  Data Path Delay:      0.515ns (Levels of Logic = 1)
-  Clock Path Skew:      0.000ns
-  Source Clock:         CLK_BUFGP rising at 83.333ns
-  Destination Clock:    CLK_BUFGP rising at 83.333ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path at Fast Process Corner: pwm/Counter_val_5 to pwm/Counter_val_5
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X18Y47.BQ      Tcko                  0.200   pwm/Counter_val<7>
-                                                       pwm/Counter_val_5
-    SLICE_X18Y47.B5      net (fanout=3)        0.081   pwm/Counter_val<5>
-    SLICE_X18Y47.CLK     Tah         (-Th)    -0.234   pwm/Counter_val<7>
-                                                       pwm/Counter_val<5>_rt
-                                                       pwm/Mcount_Counter_val_xor<7>
-                                                       pwm/Counter_val_5
-    -------------------------------------------------  ---------------------------
-    Total                                      0.515ns (0.434ns logic, 0.081ns route)
-                                                       (84.3% logic, 15.7% route)
-
---------------------------------------------------------------------------------
-
-Component Switching Limit Checks: NET "CLK_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
---------------------------------------------------------------------------------
-Slack: 81.603ns (period - min period limit)
-  Period: 83.333ns
-  Min period limit: 1.730ns (578.035MHz) (Tbcper_I)
-  Physical resource: CLK_BUFGP/BUFG/I0
-  Logical resource: CLK_BUFGP/BUFG/I0
-  Location pin: BUFGMUX_X2Y1.I0
-  Clock network: CLK_BUFGP/IBUFG
---------------------------------------------------------------------------------
-Slack: 82.903ns (period - min period limit)
-  Period: 83.333ns
-  Min period limit: 0.430ns (2325.581MHz) (Tcp)
-  Physical resource: pwm/Counter_val<3>/CLK
-  Logical resource: pwm/Counter_val_0/CK
-  Location pin: SLICE_X18Y46.CLK
-  Clock network: CLK_BUFGP
---------------------------------------------------------------------------------
-Slack: 82.903ns (period - min period limit)
-  Period: 83.333ns
-  Min period limit: 0.430ns (2325.581MHz) (Tcp)
-  Physical resource: pwm/Counter_val<3>/CLK
-  Logical resource: pwm/Counter_val_1/CK
-  Location pin: SLICE_X18Y46.CLK
-  Clock network: CLK_BUFGP
---------------------------------------------------------------------------------
-
-
-All constraints were met.
 
 
 Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
+Setup/Hold to clock CLK
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+RST         |    2.790(R)|      SLOW  |   -1.013(R)|      SLOW  |CLK_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
 Clock to Setup on destination clock CLK
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    1.994|         |         |         |
+CLK            |    3.077|         |         |         |
 ---------------+---------+---------+---------+---------+
 
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+H<0>           |A<0>           |    9.205|
+H<0>           |A<1>           |    9.566|
+H<0>           |B<0>           |    9.536|
+H<0>           |C<0>           |    9.593|
+H<0>           |C<1>           |    9.480|
+H<1>           |A<0>           |    8.412|
+H<1>           |A<1>           |    8.605|
+H<1>           |B<0>           |    8.743|
+H<1>           |B<1>           |    8.817|
+H<1>           |C<0>           |    9.050|
+H<2>           |A<0>           |    8.642|
+H<2>           |B<0>           |    8.973|
+H<2>           |B<1>           |    8.753|
+H<2>           |C<0>           |    9.120|
+H<2>           |C<1>           |    9.007|
+Input<0>       |PWM_In<0>      |   11.273|
+Input<1>       |PWM_In<1>      |   10.530|
+Input<2>       |PWM_In<2>      |   10.487|
+Input<3>       |PWM_In<3>      |   10.553|
+Input<4>       |PWM_In<4>      |   10.149|
+Input<5>       |PWM_In<5>      |    9.905|
+Input<6>       |PWM_In<6>      |   10.529|
+Input<7>       |PWM_In<7>      |    9.734|
+---------------+---------------+---------+
 
-Timing summary:
----------------
 
-Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
-
-Constraints cover 49 paths, 0 nets, and 31 connections
-
-Design statistics:
-   Minimum period:   1.994ns{1}   (Maximum frequency: 501.505MHz)
-
-
-------------------------------------Footnotes-----------------------------------
-1)  The minimum period statistic assumes all single cycle delays.
-
-Analysis completed Mon May 21 02:46:28 2018 
+Analysis completed Fri Aug 10 21:56:39 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 202 MB
+Peak Memory Usage: 201 MB
 
 
 

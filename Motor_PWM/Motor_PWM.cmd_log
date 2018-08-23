@@ -87,3 +87,28 @@ map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -reg
 par -w -intstyle ise -ol high -mt off Motor_PWM_map.ncd Motor_PWM.ncd Motor_PWM.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Motor_PWM.twx Motor_PWM.ncd -o Motor_PWM.twr Motor_PWM.pcf -ucf UCF_MIMAS.ucf 
 bitgen -intstyle ise -f Motor_PWM.ut Motor_PWM.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/Projects/Motor_PWM/Motor_PWM.xst" -ofn "E:/Xilinx/Projects/Motor_PWM/Motor_PWM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF_MIMAS.ucf -p xc6slx9-tqg144-3 Motor_PWM.ngc Motor_PWM.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Motor_PWM_map.ncd Motor_PWM.ngd Motor_PWM.pcf 
+par -w -intstyle ise -ol high -mt off Motor_PWM_map.ncd Motor_PWM.ncd Motor_PWM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Motor_PWM.twx Motor_PWM.ncd -o Motor_PWM.twr Motor_PWM.pcf -ucf UCF_MIMAS.ucf 
+bitgen -intstyle ise -f Motor_PWM.ut Motor_PWM.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/Projects/Motor_PWM/Motor_PWM.xst" -ofn "E:/Xilinx/Projects/Motor_PWM/Motor_PWM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF_MIMAS.ucf -p xc6slx9-tqg144-3 Motor_PWM.ngc Motor_PWM.ngd  
+xst -intstyle ise -ifn "E:/Xilinx/Projects/Motor_PWM/Motor_PWM.xst" -ofn "E:/Xilinx/Projects/Motor_PWM/Motor_PWM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF_MIMAS.ucf -p xc6slx9-tqg144-3 Motor_PWM.ngc Motor_PWM.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Motor_PWM_map.ncd Motor_PWM.ngd Motor_PWM.pcf 
+par -w -intstyle ise -ol high -mt off Motor_PWM_map.ncd Motor_PWM.ncd Motor_PWM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Motor_PWM.twx Motor_PWM.ncd -o Motor_PWM.twr Motor_PWM.pcf -ucf UCF_MIMAS.ucf 
+bitgen -intstyle ise -f Motor_PWM.ut Motor_PWM.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF_MIMAS.ucf -p xc6slx9-tqg144-3 Motor_PWM.ngc Motor_PWM.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Motor_PWM_map.ncd Motor_PWM.ngd Motor_PWM.pcf 
+par -w -intstyle ise -ol high -mt off Motor_PWM_map.ncd Motor_PWM.ncd Motor_PWM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Motor_PWM.twx Motor_PWM.ncd -o Motor_PWM.twr Motor_PWM.pcf -ucf UCF_MIMAS.ucf 
+bitgen -intstyle ise -f Motor_PWM.ut Motor_PWM.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/Projects/Motor_PWM/Motor_PWM.xst" -ofn "E:/Xilinx/Projects/Motor_PWM/Motor_PWM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF_MIMAS.ucf -p xc6slx9-tqg144-3 Motor_PWM.ngc Motor_PWM.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Motor_PWM_map.ncd Motor_PWM.ngd Motor_PWM.pcf 
+par -w -intstyle ise -ol high -mt off Motor_PWM_map.ncd Motor_PWM.ncd Motor_PWM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Motor_PWM.twx Motor_PWM.ncd -o Motor_PWM.twr Motor_PWM.pcf -ucf UCF_MIMAS.ucf 
+bitgen -intstyle ise -f Motor_PWM.ut Motor_PWM.ncd 

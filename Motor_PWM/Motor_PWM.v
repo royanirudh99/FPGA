@@ -21,10 +21,13 @@
 			
 
 	module PWM( input [7:0]Input,input CLK,input RST,output OUT);
-	
+		reg [15:0] IN = 4;
+		wire OUT_CLK;
 		reg output_val;
 		reg [7:0] Counter_val;		
-		always @(posedge CLK or posedge RST)
+		Clock_Divider CD (CLK, IN, RST, OUT_CLK);
+
+		always @(posedge OUT_CLK or posedge RST)
 			begin
 				
 				if (RST)
@@ -46,6 +49,7 @@
 					end
 			end		
 		assign OUT=output_val;
+		
 	endmodule
 	
 	module Motor_PWM(input [7:0]Input,input CLK,input RST, input [2:0] H,output [1:0] A,output [1:0] B,output [1:0] C);
@@ -82,6 +86,7 @@
 		assign A = a;
 		assign B = b;
 		assign C = c;
+		
 		
 	endmodule
 		

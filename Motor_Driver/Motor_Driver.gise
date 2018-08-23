@@ -42,6 +42,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="Motor_Driver.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="Motor_Driver.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Motor_Driver.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Motor_Driver_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="Motor_Driver_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Motor_Driver_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Motor_Driver_map.mrp" xil_pn:subbranch="Map"/>
@@ -89,6 +90,10 @@
     <transform xil_pn:end_ts="1526319251" xil_pn:in_ck="-4206175638631175084" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1526319251">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Motor_Driver.v"/>
       <outfile xil_pn:name="Test_Motor.v"/>
     </transform>
@@ -103,17 +108,26 @@
     <transform xil_pn:end_ts="1526319251" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-3014963698705232110" xil_pn:start_ts="1526319251">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1526319251" xil_pn:in_ck="-4206175638631175084" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1526319251">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Motor_Driver.v"/>
       <outfile xil_pn:name="Test_Motor.v"/>
     </transform>
     <transform xil_pn:end_ts="1526319257" xil_pn:in_ck="-4206175638631175084" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4013455383924715085" xil_pn:start_ts="1526319251">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Test_Motor_beh.prj"/>
       <outfile xil_pn:name="Test_Motor_isim_beh.exe"/>
@@ -124,40 +138,41 @@
     <transform xil_pn:end_ts="1526319258" xil_pn:in_ck="-2599736702326027361" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2883904276326202896" xil_pn:start_ts="1526319257">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Test_Motor_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
     </transform>
-    <transform xil_pn:end_ts="1526666829" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1526666829">
+    <transform xil_pn:end_ts="1533919805" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1533919805">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1526666829" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="6341885315097887825" xil_pn:start_ts="1526666829">
+    <transform xil_pn:end_ts="1533919805" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="6341885315097887825" xil_pn:start_ts="1533919805">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1526666829" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-3014963698705232110" xil_pn:start_ts="1526666829">
+    <transform xil_pn:end_ts="1533919805" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="6647010386378237185" xil_pn:start_ts="1533919805">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1526666829" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1526666829">
+    <transform xil_pn:end_ts="1533919805" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1533919805">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1526666829" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-1657676136456710317" xil_pn:start_ts="1526666829">
+    <transform xil_pn:end_ts="1533919805" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-1657676136456710317" xil_pn:start_ts="1533919805">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1526666829" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745293037926" xil_pn:start_ts="1526666829">
+    <transform xil_pn:end_ts="1533919805" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745955965653" xil_pn:start_ts="1533919805">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1526666829" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-8958625247231703076" xil_pn:start_ts="1526666829">
+    <transform xil_pn:end_ts="1533919805" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="703348837851766219" xil_pn:start_ts="1533919805">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1526666839" xil_pn:in_ck="2062733155555330144" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="8682775898047586145" xil_pn:start_ts="1526666829">
+    <transform xil_pn:end_ts="1533985838" xil_pn:in_ck="2062733155555330144" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-8492047782303684112" xil_pn:start_ts="1533985817">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -174,22 +189,20 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1526666839" xil_pn:in_ck="112481647050" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-9042974488107623042" xil_pn:start_ts="1526666839">
+    <transform xil_pn:end_ts="1533990233" xil_pn:in_ck="112481647050" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-9042974488107623042" xil_pn:start_ts="1533990233">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1526666849" xil_pn:in_ck="5692635584613527436" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4522092608384706957" xil_pn:start_ts="1526666839">
+    <transform xil_pn:end_ts="1533990241" xil_pn:in_ck="5692635584613527436" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="8898045972881498402" xil_pn:start_ts="1533990233">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Motor_Driver.bld"/>
       <outfile xil_pn:name="Motor_Driver.ngd"/>
       <outfile xil_pn:name="Motor_Driver_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1526666868" xil_pn:in_ck="5692635627231970413" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1405206279585514545" xil_pn:start_ts="1526666849">
+    <transform xil_pn:end_ts="1533990256" xil_pn:in_ck="5692635627231970413" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="6093601622908603872" xil_pn:start_ts="1533990241">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -204,7 +217,7 @@
       <outfile xil_pn:name="Motor_Driver_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1526666889" xil_pn:in_ck="-8579599808344140058" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="93661965788626211" xil_pn:start_ts="1526666868">
+    <transform xil_pn:end_ts="1533990275" xil_pn:in_ck="-8579599808344140058" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="93661965788626211" xil_pn:start_ts="1533990256">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Motor_Driver.ncd"/>
@@ -218,7 +231,7 @@
       <outfile xil_pn:name="Motor_Driver_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1526666909" xil_pn:in_ck="-4186370592810775681" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="4970201210546912173" xil_pn:start_ts="1526666889">
+    <transform xil_pn:end_ts="1533990293" xil_pn:in_ck="-4186370592810775681" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="4970201210546912173" xil_pn:start_ts="1533990275">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Motor_Driver.ut"/>
@@ -231,7 +244,7 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1526666889" xil_pn:in_ck="5692630001597497449" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1526666881">
+    <transform xil_pn:end_ts="1533990275" xil_pn:in_ck="5692630001597497449" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1533990267">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Motor_Driver.twr"/>

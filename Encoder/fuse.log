@@ -8,10 +8,9 @@ Analyzing Verilog file "E:/Xilinx/Projects/Encoder/Encoder.v" into library work
 Analyzing Verilog file "E:/Xilinx/Projects/Encoder/Test.v" into library work
 Analyzing Verilog file "E:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-WARNING:HDLCompiler:189 - "E:/Xilinx/Projects/Encoder/Test.v" Line 41: Size mismatch in connection of port <IN>. Formal port size is 8-bit while actual signal size is 4-bit.
 Completed static elaboration
-Fuse Memory Usage: 193792 KB
-Fuse CPU Usage: 499 ms
+Fuse Memory Usage: 194816 KB
+Fuse CPU Usage: 530 ms
 Compiling module Clock_Divider
 Compiling module Encoder
 Compiling module Test
@@ -21,4 +20,4 @@ Waiting for 1 sub-compilation(s) to finish...
 Compiled 4 Verilog Units
 Built simulation executable E:/Xilinx/Projects/Encoder/Test_isim_beh.exe
 Fuse Memory Usage: 200288 KB
-Fuse CPU Usage: 577 ms
+Fuse CPU Usage: 609 ms

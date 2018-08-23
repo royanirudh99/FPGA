@@ -61,10 +61,10 @@
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Motor_PWM_xst.xrpt"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="PWM.spl"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="PWM.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PWM_Test_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="PWM_Test_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Test_beh.prj"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="PWM_Test_isim_beh.wdb"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Test_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Test_isim_beh.wdb"/>
     <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Test_isim_par.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Test_isim_par.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Test_par.prj"/>
@@ -81,6 +81,7 @@
       <branch xil_pn:name="BehavioralSim"/>
       <branch xil_pn:name="PostRouteSimulation"/>
     </file>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="motor_pwm.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_BIN" xil_pn:name="motor_pwm.bin"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="motor_pwm.bit" xil_pn:subbranch="FPGAConfiguration"/>
@@ -105,63 +106,54 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1526403781" xil_pn:in_ck="894160667132240195" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1526403781">
+    <transform xil_pn:end_ts="1533919055" xil_pn:in_ck="-6898275437949744443" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1533919055">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../Clock_Divider/Clock_Divider.v"/>
       <outfile xil_pn:name="Motor_PWM.v"/>
       <outfile xil_pn:name="PWM_Test.v"/>
       <outfile xil_pn:name="Test.v"/>
     </transform>
-    <transform xil_pn:end_ts="1526403619" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="3984238245389819952" xil_pn:start_ts="1526403619">
+    <transform xil_pn:end_ts="1533918917" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-6714753903427751389" xil_pn:start_ts="1533918917">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1526403619" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2801629163871232914" xil_pn:start_ts="1526403619">
+    <transform xil_pn:end_ts="1533918917" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="6094490942338839649" xil_pn:start_ts="1533918917">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1526403619" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-1021048779876768454" xil_pn:start_ts="1526403619">
+    <transform xil_pn:end_ts="1533918784" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="6819484123702405513" xil_pn:start_ts="1533918784">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
-    <transform xil_pn:end_ts="1526403781" xil_pn:in_ck="894160667132240195" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1526403781">
+    <transform xil_pn:end_ts="1533919055" xil_pn:in_ck="-6898275437949744443" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1533919055">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../Clock_Divider/Clock_Divider.v"/>
       <outfile xil_pn:name="Motor_PWM.v"/>
       <outfile xil_pn:name="PWM_Test.v"/>
       <outfile xil_pn:name="Test.v"/>
     </transform>
-    <transform xil_pn:end_ts="1526403785" xil_pn:in_ck="894160667132240195" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1147079057916016570" xil_pn:start_ts="1526403781">
+    <transform xil_pn:end_ts="1533919059" xil_pn:in_ck="-6898275437949744443" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="8128001791102323340" xil_pn:start_ts="1533919055">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
-      <outfile xil_pn:name="Test_beh.prj"/>
-      <outfile xil_pn:name="Test_isim_beh.exe"/>
+      <outfile xil_pn:name="PWM_Test_beh.prj"/>
+      <outfile xil_pn:name="PWM_Test_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1526403786" xil_pn:in_ck="-7746042665842626319" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3315567144320622633" xil_pn:start_ts="1526403785">
+    <transform xil_pn:end_ts="1533919060" xil_pn:in_ck="-7746042665842626319" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-929027594722276913" xil_pn:start_ts="1533919059">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Test_isim_beh.wdb"/>
+      <outfile xil_pn:name="PWM_Test_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
     </transform>
     <transform xil_pn:end_ts="1526727442" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1526727442">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -171,7 +163,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1526848915" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-1021048779876768454" xil_pn:start_ts="1526848915">
+    <transform xil_pn:end_ts="1533837274" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="6819484123702405513" xil_pn:start_ts="1533837274">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -183,16 +175,17 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1526848915" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745293037926" xil_pn:start_ts="1526848915">
+    <transform xil_pn:end_ts="1533837274" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745955965653" xil_pn:start_ts="1533837274">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1526848915" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="922169335200055876" xil_pn:start_ts="1526848915">
+    <transform xil_pn:end_ts="1533837274" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="8762702238779229843" xil_pn:start_ts="1533837274">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1526848929" xil_pn:in_ck="123251281724162248" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-7488353447704817950" xil_pn:start_ts="1526848915">
+    <transform xil_pn:end_ts="1533918350" xil_pn:in_ck="8962008372327081546" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="8929752090293027601" xil_pn:start_ts="1533918337">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
@@ -208,11 +201,11 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1526850947" xil_pn:in_ck="-2305291555569306176" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-8119241839562335450" xil_pn:start_ts="1526850947">
+    <transform xil_pn:end_ts="1533840168" xil_pn:in_ck="-2305291555569306176" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-8119241839562335450" xil_pn:start_ts="1533840168">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1526850954" xil_pn:in_ck="-7046435450624077718" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="6828708684129496379" xil_pn:start_ts="1526850947">
+    <transform xil_pn:end_ts="1533918358" xil_pn:in_ck="-7046435450624077718" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="5896401762479136330" xil_pn:start_ts="1533918350">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Motor_PWM.bld"/>
@@ -221,7 +214,7 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1526850970" xil_pn:in_ck="-7346313678304228853" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1405206279585514545" xil_pn:start_ts="1526850954">
+    <transform xil_pn:end_ts="1533918380" xil_pn:in_ck="-7346313678304228853" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="6093601622908603872" xil_pn:start_ts="1533918358">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -236,7 +229,7 @@
       <outfile xil_pn:name="Motor_PWM_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1526850990" xil_pn:in_ck="-6480889668171774140" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-6780099238861732004" xil_pn:start_ts="1526850970">
+    <transform xil_pn:end_ts="1533918401" xil_pn:in_ck="-6480889668171774140" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-6780099238861732004" xil_pn:start_ts="1533918380">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Motor_PWM.ncd"/>
@@ -250,7 +243,7 @@
       <outfile xil_pn:name="Motor_PWM_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1526851008" xil_pn:in_ck="5093437281645821415" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="4970201210546912173" xil_pn:start_ts="1526850990">
+    <transform xil_pn:end_ts="1533918421" xil_pn:in_ck="5093437281645821415" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="4970201210546912173" xil_pn:start_ts="1533918401">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Motor_PWM.ut"/>
@@ -279,6 +272,7 @@
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputRemoved"/>
     </transform>
@@ -288,6 +282,7 @@
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
       <status xil_pn:value="OutputRemoved"/>
@@ -302,7 +297,7 @@
       <status xil_pn:value="OutputChanged"/>
       <status xil_pn:value="OutputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1526850990" xil_pn:in_ck="-4655875771943382265" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1526850982">
+    <transform xil_pn:end_ts="1533918401" xil_pn:in_ck="-4655875771943382265" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1533918393">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Motor_PWM.twr"/>

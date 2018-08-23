@@ -26,7 +26,7 @@ module Test;
 
 	// Inputs
 	reg CLK;
-	reg [3:0] IN;
+	
 	reg RST;
 	reg A;
 	
@@ -34,42 +34,40 @@ module Test;
 	// Outputs
 	wire [7:0] Count;
 	
+	
 
 	// Instantiate the Unit Under Test (UUT)
 	Encoder uut (
-		.CLK(CLK), 
-		.IN(IN), 
+		.CLK(CLK),		 
 		.RST(RST), 
 		.A(A), 
 		.Count(Count)
 		
 	);
-	integer i;
+	
 	initial begin
 		// Initialize Inputs
 		CLK = 0;
-		IN = 8'b00001000;
+		
 		RST = 1;
 		A = 0;
 
 		// Wait 100 ns for global reset to finish
 		#100;
 		RST=0;
-		for (i=0;i<200;i=i+1)
-			begin
-				#1000000 A =~ A;
-			end
+		
         
 		// Add stimulus here
 
 	end
 	always begin
-	#41.667 CLK =~ CLK;
+	#5 CLK =~ CLK;
+	end
+	always begin
+	#5859 A=~A;
 	end
 	
-	always begin
-	# 500000 A =~ A;
-	end
+	
       
 endmodule
 

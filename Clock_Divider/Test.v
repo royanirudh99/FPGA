@@ -26,11 +26,12 @@ module Test;
 
 	// Inputs
 	reg CLK;
-	reg [3:0] IN;
+	reg [15:0] IN;
 	reg RST;
 
 	// Outputs
 	wire OUT_CLK;
+	
 	
 
 	// Instantiate the Unit Under Test (UUT)
@@ -39,12 +40,13 @@ module Test;
 		.CLK(CLK), 
 		.IN(IN), 
 		.OUT_CLK(OUT_CLK)
+		
 	);
 
 	initial begin
 		// Initialize Inputs
 		CLK = 0;
-		IN = 4'b1111;
+		IN = 4999;
 		RST=1;
 
 		// Wait 100 ns for global reset to finish
@@ -55,7 +57,7 @@ module Test;
 
 	end
 	always begin
-	#20 CLK =~ CLK;
+	#5 CLK =~ CLK;
 	end
 	
       

@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.19 secs
+Total CPU time to Xst completion: 0.55 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.19 secs
+Total CPU time to Xst completion: 0.55 secs
  
 --> Reading design: Motor_Driver.prj
 
@@ -46,7 +46,7 @@ Ignore Synthesis Constraint File   : NO
 ---- Target Parameters
 Output File Name                   : "Motor_Driver"
 Output Format                      : NGC
-Target Device                      : xc6slx9-3-csg324
+Target Device                      : xc6slx9-3-tqg144
 
 ---- Source Options
 Top Module Name                    : Motor_Driver
@@ -188,7 +188,7 @@ Primitive and Black Box Usage:
 Device utilization summary:
 ---------------------------
 
-Selected Device : 6slx9csg324-3 
+Selected Device : 6slx9tqg144-3 
 
 
 Slice Logic Utilization: 
@@ -204,7 +204,7 @@ Slice Logic Distribution:
 
 IO Utilization: 
  Number of IOs:                           9
- Number of bonded IOBs:                   9  out of    200     4%  
+ Number of bonded IOBs:                   9  out of    102     8%  
 
 Specific Feature Utilization:
 
@@ -272,12 +272,12 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.01 secs
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.37 secs
  
 --> 
 
-Total memory usage is 295572 kilobytes
+Total memory usage is 295636 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

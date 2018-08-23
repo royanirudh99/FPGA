@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-MSI::  Fri May 18 23:37:50 2018
+MSI::  Sat Aug 11 17:54:17 2018
 
 par -w -intstyle ise -ol high -mt off Motor_Driver_map.ncd Motor_Driver.ncd
 Motor_Driver.pcf 
@@ -9,7 +9,7 @@ Motor_Driver.pcf
 
 Constraints file: Motor_Driver.pcf.
 Loading device for application Rf_Device from file '6slx9.nph' in environment E:\Xilinx\14.7\ISE_DS\ISE\.
-   "Motor_Driver" is an NCD, version 3.2, device xc6slx9, package csg324, speed -3
+   "Motor_Driver" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -3
 
 Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
 Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
@@ -53,7 +53,7 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                         9 out of     200    4%
+  Number of bonded IOBs:                         9 out of     102    8%
     Number of LOCed IOBs:                        9 out of       9  100%
 
 Specific Feature Utilization:
@@ -93,24 +93,24 @@ Phase  1  : 18 unrouted;      REAL time: 7 secs
 
 Phase  2  : 18 unrouted;      REAL time: 7 secs 
 
-Phase  3  : 6 unrouted;      REAL time: 7 secs 
+Phase  3  : 0 unrouted;      REAL time: 7 secs 
 
-Phase  4  : 6 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  4  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
 Updating file: Motor_Driver.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
-Total REAL time to Router completion: 8 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Total REAL time to Router completion: 7 secs 
 Total CPU time to Router completion: 6 secs 
 
 Partition Implementation Status
@@ -130,8 +130,8 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 9 secs 
-Total CPU time to PAR completion: 7 secs 
+Total REAL time to PAR completion: 8 secs 
+Total CPU time to PAR completion: 6 secs 
 
 Peak Memory Usage:  386 MB
 

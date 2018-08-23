@@ -42,7 +42,7 @@ module PWM_Test;
 
 	initial begin
 		// Initialize Inputs
-		Input = 4'b1000;
+		Input = 4'b1111000;
 		CLK = 0;
 		RST = 1;
 
@@ -54,7 +54,7 @@ module PWM_Test;
 
 	end
 	always begin
-	#20 CLK =~ CLK;
+	#5 CLK =~ CLK;
 	end
       
 endmodule

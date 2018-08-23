@@ -67,7 +67,7 @@ module Test;
 			
 	end
 	always begin
-	# 10 CLK =~ CLK;
+	# 5 CLK =~ CLK;
 	end
 	
       
