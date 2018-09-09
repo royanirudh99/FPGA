@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.27 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.26 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.27 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.26 secs
  
 --> Reading design: Encoder_UART.prj
 
@@ -299,9 +299,9 @@ Primitive and Black Box Usage:
 #      FDPE                        : 1
 # Clock Buffers                    : 2
 #      BUFGP                       : 2
-# IO Buffers                       : 10
+# IO Buffers                       : 11
 #      IBUF                        : 1
-#      OBUF                        : 9
+#      OBUF                        : 10
 
 Device utilization summary:
 ---------------------------
@@ -322,8 +322,8 @@ Slice Logic Distribution:
    Number of unique control sets:         6
 
 IO Utilization: 
- Number of IOs:                          12
- Number of bonded IOBs:                  12  out of    102    11%  
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    102    12%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
@@ -576,7 +576,7 @@ Offset:              3.245ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Motor_Encoder/CD/OUT'
-  Total number of paths / destination ports: 8 / 8
+  Total number of paths / destination ports: 9 / 9
 -------------------------------------------------------------------------
 Offset:              3.701ns (Levels of Logic = 1)
   Source:            Motor_Encoder/Out_reg_7 (FF)
@@ -640,7 +640,7 @@ Clock to Setup on destination clock E
 Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 --------------------+---------+---------+---------+---------+
 E                   |    1.837|         |         |         |
-Motor_Encoder/CD/OUT|    2.565|         |         |         |
+Motor_Encoder/CD/OUT|    2.603|         |         |         |
 --------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Motor_Encoder/CD/OUT
@@ -655,12 +655,12 @@ Motor_Encoder/CD/OUT|    3.654|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 9.78 secs
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 15.82 secs
  
 --> 
 
-Total memory usage is 296320 kilobytes
+Total memory usage is 296128 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    6 (   0 filtered)

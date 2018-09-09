@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=E:\Xilinx\Projects\UART\UART.ncd
-OUTFILE=E:\Xilinx\Projects\UART\UART.bit
-FAMILY=Spartan6
-PART=xc6slx9-3csg324
-WORKINGDIR=E:\Xilinx\Projects\UART
-LICENSE=WebPack
-USER_INFO=__0_0_0

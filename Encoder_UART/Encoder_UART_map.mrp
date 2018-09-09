@@ -11,7 +11,7 @@ Target Device  : xc6slx9
 Target Package : tqg144
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Thu Aug 23 15:29:10 2018
+Mapped Date    : Sat Aug 25 20:06:53 2018
 
 Design Summary
 --------------
@@ -53,8 +53,8 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        12 out of     102   11%
-    Number of LOCed IOBs:                       12 out of      12  100%
+  Number of bonded IOBs:                        13 out of     102   12%
+    Number of LOCed IOBs:                       12 out of      13   92%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -81,10 +81,10 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                4.54
+Average Fanout of Non-Clock Nets:                4.55
 
-Peak Memory Usage:  398 MB
-Total REAL time to MAP completion:  21 secs 
+Peak Memory Usage:  388 MB
+Total REAL time to MAP completion:  35 secs 
 Total CPU time to MAP completion:   13 secs 
 
 Table of Contents
@@ -111,7 +111,7 @@ Section 2 - Warnings
 WARNING:Place:1109 - A clock IOB / BUFGMUX clock component pair have been found
    that are not placed at an optimal clock IOB / BUFGMUX site pair. The clock
    IOB component <E> is placed at site <P34>. The corresponding BUFG component
-   <E_BUFGP/BUFG> is placed at site <BUFGMUX_X2Y3>. There is only a select set
+   <E_BUFGP/BUFG> is placed at site <BUFGMUX_X3Y8>. There is only a select set
    of IOBs that can use the fast path to the Clocker buffer, and they are not
    being used. You may want to analyze why this problem exists and correct it.
    This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint was
@@ -130,6 +130,9 @@ INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
    1.260 Volts)
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
+INFO:Place:834 - Only a subset of IOs are locked. Out of 13 IOs, 12 are locked
+   and 1 are not locked. If you would like to print the names of these IOs,
+   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
 INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
@@ -164,6 +167,7 @@ Section 6 - IOB Properties
 | Count<6>                           | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          |          |
 | Count<7>                           | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          |          |
 | E                                  | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| En                                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | RST                                | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | TX                                 | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          |          |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+

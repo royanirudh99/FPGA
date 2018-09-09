@@ -32,7 +32,7 @@ module Test;
 	// Outputs
 	wire [7:0] Count;
 	wire TX;
-	
+	wire En;
 
 	// Instantiate the Unit Under Test (UUT)
 	Encoder_UART uut (
@@ -40,8 +40,8 @@ module Test;
 		.CLK(CLK), 
 		.E(E), 
 		.Count(Count), 
-		.TX(TX),
-		.TX_Count(TX_Count)
+		.TX(TX),		
+		.En(En)
 		
 	);
 

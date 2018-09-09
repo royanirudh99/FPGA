@@ -11,7 +11,7 @@ Target Device  : xc6slx9
 Target Package : tqg144
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Thu Aug 23 15:29:10 2018
+Mapped Date    : Sat Aug 25 20:06:53 2018
 
 Mapping design into LUTs...
 Running directed packing...
@@ -20,25 +20,28 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 14 secs 
+Total REAL time at the beginning of Placer: 21 secs 
 Total CPU  time at the beginning of Placer: 8 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:210a19b3) REAL time: 16 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:f962240c) REAL time: 29 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:210a19b3) REAL time: 16 secs 
+INFO:Place:834 - Only a subset of IOs are locked. Out of 13 IOs, 12 are locked
+   and 1 are not locked. If you would like to print the names of these IOs,
+   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+Phase 2.7  Design Feasibility Check (Checksum:f962240c) REAL time: 29 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:210a19b3) REAL time: 16 secs 
+Phase 3.31  Local Placement Optimization (Checksum:f962240c) REAL time: 29 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
-
+...
 .......
 WARNING:Place:1109 - A clock IOB / BUFGMUX clock component pair have been found
    that are not placed at an optimal clock IOB / BUFGMUX site pair. The clock
    IOB component <E> is placed at site <P34>. The corresponding BUFG component
-   <E_BUFGP/BUFG> is placed at site <BUFGMUX_X2Y3>. There is only a select set
+   <E_BUFGP/BUFG> is placed at site <BUFGMUX_X3Y8>. There is only a select set
    of IOBs that can use the fast path to the Clocker buffer, and they are not
    being used. You may want to analyze why this problem exists and correct it.
    This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint was
@@ -48,39 +51,40 @@ WARNING:Place:1109 - A clock IOB / BUFGMUX clock component pair have been found
    results. It is recommended that this error condition be corrected in the
    design.
 Phase 4.2  Initial Placement for Architecture Specific Features
-(Checksum:d50f91ab) REAL time: 19 secs 
+(Checksum:c180cfa1) REAL time: 32 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:d50f91ab) REAL time: 19 secs 
+Phase 5.36  Local Placement Optimization (Checksum:c180cfa1) REAL time: 32 secs 
 
 Phase 6.30  Global Clock Region Assignment
-Phase 6.30  Global Clock Region Assignment (Checksum:d50f91ab) REAL time: 19 secs 
+Phase 6.30  Global Clock Region Assignment (Checksum:c180cfa1) REAL time: 32 secs 
 
 Phase 7.3  Local Placement Optimization
-Phase 7.3  Local Placement Optimization (Checksum:d50f91ab) REAL time: 19 secs 
+...
+Phase 7.3  Local Placement Optimization (Checksum:c2e1c1d2) REAL time: 33 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:d50f91ab) REAL time: 19 secs 
+Phase 8.5  Local Placement Optimization (Checksum:10e7ebc1) REAL time: 33 secs 
 
 Phase 9.8  Global Placement
-.....
-.....
-Phase 9.8  Global Placement (Checksum:8ad4bb77) REAL time: 20 secs 
+....
+....
+Phase 9.8  Global Placement (Checksum:6b4dc890) REAL time: 33 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:8ad4bb77) REAL time: 20 secs 
+Phase 10.5  Local Placement Optimization (Checksum:6b4dc890) REAL time: 33 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:4b84ad4f) REAL time: 20 secs 
+Phase 11.18  Placement Optimization (Checksum:b5f4d208) REAL time: 33 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:4b84ad4f) REAL time: 20 secs 
+Phase 12.5  Local Placement Optimization (Checksum:b5f4d208) REAL time: 33 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:4b84ad4f) REAL time: 20 secs 
+Phase 13.34  Placement Validation (Checksum:b5f4d208) REAL time: 33 secs 
 
-Total REAL time to Placer completion: 20 secs 
-Total CPU  time to Placer completion: 12 secs 
+Total REAL time to Placer completion: 33 secs 
+Total CPU  time to Placer completion: 13 secs 
 Running post-placement packing...
 Writing output files...
 
@@ -126,8 +130,8 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        12 out of     102   11%
-    Number of LOCed IOBs:                       12 out of      12  100%
+  Number of bonded IOBs:                        13 out of     102   12%
+    Number of LOCed IOBs:                       12 out of      13   92%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -154,10 +158,10 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                4.54
+Average Fanout of Non-Clock Nets:                4.55
 
-Peak Memory Usage:  398 MB
-Total REAL time to MAP completion:  21 secs 
+Peak Memory Usage:  388 MB
+Total REAL time to MAP completion:  35 secs 
 Total CPU time to MAP completion:   13 secs 
 
 Mapping completed.

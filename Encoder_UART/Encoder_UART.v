@@ -18,10 +18,8 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Encoder_UART(input RST, input CLK, input E, output [7:0] Count, output TX);
-		
-	
-	Encoder Motor_Encoder(CLK, RST, E, Count);	
+module Encoder_UART(input RST, input CLK, input E, output [7:0] Count, output TX, output En);	
+	Encoder Motor_Encoder(CLK, RST, E, Count, En);	
 	UART_Transmiter Comm (CLK, Count, RST, TX);	
 
 endmodule

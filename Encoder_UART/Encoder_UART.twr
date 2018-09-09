@@ -37,7 +37,7 @@ Setup/Hold to clock CLK
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-RST         |    4.166(R)|      SLOW  |   -0.766(R)|      SLOW  |CLK_BUFGP         |   0.000|
+RST         |    3.586(R)|      SLOW  |   -1.071(R)|      FAST  |CLK_BUFGP         |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Setup/Hold to clock E
@@ -45,7 +45,7 @@ Setup/Hold to clock E
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-RST         |   -0.910(R)|      FAST  |    2.562(R)|      SLOW  |E_BUFGP           |   0.000|
+RST         |   -0.861(R)|      FAST  |    2.468(R)|      SLOW  |E_BUFGP           |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK
@@ -53,7 +53,7 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    3.812|         |         |         |
+CLK            |    3.226|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock E
@@ -61,11 +61,11 @@ Clock to Setup on destination clock E
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-E              |    1.584|         |         |         |
+E              |    1.482|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Thu Aug 23 15:29:55 2018 
+Analysis completed Sat Aug 25 20:07:59 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:

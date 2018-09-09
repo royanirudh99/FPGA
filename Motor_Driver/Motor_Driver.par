@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-MSI::  Sat Aug 11 17:54:17 2018
+MSI::  Mon Aug 27 19:32:18 2018
 
 par -w -intstyle ise -ol high -mt off Motor_Driver_map.ncd Motor_Driver.ncd
 Motor_Driver.pcf 
@@ -37,7 +37,7 @@ Slice Logic Utilization:
     Number used as Memory:                       0 out of   1,440    0%
 
 Slice Logic Distribution:
-  Number of occupied Slices:                     3 out of   1,430    1%
+  Number of occupied Slices:                     1 out of   1,430    1%
   Number of MUXCYs used:                         0 out of   2,860    0%
   Number of LUT Flip Flop pairs used:            3
     Number with an unused Flip Flop:             3 out of       3  100%
@@ -83,35 +83,35 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 6 secs 
-Finished initial Timing Analysis.  REAL time: 6 secs 
+Starting initial Timing Analysis.  REAL time: 8 secs 
+Finished initial Timing Analysis.  REAL time: 8 secs 
 
 Starting Router
 
 
-Phase  1  : 18 unrouted;      REAL time: 7 secs 
+Phase  1  : 18 unrouted;      REAL time: 8 secs 
 
-Phase  2  : 18 unrouted;      REAL time: 7 secs 
+Phase  2  : 18 unrouted;      REAL time: 8 secs 
 
-Phase  3  : 0 unrouted;      REAL time: 7 secs 
+Phase  3  : 2 unrouted;      REAL time: 8 secs 
 
-Phase  4  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase  4  : 2 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
 
 Updating file: Motor_Driver.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
-Total REAL time to Router completion: 7 secs 
-Total CPU time to Router completion: 6 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
+Total REAL time to Router completion: 9 secs 
+Total CPU time to Router completion: 8 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -130,10 +130,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 8 secs 
-Total CPU time to PAR completion: 6 secs 
+Total REAL time to PAR completion: 9 secs 
+Total CPU time to PAR completion: 8 secs 
 
-Peak Memory Usage:  386 MB
+Peak Memory Usage:  385 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-	module Encoder( input CLK,input RST, input A, output [7:0] Count);
+	module Encoder( input CLK,input RST, input A, output [7:0] Count,output En);
 		reg [7:0] Clock_Cntr=0;
 		reg [7:0] Count_val,Out_reg;
 		reg en=0;
@@ -55,5 +55,5 @@
 			end
 						
 	assign Count = Out_reg;
-	
+	assign En = en;
 	endmodule

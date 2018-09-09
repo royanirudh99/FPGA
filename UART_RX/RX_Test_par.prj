@@ -1,2 +1,0 @@
-verilog work "netgen/par/Receiver_timesim.v"
-verilog work "../UART/RX_Test.v"

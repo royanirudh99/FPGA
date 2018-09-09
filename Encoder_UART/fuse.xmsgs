@@ -5,13 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="267" delta="unknown" >"E:/Xilinx/Projects/Encoder_UART/Test.v" Line 38: Cannot find port <arg fmt="%s" index="1">TX_Count</arg> on this module
-</msg>
-
-<msg type="error" file="HDLCompiler" num="25" delta="unknown" >"E:/Xilinx/Projects/Encoder_UART/Test.v" Line 44: Module &lt;<arg fmt="%s" index="1">Encoder_UART</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">TX_Count</arg>&gt;.
-</msg>
-
-<msg type="error" file="Simulator" num="778" delta="unknown" >Static elaboration of top level Verilog design unit(s) in library <arg fmt="%s" index="1">work</arg> failed
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"E:/Xilinx/Projects/Encoder_UART/../UART_Transmitter/UART_Transmiter.v" Line 26: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">9</arg>-bit.
 </msg>
 
 </messages>

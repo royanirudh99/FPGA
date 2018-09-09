@@ -1,2 +1,0 @@
-verilog work "../Clock_Divider/Clock_Divider.v"
-verilog work "Receiver.v"

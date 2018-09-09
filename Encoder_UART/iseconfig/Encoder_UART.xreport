@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-08-23T15:28:37</DateModified>
+  <DateModified>2018-08-25T20:05:07</DateModified>
   <ModuleName>Encoder_UART</ModuleName>
   <SummaryTimeStamp>2018-08-23T15:11:02</SummaryTimeStamp>
   <SavedFilePath>E:/Xilinx/Projects/Encoder_UART/iseconfig/Encoder_UART.xreport</SavedFilePath>
