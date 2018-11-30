@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "E:/Xilinx/Projects/UART_Transmitter_Enable/UART_Transmiter_Enable.xst" -ofn "E:/Xilinx/Projects/UART_Transmitter_Enable/UART_Transmiter_Enable.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Projects/UART_Transmitter_Enable/UART_Transmiter_Enable.xst" -ofn "E:/Xilinx/Projects/UART_Transmitter_Enable/UART_Transmiter_Enable.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Projects/UART_Transmitter_Enable/UART_Transmiter_Enable.xst" -ofn "E:/Xilinx/Projects/UART_Transmitter_Enable/UART_Transmiter_Enable.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Projects/UART_Transmitter_Enable/UART_Transmiter_Enable.xst" -ofn "E:/Xilinx/Projects/UART_Transmitter_Enable/UART_Transmiter_Enable.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Projects/UART_Transmitter_Enable/UART_Transmiter_Enable.xst" -ofn "E:/Xilinx/Projects/UART_Transmitter_Enable/UART_Transmiter_Enable.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 UART_Transmiter_Enable.ngc UART_Transmiter_Enable.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UART_Transmiter_Enable_map.ncd UART_Transmiter_Enable.ngd UART_Transmiter_Enable.pcf 
+par -w -intstyle ise -ol high -mt off UART_Transmiter_Enable_map.ncd UART_Transmiter_Enable.ncd UART_Transmiter_Enable.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml UART_Transmiter_Enable.twx UART_Transmiter_Enable.ncd -o UART_Transmiter_Enable.twr UART_Transmiter_Enable.pcf 
+bitgen -intstyle ise -f UART_Transmiter_Enable.ut UART_Transmiter_Enable.ncd 

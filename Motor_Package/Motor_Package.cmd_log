@@ -33,3 +33,4 @@ map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -reg
 par -w -intstyle ise -ol high -mt off Motor_Package_map.ncd Motor_Package.ncd Motor_Package.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Motor_Package.twx Motor_Package.ncd -o Motor_Package.twr Motor_Package.pcf -ucf UCF.ucf 
 bitgen -intstyle ise -f Motor_Package.ut Motor_Package.ncd 
+bitgen -intstyle ise -f Motor_Package.ut Motor_Package.ncd 

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-08-09T16:06:32</DateModified>
-  <ModuleName>Transmiter</ModuleName>
+  <DateModified>2018-11-29T17:34:24</DateModified>
+  <ModuleName>UART_Transmiter</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>E:/Xilinx/Projects/UART_Transmitter/iseconfig/UART_Transmiter.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>E:/Xilinx/Projects/UART_Transmitter</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>E:/Xilinx/Projects/UART_Transmitter\</ImplementationReportsDirectory>
   <DateInitialized>2018-08-09T16:06:32</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

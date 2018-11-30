@@ -1,0 +1,896 @@
+Release 14.7 Map P.20131013 (nt)
+Xilinx Mapping Report File for Design 'UART_8_Byte'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o UART_8_Byte_map.ncd UART_8_Byte.ngd
+UART_8_Byte.pcf 
+Target Device  : xc6slx9
+Target Package : tqg144
+Target Speed   : -2
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Thu Nov 29 18:30:12 2018
+
+Design Summary
+--------------
+Number of errors   :  16
+Number of warnings :   0
+
+Section 1 - Errors
+------------------
+ERROR:MapLib:979 - LUT5 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o21"
+   (output signal=Trans/Mmux_Count[3]_TX_register_Mux_9_o2) has input signal
+   "DATA_T_1" which will be trimmed. See Section 5 of the Map Report File for
+   details about why the input signal will become undriven.
+ERROR:MapLib:979 - LUT5 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o21"
+   (output signal=Trans/Mmux_Count[3]_TX_register_Mux_9_o2) has input signal
+   "DATA_T_5" which will be trimmed. See Section 5 of the Map Report File for
+   details about why the input signal will become undriven.
+ERROR:MapLib:979 - LUT5 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o21"
+   (output signal=Trans/Mmux_Count[3]_TX_register_Mux_9_o2) has input signal
+   "DATA_T_3" which will be trimmed. See Section 5 of the Map Report File for
+   details about why the input signal will become undriven.
+ERROR:MapLib:979 - LUT4 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o22"
+   (output signal=Trans/Mmux_Count[3]_TX_register_Mux_9_o21) has input signal
+   "DATA_T_2" which will be trimmed. See Section 5 of the Map Report File for
+   details about why the input signal will become undriven.
+ERROR:MapLib:979 - LUT4 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o22"
+   (output signal=Trans/Mmux_Count[3]_TX_register_Mux_9_o21) has input signal
+   "DATA_T_6" which will be trimmed. See Section 5 of the Map Report File for
+   details about why the input signal will become undriven.
+ERROR:MapLib:979 - LUT4 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o23"
+   (output signal=Trans/Mmux_Count[3]_TX_register_Mux_9_o22) has input signal
+   "DATA_T_0" which will be trimmed. See Section 5 of the Map Report File for
+   details about why the input signal will become undriven.
+ERROR:MapLib:979 - LUT4 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o23"
+   (output signal=Trans/Mmux_Count[3]_TX_register_Mux_9_o22) has input signal
+   "DATA_T_4" which will be trimmed. See Section 5 of the Map Report File for
+   details about why the input signal will become undriven.
+ERROR:MapLib:979 - LUT6 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o24"
+   (output signal=Trans/Count[3]_TX_register_Mux_9_o) has input signal
+   "DATA_T_7" which will be trimmed. See Section 5 of the Map Report File for
+   details about why the input signal will become undriven.
+ERROR:MapLib:978 - LUT5 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o21"
+   (output signal=Trans/Mmux_Count[3]_TX_register_Mux_9_o2) has an equation that
+   uses input pin I2, which no longer has a connected signal. Please ensure that
+   all the pins used in the equation for this LUT have signals that are not
+   trimmed (see Section 5 of the Map Report File for details on which signals
+   were trimmed).
+ERROR:MapLib:978 - LUT5 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o21"
+   (output signal=Trans/Mmux_Count[3]_TX_register_Mux_9_o2) has an equation that
+   uses input pin I3, which no longer has a connected signal. Please ensure that
+   all the pins used in the equation for this LUT have signals that are not
+   trimmed (see Section 5 of the Map Report File for details on which signals
+   were trimmed).
+ERROR:MapLib:978 - LUT5 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o21"
+   (output signal=Trans/Mmux_Count[3]_TX_register_Mux_9_o2) has an equation that
+   uses input pin I4, which no longer has a connected signal. Please ensure that
+   all the pins used in the equation for this LUT have signals that are not
+   trimmed (see Section 5 of the Map Report File for details on which signals
+   were trimmed).
+ERROR:MapLib:978 - LUT4 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o22"
+   (output signal=Trans/Mmux_Count[3]_TX_register_Mux_9_o21) has an equation
+   that uses input pin I2, which no longer has a connected signal. Please ensure
+   that all the pins used in the equation for this LUT have signals that are not
+   trimmed (see Section 5 of the Map Report File for details on which signals
+   were trimmed).
+ERROR:MapLib:978 - LUT4 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o22"
+   (output signal=Trans/Mmux_Count[3]_TX_register_Mux_9_o21) has an equation
+   that uses input pin I3, which no longer has a connected signal. Please ensure
+   that all the pins used in the equation for this LUT have signals that are not
+   trimmed (see Section 5 of the Map Report File for details on which signals
+   were trimmed).
+ERROR:MapLib:978 - LUT4 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o23"
+   (output signal=Trans/Mmux_Count[3]_TX_register_Mux_9_o22) has an equation
+   that uses input pin I2, which no longer has a connected signal. Please ensure
+   that all the pins used in the equation for this LUT have signals that are not
+   trimmed (see Section 5 of the Map Report File for details on which signals
+   were trimmed).
+ERROR:MapLib:978 - LUT4 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o23"
+   (output signal=Trans/Mmux_Count[3]_TX_register_Mux_9_o22) has an equation
+   that uses input pin I3, which no longer has a connected signal. Please ensure
+   that all the pins used in the equation for this LUT have signals that are not
+   trimmed (see Section 5 of the Map Report File for details on which signals
+   were trimmed).
+ERROR:MapLib:978 - LUT6 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o24"
+   (output signal=Trans/Count[3]_TX_register_Mux_9_o) has an equation that uses
+   input pin I4, which no longer has a connected signal. Please ensure that all
+   the pins used in the equation for this LUT have signals that are not trimmed
+   (see Section 5 of the Map Report File for details on which signals were
+   trimmed).
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 346 block(s) removed
+   2 block(s) optimized away
+ 346 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "Rec/r_RX_DV_BUFG" is unused and has been removed.
+ Unused block "Rec/r_RX_DV_BUFG" (CKBUF) removed.
+  The signal "Rec/r_RX_DV" is unused and has been removed.
+   Unused block "Rec/r_RX_DV" (FF) removed.
+    The signal "Rec/r_RX_DV_rstpot" is unused and has been removed.
+     Unused block "Rec/r_RX_DV_rstpot" (ROM) removed.
+      The signal "N39" is unused and has been removed.
+       Unused block "Rec/_n0112_inv111_SW0" (ROM) removed.
+        The signal "Rec/r_RX_DV_1" is unused and has been removed.
+         Unused block "Rec/r_RX_DV_1" (FF) removed.
+      The signal "N40" is unused and has been removed.
+       Unused block "Rec/_n0112_inv111_SW1" (ROM) removed.
+The signal "Count_R<7>" is unused and has been removed.
+ Unused block "Count_R_7" (FF) removed.
+  The signal "n0009" is unused and has been removed.
+   Unused block "out1" (ROM) removed.
+    The signal "Count_R<3>" is unused and has been removed.
+     Unused block "Count_R_3" (FF) removed.
+      The signal "Result<3>" is unused and has been removed.
+       Unused block "Mcount_Count_R_xor<3>" (XOR) removed.
+        The signal "Mcount_Count_R_cy<2>" is unused and has been removed.
+         Unused block "Mcount_Count_R_cy<2>" (MUX) removed.
+          The signal "Mcount_Count_R_cy<1>" is unused and has been removed.
+           Unused block "Mcount_Count_R_cy<1>" (MUX) removed.
+            The signal "Mcount_Count_R_cy<0>" is unused and has been removed.
+             Unused block "Mcount_Count_R_cy<0>" (MUX) removed.
+              The signal "Mcount_Count_R_lut<0>" is unused and has been removed.
+               Unused block "Mcount_Count_R_lut<0>_INV_0" (BUF) removed.
+                The signal "Count_R<0>" is unused and has been removed.
+                 Unused block "Count_R_0" (FF) removed.
+                  The signal "Result<0>" is unused and has been removed.
+                   Unused block "Mcount_Count_R_xor<0>" (XOR) removed.
+            The signal "Mcount_Count_R_cy<1>_rt" is unused and has been removed.
+             Unused block "Mcount_Count_R_cy<1>_rt" (ROM) removed.
+              The signal "Count_R<1>" is unused and has been removed.
+               Unused block "Count_R_1" (FF) removed.
+                The signal "Result<1>" is unused and has been removed.
+                 Unused block "Mcount_Count_R_xor<1>" (XOR) removed.
+          The signal "Mcount_Count_R_cy<2>_rt" is unused and has been removed.
+           Unused block "Mcount_Count_R_cy<2>_rt" (ROM) removed.
+            The signal "Count_R<2>" is unused and has been removed.
+             Unused block "Count_R_2" (FF) removed.
+              The signal "Result<2>" is unused and has been removed.
+               Unused block "Mcount_Count_R_xor<2>" (XOR) removed.
+        The signal "Mcount_Count_R_cy<3>_rt" is unused and has been removed.
+         Unused block "Mcount_Count_R_cy<3>_rt" (ROM) removed.
+    The signal "Count_R<6>" is unused and has been removed.
+     Unused block "Count_R_6" (FF) removed.
+      The signal "Result<6>" is unused and has been removed.
+       Unused block "Mcount_Count_R_xor<6>" (XOR) removed.
+        The signal "Mcount_Count_R_cy<5>" is unused and has been removed.
+         Unused block "Mcount_Count_R_cy<5>" (MUX) removed.
+          The signal "Mcount_Count_R_cy<4>" is unused and has been removed.
+           Unused block "Mcount_Count_R_cy<4>" (MUX) removed.
+            The signal "Mcount_Count_R_cy<3>" is unused and has been removed.
+             Unused block "Mcount_Count_R_cy<3>" (MUX) removed.
+            The signal "Mcount_Count_R_cy<4>_rt" is unused and has been removed.
+             Unused block "Mcount_Count_R_cy<4>_rt" (ROM) removed.
+              The signal "Count_R<4>" is unused and has been removed.
+               Unused block "Count_R_4" (FF) removed.
+                The signal "Result<4>" is unused and has been removed.
+                 Unused block "Mcount_Count_R_xor<4>" (XOR) removed.
+          The signal "Mcount_Count_R_cy<5>_rt" is unused and has been removed.
+           Unused block "Mcount_Count_R_cy<5>_rt" (ROM) removed.
+            The signal "Count_R<5>" is unused and has been removed.
+             Unused block "Count_R_5" (FF) removed.
+              The signal "Result<5>" is unused and has been removed.
+               Unused block "Mcount_Count_R_xor<5>" (XOR) removed.
+        The signal "Mcount_Count_R_cy<6>_rt" is unused and has been removed.
+         Unused block "Mcount_Count_R_cy<6>_rt" (ROM) removed.
+  The signal "Result<7>" is unused and has been removed.
+   Unused block "Mcount_Count_R_xor<7>" (XOR) removed.
+    The signal "Mcount_Count_R_cy<6>" is unused and has been removed.
+     Unused block "Mcount_Count_R_cy<6>" (MUX) removed.
+    The signal "Mcount_Count_R_xor<7>_rt" is unused and has been removed.
+     Unused block "Mcount_Count_R_xor<7>_rt" (ROM) removed.
+The signal "T_Data<7>" is unused and has been removed.
+ Unused block "T_Data_7" (FF) removed.
+  The signal "Count_R[7]_GND_1_o_equal_17_o<7>1_cepot" is unused and has been
+removed.
+   Unused block "Count_R[7]_GND_1_o_equal_17_o<7>1_cepot" (ROM) removed.
+  The signal "T_Data_7_dpot" is unused and has been removed.
+   Unused block "T_Data_7_dpot" (ROM) removed.
+    The signal "R_Data_7" is unused and has been removed.
+     Unused block "R_Data_7" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<7>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT621" (ROM) removed.
+        The signal "_n0193" is unused and has been removed.
+         Unused block "_n0193<7>1" (ROM) removed.
+The signal "T_Data<6>" is unused and has been removed.
+ Unused block "T_Data_6" (FF) removed.
+  The signal "T_Data_6_dpot" is unused and has been removed.
+   Unused block "T_Data_6_dpot" (ROM) removed.
+    The signal "R_Data_6" is unused and has been removed.
+     Unused block "R_Data_6" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<6>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT611" (ROM) removed.
+The signal "T_Data<5>" is unused and has been removed.
+ Unused block "T_Data_5" (FF) removed.
+  The signal "T_Data_5_dpot" is unused and has been removed.
+   Unused block "T_Data_5_dpot" (ROM) removed.
+    The signal "R_Data_5" is unused and has been removed.
+     Unused block "R_Data_5" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<5>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT561" (ROM) removed.
+The signal "T_Data<4>" is unused and has been removed.
+ Unused block "T_Data_4" (FF) removed.
+  The signal "T_Data_4_dpot" is unused and has been removed.
+   Unused block "T_Data_4_dpot" (ROM) removed.
+    The signal "R_Data_4" is unused and has been removed.
+     Unused block "R_Data_4" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<4>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT451" (ROM) removed.
+The signal "T_Data<3>" is unused and has been removed.
+ Unused block "T_Data_3" (FF) removed.
+  The signal "T_Data_3_dpot" is unused and has been removed.
+   Unused block "T_Data_3_dpot" (ROM) removed.
+    The signal "R_Data_3" is unused and has been removed.
+     Unused block "R_Data_3" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<3>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT341" (ROM) removed.
+The signal "T_Data<2>" is unused and has been removed.
+ Unused block "T_Data_2" (FF) removed.
+  The signal "T_Data_2_dpot" is unused and has been removed.
+   Unused block "T_Data_2_dpot" (ROM) removed.
+    The signal "R_Data_2" is unused and has been removed.
+     Unused block "R_Data_2" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<2>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT231" (ROM) removed.
+The signal "T_Data<1>" is unused and has been removed.
+ Unused block "T_Data_1" (FF) removed.
+  The signal "T_Data_1_dpot" is unused and has been removed.
+   Unused block "T_Data_1_dpot" (ROM) removed.
+    The signal "R_Data_1" is unused and has been removed.
+     Unused block "R_Data_1" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<1>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT121" (ROM) removed.
+The signal "T_Data<0>" is unused and has been removed.
+ Unused block "T_Data_0" (FF) removed.
+  The signal "T_Data_0_dpot" is unused and has been removed.
+   Unused block "T_Data_0_dpot" (ROM) removed.
+    The signal "R_Data_0" is unused and has been removed.
+     Unused block "R_Data_0" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<0>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT11" (ROM) removed.
+The signal "T_Data<15>" is unused and has been removed.
+ Unused block "T_Data_15" (FF) removed.
+  The signal "T_Data_15_dpot" is unused and has been removed.
+   Unused block "T_Data_15_dpot" (ROM) removed.
+    The signal "R_Data_15" is unused and has been removed.
+     Unused block "R_Data_15" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<15>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT71" (ROM) removed.
+The signal "T_Data<14>" is unused and has been removed.
+ Unused block "T_Data_14" (FF) removed.
+  The signal "T_Data_14_dpot" is unused and has been removed.
+   Unused block "T_Data_14_dpot" (ROM) removed.
+    The signal "R_Data_14" is unused and has been removed.
+     Unused block "R_Data_14" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<14>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT61" (ROM) removed.
+The signal "T_Data<13>" is unused and has been removed.
+ Unused block "T_Data_13" (FF) removed.
+  The signal "T_Data_13_dpot" is unused and has been removed.
+   Unused block "T_Data_13_dpot" (ROM) removed.
+    The signal "R_Data_13" is unused and has been removed.
+     Unused block "R_Data_13" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<13>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT56" (ROM) removed.
+The signal "T_Data<12>" is unused and has been removed.
+ Unused block "T_Data_12" (FF) removed.
+  The signal "T_Data_12_dpot" is unused and has been removed.
+   Unused block "T_Data_12_dpot" (ROM) removed.
+    The signal "R_Data_12" is unused and has been removed.
+     Unused block "R_Data_12" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<12>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT45" (ROM) removed.
+The signal "T_Data<11>" is unused and has been removed.
+ Unused block "T_Data_11" (FF) removed.
+  The signal "T_Data_11_dpot" is unused and has been removed.
+   Unused block "T_Data_11_dpot" (ROM) removed.
+    The signal "R_Data_11" is unused and has been removed.
+     Unused block "R_Data_11" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<11>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT34" (ROM) removed.
+The signal "T_Data<10>" is unused and has been removed.
+ Unused block "T_Data_10" (FF) removed.
+  The signal "T_Data_10_dpot" is unused and has been removed.
+   Unused block "T_Data_10_dpot" (ROM) removed.
+    The signal "R_Data_10" is unused and has been removed.
+     Unused block "R_Data_10" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<10>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT21" (ROM) removed.
+The signal "T_Data<9>" is unused and has been removed.
+ Unused block "T_Data_9" (FF) removed.
+  The signal "T_Data_9_dpot" is unused and has been removed.
+   Unused block "T_Data_9_dpot" (ROM) removed.
+    The signal "R_Data_9" is unused and has been removed.
+     Unused block "R_Data_9" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<9>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT641" (ROM) removed.
+The signal "T_Data<8>" is unused and has been removed.
+ Unused block "T_Data_8" (FF) removed.
+  The signal "T_Data_8_dpot" is unused and has been removed.
+   Unused block "T_Data_8_dpot" (ROM) removed.
+    The signal "R_Data_8" is unused and has been removed.
+     Unused block "R_Data_8" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<8>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT631" (ROM) removed.
+The signal "T_Data<23>" is unused and has been removed.
+ Unused block "T_Data_23" (FF) removed.
+  The signal "T_Data_23_dpot" is unused and has been removed.
+   Unused block "T_Data_23_dpot" (ROM) removed.
+    The signal "R_Data_23" is unused and has been removed.
+     Unused block "R_Data_23" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<23>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT161" (ROM) removed.
+The signal "T_Data<22>" is unused and has been removed.
+ Unused block "T_Data_22" (FF) removed.
+  The signal "T_Data_22_dpot" is unused and has been removed.
+   Unused block "T_Data_22_dpot" (ROM) removed.
+    The signal "R_Data_22" is unused and has been removed.
+     Unused block "R_Data_22" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<22>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT151" (ROM) removed.
+The signal "T_Data<21>" is unused and has been removed.
+ Unused block "T_Data_21" (FF) removed.
+  The signal "T_Data_21_dpot" is unused and has been removed.
+   Unused block "T_Data_21_dpot" (ROM) removed.
+    The signal "R_Data_21" is unused and has been removed.
+     Unused block "R_Data_21" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<21>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT141" (ROM) removed.
+The signal "T_Data<20>" is unused and has been removed.
+ Unused block "T_Data_20" (FF) removed.
+  The signal "T_Data_20_dpot" is unused and has been removed.
+   Unused block "T_Data_20_dpot" (ROM) removed.
+    The signal "R_Data_20" is unused and has been removed.
+     Unused block "R_Data_20" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<20>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT131" (ROM) removed.
+The signal "T_Data<19>" is unused and has been removed.
+ Unused block "T_Data_19" (FF) removed.
+  The signal "T_Data_19_dpot" is unused and has been removed.
+   Unused block "T_Data_19_dpot" (ROM) removed.
+    The signal "R_Data_19" is unused and has been removed.
+     Unused block "R_Data_19" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<19>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT111" (ROM) removed.
+The signal "T_Data<18>" is unused and has been removed.
+ Unused block "T_Data_18" (FF) removed.
+  The signal "T_Data_18_dpot" is unused and has been removed.
+   Unused block "T_Data_18_dpot" (ROM) removed.
+    The signal "R_Data_18" is unused and has been removed.
+     Unused block "R_Data_18" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<18>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT101" (ROM) removed.
+The signal "T_Data<17>" is unused and has been removed.
+ Unused block "T_Data_17" (FF) removed.
+  The signal "T_Data_17_dpot" is unused and has been removed.
+   Unused block "T_Data_17_dpot" (ROM) removed.
+    The signal "R_Data_17" is unused and has been removed.
+     Unused block "R_Data_17" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<17>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT91" (ROM) removed.
+The signal "T_Data<16>" is unused and has been removed.
+ Unused block "T_Data_16" (FF) removed.
+  The signal "T_Data_16_dpot" is unused and has been removed.
+   Unused block "T_Data_16_dpot" (ROM) removed.
+    The signal "R_Data_16" is unused and has been removed.
+     Unused block "R_Data_16" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<16>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT81" (ROM) removed.
+The signal "T_Data<31>" is unused and has been removed.
+ Unused block "T_Data_31" (FF) removed.
+  The signal "T_Data_31_dpot" is unused and has been removed.
+   Unused block "T_Data_31_dpot" (ROM) removed.
+    The signal "R_Data_31" is unused and has been removed.
+     Unused block "R_Data_31" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<31>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT251" (ROM) removed.
+The signal "T_Data<30>" is unused and has been removed.
+ Unused block "T_Data_30" (FF) removed.
+  The signal "T_Data_30_dpot" is unused and has been removed.
+   Unused block "T_Data_30_dpot" (ROM) removed.
+    The signal "R_Data_30" is unused and has been removed.
+     Unused block "R_Data_30" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<30>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT241" (ROM) removed.
+The signal "T_Data<29>" is unused and has been removed.
+ Unused block "T_Data_29" (FF) removed.
+  The signal "T_Data_29_dpot" is unused and has been removed.
+   Unused block "T_Data_29_dpot" (ROM) removed.
+    The signal "R_Data_29" is unused and has been removed.
+     Unused block "R_Data_29" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<29>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT221" (ROM) removed.
+The signal "T_Data<28>" is unused and has been removed.
+ Unused block "T_Data_28" (FF) removed.
+  The signal "T_Data_28_dpot" is unused and has been removed.
+   Unused block "T_Data_28_dpot" (ROM) removed.
+    The signal "R_Data_28" is unused and has been removed.
+     Unused block "R_Data_28" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<28>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT211" (ROM) removed.
+The signal "T_Data<27>" is unused and has been removed.
+ Unused block "T_Data_27" (FF) removed.
+  The signal "T_Data_27_dpot" is unused and has been removed.
+   Unused block "T_Data_27_dpot" (ROM) removed.
+    The signal "R_Data_27" is unused and has been removed.
+     Unused block "R_Data_27" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<27>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT201" (ROM) removed.
+The signal "T_Data<26>" is unused and has been removed.
+ Unused block "T_Data_26" (FF) removed.
+  The signal "T_Data_26_dpot" is unused and has been removed.
+   Unused block "T_Data_26_dpot" (ROM) removed.
+    The signal "R_Data_26" is unused and has been removed.
+     Unused block "R_Data_26" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<26>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT191" (ROM) removed.
+The signal "T_Data<25>" is unused and has been removed.
+ Unused block "T_Data_25" (FF) removed.
+  The signal "T_Data_25_dpot" is unused and has been removed.
+   Unused block "T_Data_25_dpot" (ROM) removed.
+    The signal "R_Data_25" is unused and has been removed.
+     Unused block "R_Data_25" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<25>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT181" (ROM) removed.
+The signal "T_Data<24>" is unused and has been removed.
+ Unused block "T_Data_24" (FF) removed.
+  The signal "T_Data_24_dpot" is unused and has been removed.
+   Unused block "T_Data_24_dpot" (ROM) removed.
+    The signal "R_Data_24" is unused and has been removed.
+     Unused block "R_Data_24" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<24>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT171" (ROM) removed.
+The signal "T_Data<39>" is unused and has been removed.
+ Unused block "T_Data_39" (FF) removed.
+  The signal "T_Data_39_dpot" is unused and has been removed.
+   Unused block "T_Data_39_dpot" (ROM) removed.
+    The signal "R_Data_39" is unused and has been removed.
+     Unused block "R_Data_39" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<39>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT331" (ROM) removed.
+The signal "T_Data<38>" is unused and has been removed.
+ Unused block "T_Data_38" (FF) removed.
+  The signal "T_Data_38_dpot" is unused and has been removed.
+   Unused block "T_Data_38_dpot" (ROM) removed.
+    The signal "R_Data_38" is unused and has been removed.
+     Unused block "R_Data_38" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<38>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT321" (ROM) removed.
+The signal "T_Data<37>" is unused and has been removed.
+ Unused block "T_Data_37" (FF) removed.
+  The signal "T_Data_37_dpot" is unused and has been removed.
+   Unused block "T_Data_37_dpot" (ROM) removed.
+    The signal "R_Data_37" is unused and has been removed.
+     Unused block "R_Data_37" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<37>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT311" (ROM) removed.
+The signal "T_Data<36>" is unused and has been removed.
+ Unused block "T_Data_36" (FF) removed.
+  The signal "T_Data_36_dpot" is unused and has been removed.
+   Unused block "T_Data_36_dpot" (ROM) removed.
+    The signal "R_Data_36" is unused and has been removed.
+     Unused block "R_Data_36" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<36>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT301" (ROM) removed.
+The signal "T_Data<35>" is unused and has been removed.
+ Unused block "T_Data_35" (FF) removed.
+  The signal "T_Data_35_dpot" is unused and has been removed.
+   Unused block "T_Data_35_dpot" (ROM) removed.
+    The signal "R_Data_35" is unused and has been removed.
+     Unused block "R_Data_35" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<35>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT291" (ROM) removed.
+The signal "T_Data<34>" is unused and has been removed.
+ Unused block "T_Data_34" (FF) removed.
+  The signal "T_Data_34_dpot" is unused and has been removed.
+   Unused block "T_Data_34_dpot" (ROM) removed.
+    The signal "R_Data_34" is unused and has been removed.
+     Unused block "R_Data_34" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<34>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT281" (ROM) removed.
+The signal "T_Data<33>" is unused and has been removed.
+ Unused block "T_Data_33" (FF) removed.
+  The signal "T_Data_33_dpot" is unused and has been removed.
+   Unused block "T_Data_33_dpot" (ROM) removed.
+    The signal "R_Data_33" is unused and has been removed.
+     Unused block "R_Data_33" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<33>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT271" (ROM) removed.
+The signal "T_Data<32>" is unused and has been removed.
+ Unused block "T_Data_32" (FF) removed.
+  The signal "T_Data_32_dpot" is unused and has been removed.
+   Unused block "T_Data_32_dpot" (ROM) removed.
+    The signal "R_Data_32" is unused and has been removed.
+     Unused block "R_Data_32" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<32>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT261" (ROM) removed.
+The signal "T_Data<47>" is unused and has been removed.
+ Unused block "T_Data_47" (FF) removed.
+  The signal "T_Data_47_dpot" is unused and has been removed.
+   Unused block "T_Data_47_dpot" (ROM) removed.
+    The signal "R_Data_47" is unused and has been removed.
+     Unused block "R_Data_47" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<47>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT421" (ROM) removed.
+The signal "T_Data<46>" is unused and has been removed.
+ Unused block "T_Data_46" (FF) removed.
+  The signal "T_Data_46_dpot" is unused and has been removed.
+   Unused block "T_Data_46_dpot" (ROM) removed.
+    The signal "R_Data_46" is unused and has been removed.
+     Unused block "R_Data_46" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<46>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT411" (ROM) removed.
+The signal "T_Data<45>" is unused and has been removed.
+ Unused block "T_Data_45" (FF) removed.
+  The signal "T_Data_45_dpot" is unused and has been removed.
+   Unused block "T_Data_45_dpot" (ROM) removed.
+    The signal "R_Data_45" is unused and has been removed.
+     Unused block "R_Data_45" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<45>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT401" (ROM) removed.
+The signal "T_Data<44>" is unused and has been removed.
+ Unused block "T_Data_44" (FF) removed.
+  The signal "T_Data_44_dpot" is unused and has been removed.
+   Unused block "T_Data_44_dpot" (ROM) removed.
+    The signal "R_Data_44" is unused and has been removed.
+     Unused block "R_Data_44" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<44>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT391" (ROM) removed.
+The signal "T_Data<43>" is unused and has been removed.
+ Unused block "T_Data_43" (FF) removed.
+  The signal "T_Data_43_dpot" is unused and has been removed.
+   Unused block "T_Data_43_dpot" (ROM) removed.
+    The signal "R_Data_43" is unused and has been removed.
+     Unused block "R_Data_43" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<43>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT381" (ROM) removed.
+The signal "T_Data<42>" is unused and has been removed.
+ Unused block "T_Data_42" (FF) removed.
+  The signal "T_Data_42_dpot" is unused and has been removed.
+   Unused block "T_Data_42_dpot" (ROM) removed.
+    The signal "R_Data_42" is unused and has been removed.
+     Unused block "R_Data_42" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<42>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT371" (ROM) removed.
+The signal "T_Data<41>" is unused and has been removed.
+ Unused block "T_Data_41" (FF) removed.
+  The signal "T_Data_41_dpot" is unused and has been removed.
+   Unused block "T_Data_41_dpot" (ROM) removed.
+    The signal "R_Data_41" is unused and has been removed.
+     Unused block "R_Data_41" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<41>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT361" (ROM) removed.
+The signal "T_Data<40>" is unused and has been removed.
+ Unused block "T_Data_40" (FF) removed.
+  The signal "T_Data_40_dpot" is unused and has been removed.
+   Unused block "T_Data_40_dpot" (ROM) removed.
+    The signal "R_Data_40" is unused and has been removed.
+     Unused block "R_Data_40" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<40>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT351" (ROM) removed.
+The signal "T_Data<55>" is unused and has been removed.
+ Unused block "T_Data_55" (FF) removed.
+  The signal "T_Data_55_dpot" is unused and has been removed.
+   Unused block "T_Data_55_dpot" (ROM) removed.
+    The signal "R_Data_55" is unused and has been removed.
+     Unused block "R_Data_55" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<55>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT511" (ROM) removed.
+The signal "T_Data<54>" is unused and has been removed.
+ Unused block "T_Data_54" (FF) removed.
+  The signal "T_Data_54_dpot" is unused and has been removed.
+   Unused block "T_Data_54_dpot" (ROM) removed.
+    The signal "R_Data_54" is unused and has been removed.
+     Unused block "R_Data_54" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<54>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT501" (ROM) removed.
+The signal "T_Data<53>" is unused and has been removed.
+ Unused block "T_Data_53" (FF) removed.
+  The signal "T_Data_53_dpot" is unused and has been removed.
+   Unused block "T_Data_53_dpot" (ROM) removed.
+    The signal "R_Data_53" is unused and has been removed.
+     Unused block "R_Data_53" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<53>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT491" (ROM) removed.
+The signal "T_Data<52>" is unused and has been removed.
+ Unused block "T_Data_52" (FF) removed.
+  The signal "T_Data_52_dpot" is unused and has been removed.
+   Unused block "T_Data_52_dpot" (ROM) removed.
+    The signal "R_Data_52" is unused and has been removed.
+     Unused block "R_Data_52" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<52>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT481" (ROM) removed.
+The signal "T_Data<51>" is unused and has been removed.
+ Unused block "T_Data_51" (FF) removed.
+  The signal "T_Data_51_dpot" is unused and has been removed.
+   Unused block "T_Data_51_dpot" (ROM) removed.
+    The signal "R_Data_51" is unused and has been removed.
+     Unused block "R_Data_51" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<51>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT471" (ROM) removed.
+The signal "T_Data<50>" is unused and has been removed.
+ Unused block "T_Data_50" (FF) removed.
+  The signal "T_Data_50_dpot" is unused and has been removed.
+   Unused block "T_Data_50_dpot" (ROM) removed.
+    The signal "R_Data_50" is unused and has been removed.
+     Unused block "R_Data_50" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<50>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT461" (ROM) removed.
+The signal "T_Data<49>" is unused and has been removed.
+ Unused block "T_Data_49" (FF) removed.
+  The signal "T_Data_49_dpot" is unused and has been removed.
+   Unused block "T_Data_49_dpot" (ROM) removed.
+    The signal "R_Data_49" is unused and has been removed.
+     Unused block "R_Data_49" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<49>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT441" (ROM) removed.
+The signal "T_Data<48>" is unused and has been removed.
+ Unused block "T_Data_48" (FF) removed.
+  The signal "T_Data_48_dpot" is unused and has been removed.
+   Unused block "T_Data_48_dpot" (ROM) removed.
+    The signal "R_Data_48" is unused and has been removed.
+     Unused block "R_Data_48" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<48>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT431" (ROM) removed.
+The signal "T_Data<63>" is unused and has been removed.
+ Unused block "T_Data_63" (FF) removed.
+  The signal "T_Data_63_dpot" is unused and has been removed.
+   Unused block "T_Data_63_dpot" (ROM) removed.
+    The signal "R_Data_63" is unused and has been removed.
+     Unused block "R_Data_63" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<63>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT601" (ROM) removed.
+The signal "T_Data<62>" is unused and has been removed.
+ Unused block "T_Data_62" (FF) removed.
+  The signal "T_Data_62_dpot" is unused and has been removed.
+   Unused block "T_Data_62_dpot" (ROM) removed.
+    The signal "R_Data_62" is unused and has been removed.
+     Unused block "R_Data_62" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<62>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT591" (ROM) removed.
+The signal "T_Data<61>" is unused and has been removed.
+ Unused block "T_Data_61" (FF) removed.
+  The signal "T_Data_61_dpot" is unused and has been removed.
+   Unused block "T_Data_61_dpot" (ROM) removed.
+    The signal "R_Data_61" is unused and has been removed.
+     Unused block "R_Data_61" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<61>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT581" (ROM) removed.
+The signal "T_Data<60>" is unused and has been removed.
+ Unused block "T_Data_60" (FF) removed.
+  The signal "T_Data_60_dpot" is unused and has been removed.
+   Unused block "T_Data_60_dpot" (ROM) removed.
+    The signal "R_Data_60" is unused and has been removed.
+     Unused block "R_Data_60" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<60>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT571" (ROM) removed.
+The signal "T_Data<59>" is unused and has been removed.
+ Unused block "T_Data_59" (FF) removed.
+  The signal "T_Data_59_dpot" is unused and has been removed.
+   Unused block "T_Data_59_dpot" (ROM) removed.
+    The signal "R_Data_59" is unused and has been removed.
+     Unused block "R_Data_59" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<59>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT551" (ROM) removed.
+The signal "T_Data<58>" is unused and has been removed.
+ Unused block "T_Data_58" (FF) removed.
+  The signal "T_Data_58_dpot" is unused and has been removed.
+   Unused block "T_Data_58_dpot" (ROM) removed.
+    The signal "R_Data_58" is unused and has been removed.
+     Unused block "R_Data_58" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<58>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT541" (ROM) removed.
+The signal "T_Data<57>" is unused and has been removed.
+ Unused block "T_Data_57" (FF) removed.
+  The signal "T_Data_57_dpot" is unused and has been removed.
+   Unused block "T_Data_57_dpot" (ROM) removed.
+    The signal "R_Data_57" is unused and has been removed.
+     Unused block "R_Data_57" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<57>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT531" (ROM) removed.
+The signal "T_Data<56>" is unused and has been removed.
+ Unused block "T_Data_56" (FF) removed.
+  The signal "T_Data_56_dpot" is unused and has been removed.
+   Unused block "T_Data_56_dpot" (ROM) removed.
+    The signal "R_Data_56" is unused and has been removed.
+     Unused block "R_Data_56" (FF) removed.
+      The signal "Count_R[7]_R_Data[63]_select_18_OUT<56>" is unused and has been
+removed.
+       Unused block "Mmux_Count_R[7]_R_Data[63]_select_18_OUT521" (ROM) removed.
+The signal "_n0173<1>" is unused and has been removed.
+ Unused block "Mmux__n0173_2_f7" (MUX) removed.
+  The signal "Mmux__n0173_4" is unused and has been removed.
+   Unused block "Mmux__n0173_4" (ROM) removed.
+    The signal "Count_T_1" is unused and has been removed.
+     Unused block "Count_T_1" (LATCH) removed.
+      The signal "Count_T[7]_Count_T[7]_select_43_OUT<1>" is unused and has been
+removed.
+       Unused block "Madd_Count_T[7]_Count_T[7]_select_43_OUT_xor<1>11" (ROM) removed.
+        The signal "Count_T_0" is unused and has been removed.
+         Unused block "Count_T_0" (LATCH) removed.
+          The signal "Count_T[7]_Count_T[7]_select_43_OUT<0>" is unused and has been
+removed.
+           Unused block "Madd_Count_T[7]_Count_T[7]_select_43_OUT_xor<0>11_INV_0" (BUF)
+removed.
+          The signal "_n0148" is unused and has been removed.
+           Unused block "out11" (ROM) removed.
+            The signal "Count_T_7" is unused and has been removed.
+             Unused block "Count_T_7" (LATCH) removed.
+              The signal "Count_T[7]_Count_T[7]_select_43_OUT<7>" is unused and has been
+removed.
+               Unused block "Madd_Count_T[7]_Count_T[7]_select_43_OUT_xor<7>11" (ROM) removed.
+                The signal "Count_T_6" is unused and has been removed.
+                 Unused block "Count_T_6" (LATCH) removed.
+                  The signal "Count_T[7]_Count_T[7]_select_43_OUT<6>" is unused and has been
+removed.
+                   Unused block "Madd_Count_T[7]_Count_T[7]_select_43_OUT_xor<6>11" (ROM) removed.
+                    The signal "Madd_Count_T[7]_Count_T[7]_select_43_OUT_xor<3>11" is unused and has
+been removed.
+                     Unused block "Madd_Count_T[7]_Count_T[7]_select_43_OUT_xor<3>111" (ROM) removed.
+                      The signal "Count_T_2" is unused and has been removed.
+                       Unused block "Count_T_2" (LATCH) removed.
+                        The signal "Count_T[7]_Count_T[7]_select_43_OUT<2>" is unused and has been
+removed.
+                         Unused block "Madd_Count_T[7]_Count_T[7]_select_43_OUT_xor<2>11" (ROM) removed.
+                    The signal "Count_T_4" is unused and has been removed.
+                     Unused block "Count_T_4" (LATCH) removed.
+                      The signal "Count_T[7]_Count_T[7]_select_43_OUT<4>" is unused and has been
+removed.
+                       Unused block "Madd_Count_T[7]_Count_T[7]_select_43_OUT_xor<4>11" (ROM) removed.
+                        The signal "Count_T_3" is unused and has been removed.
+                         Unused block "Count_T_3" (LATCH) removed.
+                          The signal "Count_T[7]_Count_T[7]_select_43_OUT<3>" is unused and has been
+removed.
+                           Unused block "Madd_Count_T[7]_Count_T[7]_select_43_OUT_xor<3>11" (ROM) removed.
+                    The signal "Count_T_5" is unused and has been removed.
+                     Unused block "Count_T_5" (LATCH) removed.
+                      The signal "Count_T[7]_Count_T[7]_select_43_OUT<5>" is unused and has been
+removed.
+                       Unused block "Madd_Count_T[7]_Count_T[7]_select_43_OUT_xor<5>11" (ROM) removed.
+  The signal "Mmux__n0173_3" is unused and has been removed.
+   Unused block "Mmux__n0173_3" (ROM) removed.
+The signal "_n0173<2>" is unused and has been removed.
+ Unused block "Mmux__n0173_2_f7_0" (MUX) removed.
+  The signal "Mmux__n0173_41" is unused and has been removed.
+   Unused block "Mmux__n0173_41" (ROM) removed.
+  The signal "Mmux__n0173_31" is unused and has been removed.
+   Unused block "Mmux__n0173_31" (ROM) removed.
+The signal "_n0173<3>" is unused and has been removed.
+ Unused block "Mmux__n0173_2_f7_1" (MUX) removed.
+  The signal "Mmux__n0173_42" is unused and has been removed.
+   Unused block "Mmux__n0173_42" (ROM) removed.
+  The signal "Mmux__n0173_32" is unused and has been removed.
+   Unused block "Mmux__n0173_32" (ROM) removed.
+The signal "_n0173<4>" is unused and has been removed.
+ Unused block "Mmux__n0173_2_f7_2" (MUX) removed.
+  The signal "Mmux__n0173_43" is unused and has been removed.
+   Unused block "Mmux__n0173_43" (ROM) removed.
+  The signal "Mmux__n0173_33" is unused and has been removed.
+   Unused block "Mmux__n0173_33" (ROM) removed.
+The signal "_n0173<5>" is unused and has been removed.
+ Unused block "Mmux__n0173_2_f7_3" (MUX) removed.
+  The signal "Mmux__n0173_44" is unused and has been removed.
+   Unused block "Mmux__n0173_44" (ROM) removed.
+  The signal "Mmux__n0173_34" is unused and has been removed.
+   Unused block "Mmux__n0173_34" (ROM) removed.
+The signal "_n0173<6>" is unused and has been removed.
+ Unused block "Mmux__n0173_2_f7_4" (MUX) removed.
+  The signal "Mmux__n0173_45" is unused and has been removed.
+   Unused block "Mmux__n0173_45" (ROM) removed.
+  The signal "Mmux__n0173_35" is unused and has been removed.
+   Unused block "Mmux__n0173_35" (ROM) removed.
+The signal "_n0173<7>" is unused and has been removed.
+ Unused block "Mmux__n0173_2_f7_5" (MUX) removed.
+  The signal "Mmux__n0173_46" is unused and has been removed.
+   Unused block "Mmux__n0173_46" (ROM) removed.
+  The signal "Mmux__n0173_36" is unused and has been removed.
+   Unused block "Mmux__n0173_36" (ROM) removed.
+The signal "_n0173<8>" is unused and has been removed.
+ Unused block "Mmux__n0173_2_f7_6" (MUX) removed.
+  The signal "Mmux__n0173_47" is unused and has been removed.
+   Unused block "Mmux__n0173_47" (ROM) removed.
+  The signal "Mmux__n0173_37" is unused and has been removed.
+   Unused block "Mmux__n0173_37" (ROM) removed.
+The signal "DATA_T_7" is unused and has been removed.
+ Unused block "DATA_T_7" (LATCH) removed.
+The signal "DATA_T_6" is unused and has been removed.
+ Unused block "DATA_T_6" (LATCH) removed.
+The signal "DATA_T_5" is unused and has been removed.
+ Unused block "DATA_T_5" (LATCH) removed.
+The signal "DATA_T_4" is unused and has been removed.
+ Unused block "DATA_T_4" (LATCH) removed.
+The signal "DATA_T_3" is unused and has been removed.
+ Unused block "DATA_T_3" (LATCH) removed.
+The signal "DATA_T_2" is unused and has been removed.
+ Unused block "DATA_T_2" (LATCH) removed.
+The signal "DATA_T_1" is unused and has been removed.
+ Unused block "DATA_T_1" (LATCH) removed.
+The signal "DATA_T_0" is unused and has been removed.
+ Unused block "DATA_T_0" (LATCH) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC

@@ -1,0 +1,2 @@
+vhdl work "../UART_Receiver/UART_Receiver.vhd"
+verilog work "Test.v"

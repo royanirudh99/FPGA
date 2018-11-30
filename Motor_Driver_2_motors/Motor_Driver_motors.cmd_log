@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "E:/Xilinx/Projects/Motor_Driver_2_motors/Motor_Driver_motors.xst" -ofn "E:/Xilinx/Projects/Motor_Driver_2_motors/Motor_Driver_motors.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Projects/Motor_Driver_2_motors/Motor_Driver_motors.xst" -ofn "E:/Xilinx/Projects/Motor_Driver_2_motors/Motor_Driver_motors.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Projects/Motor_Driver_2_motors/Motor_Driver_motors.xst" -ofn "E:/Xilinx/Projects/Motor_Driver_2_motors/Motor_Driver_motors.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 Motor_Driver_motors.ngc Motor_Driver_motors.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Motor_Driver_motors_map.ncd Motor_Driver_motors.ngd Motor_Driver_motors.pcf 
+par -w -intstyle ise -ol high -mt off Motor_Driver_motors_map.ncd Motor_Driver_motors.ncd Motor_Driver_motors.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Motor_Driver_motors.twx Motor_Driver_motors.ncd -o Motor_Driver_motors.twr Motor_Driver_motors.pcf 
+bitgen -intstyle ise -f Motor_Driver_motors.ut Motor_Driver_motors.ncd 

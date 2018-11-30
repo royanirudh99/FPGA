@@ -1,0 +1,105 @@
+Release 14.7 Map P.20131013 (nt)
+Xilinx Map Application Log File for Design 'UART_8_Byte'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o UART_8_Byte_map.ncd UART_8_Byte.ngd
+UART_8_Byte.pcf 
+Target Device  : xc6slx9
+Target Package : tqg144
+Target Speed   : -2
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Thu Nov 29 18:30:12 2018
+
+Mapping design into LUTs...
+ERROR:MapLib:979 - LUT5 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o21"
+   (output signal=Trans/Mmux_Count[3]_TX_register_Mux_9_o2) has input signal
+   "DATA_T_1" which will be trimmed. See Section 5 of the Map Report File for
+   details about why the input signal will become undriven.
+ERROR:MapLib:979 - LUT5 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o21"
+   (output signal=Trans/Mmux_Count[3]_TX_register_Mux_9_o2) has input signal
+   "DATA_T_5" which will be trimmed. See Section 5 of the Map Report File for
+   details about why the input signal will become undriven.
+ERROR:MapLib:979 - LUT5 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o21"
+   (output signal=Trans/Mmux_Count[3]_TX_register_Mux_9_o2) has input signal
+   "DATA_T_3" which will be trimmed. See Section 5 of the Map Report File for
+   details about why the input signal will become undriven.
+ERROR:MapLib:979 - LUT4 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o22"
+   (output signal=Trans/Mmux_Count[3]_TX_register_Mux_9_o21) has input signal
+   "DATA_T_2" which will be trimmed. See Section 5 of the Map Report File for
+   details about why the input signal will become undriven.
+ERROR:MapLib:979 - LUT4 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o22"
+   (output signal=Trans/Mmux_Count[3]_TX_register_Mux_9_o21) has input signal
+   "DATA_T_6" which will be trimmed. See Section 5 of the Map Report File for
+   details about why the input signal will become undriven.
+ERROR:MapLib:979 - LUT4 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o23"
+   (output signal=Trans/Mmux_Count[3]_TX_register_Mux_9_o22) has input signal
+   "DATA_T_0" which will be trimmed. See Section 5 of the Map Report File for
+   details about why the input signal will become undriven.
+ERROR:MapLib:979 - LUT4 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o23"
+   (output signal=Trans/Mmux_Count[3]_TX_register_Mux_9_o22) has input signal
+   "DATA_T_4" which will be trimmed. See Section 5 of the Map Report File for
+   details about why the input signal will become undriven.
+ERROR:MapLib:979 - LUT6 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o24"
+   (output signal=Trans/Count[3]_TX_register_Mux_9_o) has input signal
+   "DATA_T_7" which will be trimmed. See Section 5 of the Map Report File for
+   details about why the input signal will become undriven.
+ERROR:MapLib:978 - LUT5 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o21"
+   (output signal=Trans/Mmux_Count[3]_TX_register_Mux_9_o2) has an equation that
+   uses input pin I2, which no longer has a connected signal. Please ensure that
+   all the pins used in the equation for this LUT have signals that are not
+   trimmed (see Section 5 of the Map Report File for details on which signals
+   were trimmed).
+ERROR:MapLib:978 - LUT5 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o21"
+   (output signal=Trans/Mmux_Count[3]_TX_register_Mux_9_o2) has an equation that
+   uses input pin I3, which no longer has a connected signal. Please ensure that
+   all the pins used in the equation for this LUT have signals that are not
+   trimmed (see Section 5 of the Map Report File for details on which signals
+   were trimmed).
+ERROR:MapLib:978 - LUT5 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o21"
+   (output signal=Trans/Mmux_Count[3]_TX_register_Mux_9_o2) has an equation that
+   uses input pin I4, which no longer has a connected signal. Please ensure that
+   all the pins used in the equation for this LUT have signals that are not
+   trimmed (see Section 5 of the Map Report File for details on which signals
+   were trimmed).
+ERROR:MapLib:978 - LUT4 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o22"
+   (output signal=Trans/Mmux_Count[3]_TX_register_Mux_9_o21) has an equation
+   that uses input pin I2, which no longer has a connected signal. Please ensure
+   that all the pins used in the equation for this LUT have signals that are not
+   trimmed (see Section 5 of the Map Report File for details on which signals
+   were trimmed).
+ERROR:MapLib:978 - LUT4 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o22"
+   (output signal=Trans/Mmux_Count[3]_TX_register_Mux_9_o21) has an equation
+   that uses input pin I3, which no longer has a connected signal. Please ensure
+   that all the pins used in the equation for this LUT have signals that are not
+   trimmed (see Section 5 of the Map Report File for details on which signals
+   were trimmed).
+ERROR:MapLib:978 - LUT4 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o23"
+   (output signal=Trans/Mmux_Count[3]_TX_register_Mux_9_o22) has an equation
+   that uses input pin I2, which no longer has a connected signal. Please ensure
+   that all the pins used in the equation for this LUT have signals that are not
+   trimmed (see Section 5 of the Map Report File for details on which signals
+   were trimmed).
+ERROR:MapLib:978 - LUT4 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o23"
+   (output signal=Trans/Mmux_Count[3]_TX_register_Mux_9_o22) has an equation
+   that uses input pin I3, which no longer has a connected signal. Please ensure
+   that all the pins used in the equation for this LUT have signals that are not
+   trimmed (see Section 5 of the Map Report File for details on which signals
+   were trimmed).
+ERROR:MapLib:978 - LUT6 symbol "Trans/Mmux_Count[3]_TX_register_Mux_9_o24"
+   (output signal=Trans/Count[3]_TX_register_Mux_9_o) has an equation that uses
+   input pin I4, which no longer has a connected signal. Please ensure that all
+   the pins used in the equation for this LUT have signals that are not trimmed
+   (see Section 5 of the Map Report File for details on which signals were
+   trimmed).
+
+Error found in mapping process, exiting...
+Errors found during the mapping phase.  Please see map report file for more
+details.  Output files will not be written.
+
+Design Summary
+--------------
+Number of errors   :  16
+Number of warnings :   0

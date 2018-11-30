@@ -1,0 +1,82 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+E:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 2 -n
+3 -fastpaths -xml Motor_Driver_motors.twx Motor_Driver_motors.ncd -o
+Motor_Driver_motors.twr Motor_Driver_motors.pcf
+
+Design file:              Motor_Driver_motors.ncd
+Physical constraint file: Motor_Driver_motors.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+H1<0>          |A1<0>          |    8.570|
+H1<0>          |A1<1>          |    8.802|
+H1<0>          |B1<0>          |    9.299|
+H1<0>          |C1<0>          |    8.758|
+H1<0>          |C1<1>          |    8.911|
+H1<1>          |A1<0>          |    8.765|
+H1<1>          |A1<1>          |    8.581|
+H1<1>          |B1<0>          |    9.188|
+H1<1>          |B1<1>          |    9.273|
+H1<1>          |C1<0>          |    8.953|
+H1<2>          |A1<0>          |    8.338|
+H1<2>          |B1<0>          |    9.226|
+H1<2>          |B1<1>          |    9.311|
+H1<2>          |C1<0>          |    8.526|
+H1<2>          |C1<1>          |    8.843|
+H2<0>          |A2<0>          |    8.517|
+H2<0>          |A2<1>          |    8.737|
+H2<0>          |B2<0>          |    9.134|
+H2<0>          |C2<0>          |    8.867|
+H2<0>          |C2<1>          |    8.973|
+H2<1>          |A2<0>          |    8.593|
+H2<1>          |A2<1>          |    8.498|
+H2<1>          |B2<0>          |    8.935|
+H2<1>          |B2<1>          |    9.024|
+H2<1>          |C2<0>          |    8.943|
+H2<2>          |A2<0>          |    8.934|
+H2<2>          |B2<0>          |    9.308|
+H2<2>          |B2<1>          |    9.397|
+H2<2>          |C2<0>          |    9.284|
+H2<2>          |C2<1>          |    9.144|
+---------------+---------------+---------+
+
+
+Analysis completed Sat Oct 27 15:36:02 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 170 MB
+
+
+

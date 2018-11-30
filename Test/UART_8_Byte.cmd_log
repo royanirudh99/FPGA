@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "E:/Xilinx/Projects/Test/UART_8_Byte.xst" -ofn "E:/Xilinx/Projects/Test/UART_8_Byte.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Projects/Test/UART_8_Byte.xst" -ofn "E:/Xilinx/Projects/Test/UART_8_Byte.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc6slx9-tqg144-2 UART_8_Byte.ngc UART_8_Byte.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc6slx9-tqg144-2 UART_8_Byte.ngc UART_8_Byte.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UART_8_Byte_map.ncd UART_8_Byte.ngd UART_8_Byte.pcf 
+par -w -intstyle ise -ol high -mt off UART_8_Byte_map.ncd UART_8_Byte.ncd UART_8_Byte.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml UART_8_Byte.twx UART_8_Byte.ncd -o UART_8_Byte.twr UART_8_Byte.pcf -ucf UCF.ucf 
+bitgen -intstyle ise -f UART_8_Byte.ut UART_8_Byte.ncd 

@@ -52,7 +52,7 @@ module Motor_Package(input RST, input CLK, input E, input RX, input [2:0] H, out
 		Error_2 = Error_1;
 		Error_1 = Error_0;
 		Error_0 = Set_Point_reg_Curr - Enc_Val_reg;
-		if((KP + KI + KD)* Error_0 - (KP + 2*KD) * Error_1 + KD * Error_2 < PWM_Val_reg)
+		if( ((KP + KI + KD)* Error_0 - (KP + 2*KD) * Error_1 + KD * Error_2 )< PWM_Val_reg)
 		begin
 			PWM_Val_reg = PWM_Val_reg + (KP + KI + KD)* Error_0 - (KP + 2*KD) * Error_1 + KD * Error_2 ;
 		end

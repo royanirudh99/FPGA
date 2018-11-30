@@ -1,0 +1,2 @@
+verilog work "../Motor_Driver/Motor_Driver.v"
+verilog work "Motor_Driver_motors.v"

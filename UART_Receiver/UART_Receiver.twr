@@ -1,0 +1,78 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+E:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 2 -n
+3 -fastpaths -xml UART_Receiver.twx UART_Receiver.ncd -o UART_Receiver.twr
+UART_Receiver.pcf -ucf UCF.ucf
+
+Design file:              UART_Receiver.ncd
+Physical constraint file: UART_Receiver.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock i_Clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+i_RX_Serial |    4.975(R)|      SLOW  |   -2.456(R)|      FAST  |i_Clk_BUFGP       |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock i_Clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+o_RX_Byte<0>|        10.047(R)|      SLOW  |         4.299(R)|      FAST  |i_Clk_BUFGP       |   0.000|
+o_RX_Byte<1>|        10.047(R)|      SLOW  |         4.299(R)|      FAST  |i_Clk_BUFGP       |   0.000|
+o_RX_Byte<2>|        10.006(R)|      SLOW  |         4.307(R)|      FAST  |i_Clk_BUFGP       |   0.000|
+o_RX_Byte<3>|        10.061(R)|      SLOW  |         4.343(R)|      FAST  |i_Clk_BUFGP       |   0.000|
+o_RX_Byte<4>|        10.054(R)|      SLOW  |         4.289(R)|      FAST  |i_Clk_BUFGP       |   0.000|
+o_RX_Byte<5>|         9.885(R)|      SLOW  |         4.205(R)|      FAST  |i_Clk_BUFGP       |   0.000|
+o_RX_Byte<6>|        10.170(R)|      SLOW  |         4.395(R)|      FAST  |i_Clk_BUFGP       |   0.000|
+o_RX_Byte<7>|        10.127(R)|      SLOW  |         4.342(R)|      FAST  |i_Clk_BUFGP       |   0.000|
+o_RX_DV     |         9.526(R)|      SLOW  |         3.938(R)|      FAST  |i_Clk_BUFGP       |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock i_Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_Clk          |    3.839|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Sun Oct 07 18:43:43 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 171 MB
+
+
+

@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-MSI::  Mon Aug 27 19:32:18 2018
+MSI::  Thu Oct 04 01:08:18 2018
 
 par -w -intstyle ise -ol high -mt off Motor_Driver_map.ncd Motor_Driver.ncd
 Motor_Driver.pcf 
@@ -83,8 +83,8 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 8 secs 
-Finished initial Timing Analysis.  REAL time: 8 secs 
+Starting initial Timing Analysis.  REAL time: 7 secs 
+Finished initial Timing Analysis.  REAL time: 7 secs 
 
 Starting Router
 
@@ -111,7 +111,7 @@ Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 9
 
 Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
 Total REAL time to Router completion: 9 secs 
-Total CPU time to Router completion: 8 secs 
+Total CPU time to Router completion: 7 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -131,9 +131,9 @@ Generating Pad Report.
 All signals are completely routed.
 
 Total REAL time to PAR completion: 9 secs 
-Total CPU time to PAR completion: 8 secs 
+Total CPU time to PAR completion: 7 secs 
 
-Peak Memory Usage:  385 MB
+Peak Memory Usage:  356 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

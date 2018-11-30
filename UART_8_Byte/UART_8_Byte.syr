@@ -1,0 +1,803 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Reading design: UART_8_Byte.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "UART_8_Byte.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "UART_8_Byte"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : UART_8_Byte
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\Xilinx\Projects\Clock_Divider\Clock_Divider.v" into library work
+Parsing module <Clock_Divider>.
+Analyzing Verilog file "E:\Xilinx\Projects\UART_Transmitter_Enable\UART_Transmitter_Enable.v" into library work
+Parsing module <UART_Transmiter_Enable>.
+Analyzing Verilog file "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" into library work
+Parsing module <UART_8_Byte>.
+Parsing VHDL file "E:\Xilinx\Projects\UART_Receiver\UART_Receiver.vhd" into library work
+Parsing entity <UART_Receiver>.
+Parsing architecture <rtl> of entity <uart_receiver>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <UART_8_Byte>.
+Going to vhdl side to elaborate module UART_Receiver
+
+Elaborating entity <UART_Receiver> (architecture <rtl>) with generics from library <work>.
+INFO:HDLCompiler:679 - "E:\Xilinx\Projects\UART_Receiver\UART_Receiver.vhd" Line 119. Case statement is complete. others clause is never selected
+Back to verilog to continue elaboration
+
+Elaborating module <UART_Transmiter_Enable>.
+WARNING:HDLCompiler:872 - "E:\Xilinx\Projects\UART_Transmitter_Enable\UART_Transmitter_Enable.v" Line 24: Using initial value of IN since it is never assigned
+
+Elaborating module <Clock_Divider>.
+WARNING:HDLCompiler:413 - "E:\Xilinx\Projects\Clock_Divider\Clock_Divider.v" Line 19: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:189 - "E:\Xilinx\Projects\UART_Transmitter_Enable\UART_Transmitter_Enable.v" Line 29: Size mismatch in connection of port <IN>. Formal port size is 16-bit while actual signal size is 9-bit.
+WARNING:HDLCompiler:91 - "E:\Xilinx\Projects\UART_Transmitter_Enable\UART_Transmitter_Enable.v" Line 41: Signal <Count> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\Xilinx\Projects\UART_Transmitter_Enable\UART_Transmitter_Enable.v" Line 42: Signal <Count> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\Xilinx\Projects\UART_Transmitter_Enable\UART_Transmitter_Enable.v" Line 43: Signal <DATA> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\Xilinx\Projects\UART_Transmitter_Enable\UART_Transmitter_Enable.v" Line 44: Signal <DATA> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\Xilinx\Projects\UART_Transmitter_Enable\UART_Transmitter_Enable.v" Line 45: Signal <DATA> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\Xilinx\Projects\UART_Transmitter_Enable\UART_Transmitter_Enable.v" Line 46: Signal <DATA> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\Xilinx\Projects\UART_Transmitter_Enable\UART_Transmitter_Enable.v" Line 47: Signal <DATA> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\Xilinx\Projects\UART_Transmitter_Enable\UART_Transmitter_Enable.v" Line 48: Signal <DATA> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\Xilinx\Projects\UART_Transmitter_Enable\UART_Transmitter_Enable.v" Line 49: Signal <DATA> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\Xilinx\Projects\UART_Transmitter_Enable\UART_Transmitter_Enable.v" Line 50: Signal <DATA> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" Line 35: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" Line 36: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" Line 37: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" Line 38: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" Line 39: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" Line 40: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" Line 41: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" Line 42: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:1127 - "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" Line 32: Assignment to Rec_8 ignored, since the identifier is never used
+WARNING:HDLCompiler:91 - "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" Line 48: Signal <Count_T> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" Line 49: Signal <T_Data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" Line 49: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:91 - "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" Line 50: Signal <T_Data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" Line 50: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:91 - "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" Line 51: Signal <T_Data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" Line 51: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:91 - "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" Line 52: Signal <T_Data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" Line 52: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:91 - "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" Line 53: Signal <T_Data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" Line 53: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:91 - "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" Line 54: Signal <T_Data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" Line 54: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:91 - "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" Line 55: Signal <T_Data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" Line 55: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:91 - "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" Line 56: Signal <T_Data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" Line 56: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:1127 - "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" Line 46: Assignment to Rec_T ignored, since the identifier is never used
+WARNING:Xst:2972 - "E:\Xilinx\Projects\UART_Transmitter_Enable\UART_Transmitter_Enable.v" line 29. All outputs of instance <CD1> of block <Clock_Divider> are unconnected in block <UART_Transmiter_Enable>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <UART_8_Byte>.
+    Related source file is "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v".
+INFO:Xst:3210 - "E:\Xilinx\Projects\UART_8_Byte\UART_8_Byte.v" line 31: Output port <Status_T> of the instance <Trans> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <R_Data<62>>.
+    Found 1-bit register for signal <R_Data<61>>.
+    Found 1-bit register for signal <R_Data<60>>.
+    Found 1-bit register for signal <R_Data<59>>.
+    Found 1-bit register for signal <R_Data<58>>.
+    Found 1-bit register for signal <R_Data<57>>.
+    Found 1-bit register for signal <R_Data<56>>.
+    Found 1-bit register for signal <R_Data<55>>.
+    Found 1-bit register for signal <R_Data<54>>.
+    Found 1-bit register for signal <R_Data<53>>.
+    Found 1-bit register for signal <R_Data<52>>.
+    Found 1-bit register for signal <R_Data<51>>.
+    Found 1-bit register for signal <R_Data<50>>.
+    Found 1-bit register for signal <R_Data<49>>.
+    Found 1-bit register for signal <R_Data<48>>.
+    Found 1-bit register for signal <R_Data<47>>.
+    Found 1-bit register for signal <R_Data<46>>.
+    Found 1-bit register for signal <R_Data<45>>.
+    Found 1-bit register for signal <R_Data<44>>.
+    Found 1-bit register for signal <R_Data<43>>.
+    Found 1-bit register for signal <R_Data<42>>.
+    Found 1-bit register for signal <R_Data<41>>.
+    Found 1-bit register for signal <R_Data<40>>.
+    Found 1-bit register for signal <R_Data<39>>.
+    Found 1-bit register for signal <R_Data<38>>.
+    Found 1-bit register for signal <R_Data<37>>.
+    Found 1-bit register for signal <R_Data<36>>.
+    Found 1-bit register for signal <R_Data<35>>.
+    Found 1-bit register for signal <R_Data<34>>.
+    Found 1-bit register for signal <R_Data<33>>.
+    Found 1-bit register for signal <R_Data<32>>.
+    Found 1-bit register for signal <R_Data<31>>.
+    Found 1-bit register for signal <R_Data<30>>.
+    Found 1-bit register for signal <R_Data<29>>.
+    Found 1-bit register for signal <R_Data<28>>.
+    Found 1-bit register for signal <R_Data<27>>.
+    Found 1-bit register for signal <R_Data<26>>.
+    Found 1-bit register for signal <R_Data<25>>.
+    Found 1-bit register for signal <R_Data<24>>.
+    Found 1-bit register for signal <R_Data<23>>.
+    Found 1-bit register for signal <R_Data<22>>.
+    Found 1-bit register for signal <R_Data<21>>.
+    Found 1-bit register for signal <R_Data<20>>.
+    Found 1-bit register for signal <R_Data<19>>.
+    Found 1-bit register for signal <R_Data<18>>.
+    Found 1-bit register for signal <R_Data<17>>.
+    Found 1-bit register for signal <R_Data<16>>.
+    Found 1-bit register for signal <R_Data<15>>.
+    Found 1-bit register for signal <R_Data<14>>.
+    Found 1-bit register for signal <R_Data<13>>.
+    Found 1-bit register for signal <R_Data<12>>.
+    Found 1-bit register for signal <R_Data<11>>.
+    Found 1-bit register for signal <R_Data<10>>.
+    Found 1-bit register for signal <R_Data<9>>.
+    Found 1-bit register for signal <R_Data<8>>.
+    Found 1-bit register for signal <R_Data<7>>.
+    Found 1-bit register for signal <R_Data<6>>.
+    Found 1-bit register for signal <R_Data<5>>.
+    Found 1-bit register for signal <R_Data<4>>.
+    Found 1-bit register for signal <R_Data<3>>.
+    Found 1-bit register for signal <R_Data<2>>.
+    Found 1-bit register for signal <R_Data<1>>.
+    Found 1-bit register for signal <R_Data<0>>.
+    Found 8-bit register for signal <Count_R>.
+    Found 64-bit register for signal <T_Data>.
+    Found 1-bit register for signal <R_Data<63>>.
+    Found 8-bit adder for signal <Count_R[7]_GND_1_o_add_1_OUT> created at line 35.
+    Found 8-bit adder for signal <Count_T[7]_Count_T[7]_select_43_OUT> created at line 49.
+    Found 8-bit 8-to-1 multiplexer for signal <_n0173> created at line 48.
+    Found 64-bit 8-to-1 multiplexer for signal <_n0192> created at line 34.
+WARNING:Xst:737 - Found 1-bit latch for signal <DATA_T<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DATA_T<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DATA_T<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DATA_T<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DATA_T<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DATA_T<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DATA_T<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DATA_T<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Count_T<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Count_T<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Count_T<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Count_T<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Count_T<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Count_T<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Count_T<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Count_T<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred 136 D-type flip-flop(s).
+	inferred  16 Latch(s).
+	inferred   3 Multiplexer(s).
+Unit <UART_8_Byte> synthesized.
+
+Synthesizing Unit <UART_Receiver>.
+    Related source file is "E:\Xilinx\Projects\UART_Receiver\UART_Receiver.vhd".
+        g_CLKS_PER_BIT = 400
+    Found 1-bit register for signal <r_RX_Data>.
+    Found 1-bit register for signal <r_RX_DV>.
+    Found 9-bit register for signal <r_Clk_Count>.
+    Found 3-bit register for signal <r_Bit_Index>.
+    Found 3-bit register for signal <r_SM_Main>.
+    Found 8-bit register for signal <r_RX_Byte>.
+    Found 1-bit register for signal <r_RX_Data_R>.
+    Found finite state machine <FSM_0> for signal <r_SM_Main>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 4                                              |
+    | Clock              | i_Clk (rising_edge)                            |
+    | Power Up State     | s_idle                                         |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit adder for signal <r_Bit_Index[2]_GND_5_o_add_11_OUT> created at line 91.
+    Found 9-bit adder for signal <r_Clk_Count[8]_GND_5_o_add_19_OUT> created at line 104.
+    Found 3-bit comparator greater for signal <r_Bit_Index[2]_PWR_5_o_LessThan_11_o> created at line 90
+    Found 9-bit comparator greater for signal <r_Clk_Count[8]_PWR_5_o_LessThan_19_o> created at line 103
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  23 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  14 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <UART_Receiver> synthesized.
+
+Synthesizing Unit <UART_Transmiter_Enable>.
+    Related source file is "E:\Xilinx\Projects\UART_Transmitter_Enable\UART_Transmitter_Enable.v".
+INFO:Xst:3210 - "E:\Xilinx\Projects\UART_Transmitter_Enable\UART_Transmitter_Enable.v" line 29: Output port <OUT_CLK> of the instance <CD1> is unconnected or connected to loadless signal.
+    Found 4-bit adder for signal <Count[3]_GND_6_o_add_8_OUT> created at line 50.
+    Found 1-bit 10-to-1 multiplexer for signal <Count[3]_TX_register_Mux_9_o> created at line 41.
+WARNING:Xst:737 - Found 1-bit latch for signal <Count<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Count<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Count<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Status_reg>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Count<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <TX_register>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   6 Latch(s).
+	inferred   2 Multiplexer(s).
+Unit <UART_Transmiter_Enable> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 5
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 1
+ 8-bit adder                                           : 2
+ 9-bit adder                                           : 1
+# Registers                                            : 9
+ 1-bit register                                        : 3
+ 3-bit register                                        : 1
+ 64-bit register                                       : 2
+ 8-bit register                                        : 2
+ 9-bit register                                        : 1
+# Latches                                              : 22
+ 1-bit latch                                           : 22
+# Comparators                                          : 2
+ 3-bit comparator greater                              : 1
+ 9-bit comparator greater                              : 1
+# Multiplexers                                         : 19
+ 1-bit 10-to-1 multiplexer                             : 1
+ 1-bit 2-to-1 multiplexer                              : 8
+ 3-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 1
+ 64-bit 2-to-1 multiplexer                             : 1
+ 64-bit 8-to-1 multiplexer                             : 1
+ 8-bit 8-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 4
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <UART_8_Byte>.
+The following registers are absorbed into counter <Count_R>: 1 register on signal <Count_R>.
+Unit <UART_8_Byte> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 1
+ 8-bit adder                                           : 1
+ 9-bit adder                                           : 1
+# Counters                                             : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 151
+ Flip-Flops                                            : 151
+# Comparators                                          : 2
+ 3-bit comparator greater                              : 1
+ 9-bit comparator greater                              : 1
+# Multiplexers                                         : 19
+ 1-bit 10-to-1 multiplexer                             : 1
+ 1-bit 2-to-1 multiplexer                              : 8
+ 3-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 1
+ 64-bit 2-to-1 multiplexer                             : 1
+ 64-bit 8-to-1 multiplexer                             : 1
+ 8-bit 8-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 4
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <Rec/FSM_0> on signal <r_SM_Main[1:3]> with user encoding.
+----------------------------
+ State          | Encoding
+----------------------------
+ s_idle         | 000
+ s_rx_start_bit | 001
+ s_rx_data_bits | 010
+ s_rx_stop_bit  | 011
+ s_cleanup      | 100
+----------------------------
+
+Optimizing unit <UART_8_Byte> ...
+
+Optimizing unit <UART_Receiver> ...
+
+Optimizing unit <UART_Transmiter_Enable> ...
+WARNING:Xst:2677 - Node <Trans/Status_reg> of sequential type is unconnected in block <UART_8_Byte>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block UART_8_Byte, actual ratio is 4.
+FlipFlop Rec/r_RX_DV has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <UART_8_Byte> :
+	Found 2-bit shift register for signal <Rec/r_RX_Data>.
+Unit <UART_8_Byte> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 161
+ Flip-Flops                                            : 161
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : UART_8_Byte.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 266
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 7
+#      LUT2                        : 3
+#      LUT3                        : 18
+#      LUT4                        : 12
+#      LUT5                        : 82
+#      LUT6                        : 113
+#      MUXCY                       : 7
+#      MUXF7                       : 8
+#      VCC                         : 1
+#      XORCY                       : 8
+# FlipFlops/Latches                : 183
+#      FD                          : 70
+#      FDE                         : 92
+#      LD                          : 16
+#      LDC                         : 4
+#      LDP                         : 1
+# Shift Registers                  : 1
+#      SRLC16E                     : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 12
+#      IBUF                        : 3
+#      OBUF                        : 9
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             183  out of  11440     1%  
+ Number of Slice LUTs:                  242  out of   5720     4%  
+    Number used as Logic:               241  out of   5720     4%  
+    Number used as Memory:                1  out of   1440     0%  
+       Number used as SRL:                1
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    243
+   Number with an unused Flip Flop:      60  out of    243    24%  
+   Number with an unused LUT:             1  out of    243     0%  
+   Number of fully used LUT-FF pairs:   182  out of    243    74%  
+   Number of unique control sets:        13
+
+IO Utilization: 
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    102    12%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)     | Load  |
+-----------------------------------+---------------------------+-------+
+_n0148(out11:O)                    | NONE(*)(Count_T_5)        | 16    |
+Rec/r_RX_DV                        | BUFG                      | 136   |
+CLK                                | BUFGP                     | 27    |
+Trans/_n0036<1>(Trans/_n0036<1>1:O)| NONE(*)(Trans/TX_register)| 5     |
+-----------------------------------+---------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 4.588ns (Maximum Frequency: 217.960MHz)
+   Minimum input arrival time before clock: 2.627ns
+   Maximum output required time after clock: 5.214ns
+   Maximum combinational path delay: 5.857ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock '_n0148'
+  Clock period: 3.565ns (frequency: 280.505MHz)
+  Total number of paths / destination ports: 76 / 16
+-------------------------------------------------------------------------
+Delay:               3.565ns (Levels of Logic = 2)
+  Source:            Count_T_1 (LATCH)
+  Destination:       Count_T_6 (LATCH)
+  Source Clock:      _n0148 falling
+  Destination Clock: _n0148 falling
+
+  Data Path: Count_T_1 to Count_T_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q              22   0.581   1.442  Count_T_1 (Count_T_1)
+     LUT3:I1->O            2   0.250   1.002  Madd_Count_T[7]_Count_T[7]_select_43_OUT_xor<3>111 (Madd_Count_T[7]_Count_T[7]_select_43_OUT_xor<3>11)
+     LUT5:I1->O            1   0.254   0.000  Madd_Count_T[7]_Count_T[7]_select_43_OUT_xor<6>11 (Count_T[7]_Count_T[7]_select_43_OUT<6>)
+     LD:D                      0.036          Count_T_6
+    ----------------------------------------
+    Total                      3.565ns (1.121ns logic, 2.444ns route)
+                                       (31.4% logic, 68.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Rec/r_RX_DV'
+  Clock period: 4.271ns (frequency: 234.157MHz)
+  Total number of paths / destination ports: 1292 / 208
+-------------------------------------------------------------------------
+Delay:               4.271ns (Levels of Logic = 2)
+  Source:            Count_R_3 (FF)
+  Destination:       R_Data_0 (FF)
+  Source Clock:      Rec/r_RX_DV rising
+  Destination Clock: Rec/r_RX_DV rising
+
+  Data Path: Count_R_3 to R_Data_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              4   0.525   1.234  Count_R_3 (Count_R_3)
+     LUT5:I0->O           64   0.254   1.930  _n0193<7>1 (_n0193)
+     LUT6:I5->O            1   0.254   0.000  Mmux_Count_R[7]_R_Data[63]_select_18_OUT161 (Count_R[7]_R_Data[63]_select_18_OUT<23>)
+     FD:D                      0.074          R_Data_23
+    ----------------------------------------
+    Total                      4.271ns (1.107ns logic, 3.164ns route)
+                                       (25.9% logic, 74.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 4.588ns (frequency: 217.960MHz)
+  Total number of paths / destination ports: 588 / 45
+-------------------------------------------------------------------------
+Delay:               4.588ns (Levels of Logic = 3)
+  Source:            Rec/r_Clk_Count_2 (FF)
+  Destination:       Rec/r_RX_Byte_6 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: Rec/r_Clk_Count_2 to Rec/r_RX_Byte_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             11   0.525   1.267  Rec/r_Clk_Count_2 (Rec/r_Clk_Count_2)
+     LUT4:I1->O           12   0.235   1.069  Rec/Mmux__n0084111 (Rec/Mmux__n008411)
+     LUT5:I4->O            7   0.254   0.910  Rec/_n0112_inv111_rstpot (Rec/_n0112_inv111_rstpot)
+     LUT3:I2->O            1   0.254   0.000  Rec/r_RX_Byte_0_dpot1 (Rec/r_RX_Byte_0_dpot1)
+     FDE:D                     0.074          Rec/r_RX_Byte_0
+    ----------------------------------------
+    Total                      4.588ns (1.342ns logic, 3.246ns route)
+                                       (29.3% logic, 70.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Trans/_n0036<1>'
+  Clock period: 3.269ns (frequency: 305.904MHz)
+  Total number of paths / destination ports: 20 / 5
+-------------------------------------------------------------------------
+Delay:               3.269ns (Levels of Logic = 2)
+  Source:            Trans/Count_1 (LATCH)
+  Destination:       Trans/TX_register (LATCH)
+  Source Clock:      Trans/_n0036<1> falling
+  Destination Clock: Trans/_n0036<1> falling
+
+  Data Path: Trans/Count_1 to Trans/TX_register
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              7   0.581   1.186  Trans/Count_1 (Trans/Count_1)
+     LUT4:I0->O            1   0.254   0.958  Trans/Mmux_Count[3]_TX_register_Mux_9_o23 (Trans/Mmux_Count[3]_TX_register_Mux_9_o22)
+     LUT6:I2->O            1   0.254   0.000  Trans/Mmux_Count[3]_TX_register_Mux_9_o24 (Trans/Count[3]_TX_register_Mux_9_o)
+     LDP:D                     0.036          Trans/TX_register
+    ----------------------------------------
+    Total                      3.269ns (1.125ns logic, 2.144ns route)
+                                       (34.4% logic, 65.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Trans/_n0036<1>'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              2.627ns (Levels of Logic = 1)
+  Source:            RST (PAD)
+  Destination:       Trans/TX_register (LATCH)
+  Destination Clock: Trans/_n0036<1> falling
+
+  Data Path: RST to Trans/TX_register
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.328   0.840  RST_IBUF (RST_IBUF)
+     LDC:CLR                   0.459          Trans/Count_0
+    ----------------------------------------
+    Total                      2.627ns (1.787ns logic, 0.840ns route)
+                                       (68.0% logic, 32.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.009ns (Levels of Logic = 1)
+  Source:            RX (PAD)
+  Destination:       Rec/Mshreg_r_RX_Data (FF)
+  Destination Clock: CLK rising
+
+  Data Path: RX to Rec/Mshreg_r_RX_Data
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  RX_IBUF (RX_IBUF)
+     SRLC16E:D                -0.060          Rec/Mshreg_r_RX_Data
+    ----------------------------------------
+    Total                      2.009ns (1.328ns logic, 0.681ns route)
+                                       (66.1% logic, 33.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.475ns (Levels of Logic = 1)
+  Source:            Rec/r_RX_Byte_6 (FF)
+  Destination:       DATA_R_W<6> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: Rec/r_RX_Byte_6 to DATA_R_W<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             11   0.525   1.038  Rec/r_RX_Byte_6 (Rec/r_RX_Byte_6)
+     OBUF:I->O                 2.912          DATA_R_W_6_OBUF (DATA_R_W<6>)
+    ----------------------------------------
+    Total                      4.475ns (3.437ns logic, 1.038ns route)
+                                       (76.8% logic, 23.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Trans/_n0036<1>'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.214ns (Levels of Logic = 2)
+  Source:            Trans/TX_register (LATCH)
+  Destination:       TX (PAD)
+  Source Clock:      Trans/_n0036<1> falling
+
+  Data Path: Trans/TX_register to TX
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDP:G->Q              1   0.581   0.790  Trans/TX_register (Trans/TX_register)
+     LUT2:I0->O            1   0.250   0.681  Trans/TX1 (TX_OBUF)
+     OBUF:I->O                 2.912          TX_OBUF (TX)
+    ----------------------------------------
+    Total                      5.214ns (3.743ns logic, 1.471ns route)
+                                       (71.8% logic, 28.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               5.857ns (Levels of Logic = 3)
+  Source:            En (PAD)
+  Destination:       TX (PAD)
+
+  Data Path: En to TX
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.682  En_IBUF (En_IBUF)
+     LUT2:I1->O            1   0.254   0.681  Trans/TX1 (TX_OBUF)
+     OBUF:I->O                 2.912          TX_OBUF (TX)
+    ----------------------------------------
+    Total                      5.857ns (4.494ns logic, 1.363ns route)
+                                       (76.7% logic, 23.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    4.588|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Rec/r_RX_DV
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    2.347|         |         |         |
+Rec/r_RX_DV    |    4.271|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Trans/_n0036<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Trans/_n0036<1>|         |         |    3.269|         |
+_n0148         |         |         |    2.869|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock _n0148
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Rec/r_RX_DV    |         |         |    1.992|         |
+_n0148         |         |         |    3.565|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.82 secs
+ 
+--> 
+
+Total memory usage is 267716 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   64 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

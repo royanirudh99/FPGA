@@ -1,0 +1,39 @@
+Running: E:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o E:/Xilinx/Projects/Motor_Package/Test_isim_beh.exe -prj E:/Xilinx/Projects/Motor_Package/Test_beh.prj work.Test work.glbl 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/Xilinx/Projects/Motor_Package/../Clock_Divider/Clock_Divider.v" into library work
+Analyzing Verilog file "E:/Xilinx/Projects/Motor_Package/../UART_Transmitter/UART_Transmiter.v" into library work
+Analyzing Verilog file "E:/Xilinx/Projects/Motor_Package/../Encoder/Encoder.v" into library work
+Analyzing Verilog file "E:/Xilinx/Projects/Motor_Package/../Motor_PWM/Motor_PWM.v" into library work
+Analyzing Verilog file "E:/Xilinx/Projects/Motor_Package/../Encoder_UART/Encoder_UART.v" into library work
+Analyzing Verilog file "E:/Xilinx/Projects/Motor_Package/Motor_Package.v" into library work
+Analyzing Verilog file "E:/Xilinx/Projects/Motor_Package/Test.v" into library work
+Analyzing Verilog file "E:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Parsing VHDL file "E:/Xilinx/Projects/Motor_Package/../UART_Receiver/UART_Receiver.vhd" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "E:/Xilinx/Projects/Motor_Package/../UART_Transmitter/UART_Transmiter.v" Line 26: Size mismatch in connection of port <IN>. Formal port size is 16-bit while actual signal size is 9-bit.
+Completed static elaboration
+Fuse Memory Usage: 182856 KB
+Fuse CPU Usage: 624 ms
+Compiling module Clock_Divider
+Compiling module Encoder
+Compiling module UART_Transmiter
+Compiling module Encoder_UART
+Compiling module PWM
+Compiling module Motor_PWM
+Compiling module Motor_Package
+Compiling module Test
+Compiling module glbl
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture rtl of entity UART_Receiver [uart_receiver_default]
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 5 VHDL Units
+Compiled 9 Verilog Units
+Built simulation executable E:/Xilinx/Projects/Motor_Package/Test_isim_beh.exe
+Fuse Memory Usage: 203608 KB
+Fuse CPU Usage: 1062 ms

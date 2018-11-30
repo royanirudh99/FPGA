@@ -1,0 +1,8 @@
+vhdtdtfi -lib work E:/Xilinx/Projects/UART_Transmitter/UART_Transmiter.v -lang verilog -prj UART_Transmitter -o UART_Transmiter.spl -module UART_Transmiter -template E:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 UART_Transmiter.spl E:/Xilinx/Projects/UART_Transmitter/UART_Transmiter.sym 
+xst -intstyle ise -ifn "E:/Xilinx/Projects/UART_Transmitter/UART_Transmiter.xst" -ofn "E:/Xilinx/Projects/UART_Transmitter/UART_Transmiter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 UART_Transmiter.ngc UART_Transmiter.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UART_Transmiter_map.ncd UART_Transmiter.ngd UART_Transmiter.pcf 
+par -w -intstyle ise -ol high -mt off UART_Transmiter_map.ncd UART_Transmiter.ncd UART_Transmiter.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml UART_Transmiter.twx UART_Transmiter.ncd -o UART_Transmiter.twr UART_Transmiter.pcf 
+bitgen -intstyle ise -f UART_Transmiter.ut UART_Transmiter.ncd 

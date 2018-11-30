@@ -1,0 +1,4 @@
+verilog work "../Clock_Divider/Clock_Divider.v"
+verilog work "../UART_Transmitter_Enable/UART_Transmitter_Enable.v"
+vhdl work "../UART_Receiver/UART_Receiver.vhd"
+verilog work "UART_8_Byte.v"

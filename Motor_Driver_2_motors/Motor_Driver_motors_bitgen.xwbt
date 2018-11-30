@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\Xilinx\Projects\Motor_Driver_2_motors\Motor_Driver_motors.ncd
+OUTFILE=E:\Xilinx\Projects\Motor_Driver_2_motors\Motor_Driver_motors.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=E:\Xilinx\Projects\Motor_Driver_2_motors
+LICENSE=WebPack
+USER_INFO=__0_0_0

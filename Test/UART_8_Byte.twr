@@ -1,0 +1,77 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+E:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 2 -n
+3 -fastpaths -xml UART_8_Byte.twx UART_8_Byte.ncd -o UART_8_Byte.twr
+UART_8_Byte.pcf -ucf UCF.ucf
+
+Design file:              UART_8_Byte.ncd
+Physical constraint file: UART_8_Byte.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLK
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+RX          |    4.592(R)|      SLOW  |   -2.298(R)|      FAST  |CLK_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock CLK to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+DATA_R_W<0> |        10.287(R)|      SLOW  |         4.367(R)|      FAST  |CLK_BUFGP         |   0.000|
+DATA_R_W<1> |        10.222(R)|      SLOW  |         4.366(R)|      FAST  |CLK_BUFGP         |   0.000|
+DATA_R_W<2> |        10.180(R)|      SLOW  |         4.373(R)|      FAST  |CLK_BUFGP         |   0.000|
+DATA_R_W<3> |        10.262(R)|      SLOW  |         4.395(R)|      FAST  |CLK_BUFGP         |   0.000|
+DATA_R_W<4> |        10.538(R)|      SLOW  |         4.545(R)|      FAST  |CLK_BUFGP         |   0.000|
+DATA_R_W<5> |        10.545(R)|      SLOW  |         4.552(R)|      FAST  |CLK_BUFGP         |   0.000|
+DATA_R_W<6> |         9.698(R)|      SLOW  |         4.142(R)|      FAST  |CLK_BUFGP         |   0.000|
+DATA_R_W<7> |         9.539(R)|      SLOW  |         4.048(R)|      FAST  |CLK_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    4.243|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Thu Nov 29 19:53:43 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 168 MB
+
+
+

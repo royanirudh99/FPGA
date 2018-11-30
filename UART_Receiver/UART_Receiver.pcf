@@ -1,0 +1,17 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun Oct 07 18:43:12 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "i_Clk" LOCATE = SITE "P126" LEVEL 1;
+COMP "i_RX_Serial" LOCATE = SITE "P35" LEVEL 1;
+COMP "o_RX_Byte<0>" LOCATE = SITE "P119" LEVEL 1;
+COMP "o_RX_Byte<1>" LOCATE = SITE "P118" LEVEL 1;
+COMP "o_RX_Byte<2>" LOCATE = SITE "P117" LEVEL 1;
+COMP "o_RX_Byte<3>" LOCATE = SITE "P116" LEVEL 1;
+COMP "o_RX_Byte<4>" LOCATE = SITE "P115" LEVEL 1;
+COMP "o_RX_Byte<5>" LOCATE = SITE "P114" LEVEL 1;
+COMP "o_RX_Byte<6>" LOCATE = SITE "P112" LEVEL 1;
+COMP "o_RX_Byte<7>" LOCATE = SITE "P111" LEVEL 1;
+SCHEMATIC END;
+

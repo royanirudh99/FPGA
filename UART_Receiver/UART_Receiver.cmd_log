@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "E:/Xilinx/Projects/UART_Receiver/UART_Receiver.xst" -ofn "E:/Xilinx/Projects/UART_Receiver/UART_Receiver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 UART_Receiver.ngc UART_Receiver.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UART_Receiver_map.ncd UART_Receiver.ngd UART_Receiver.pcf 
+par -w -intstyle ise -ol high -mt off UART_Receiver_map.ncd UART_Receiver.ncd UART_Receiver.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml UART_Receiver.twx UART_Receiver.ncd -o UART_Receiver.twr UART_Receiver.pcf 
+bitgen -intstyle ise -f UART_Receiver.ut UART_Receiver.ncd 
+bitgen -intstyle ise -f UART_Receiver.ut UART_Receiver.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc6slx9-tqg144-2 UART_Receiver.ngc UART_Receiver.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UART_Receiver_map.ncd UART_Receiver.ngd UART_Receiver.pcf 
+par -w -intstyle ise -ol high -mt off UART_Receiver_map.ncd UART_Receiver.ncd UART_Receiver.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml UART_Receiver.twx UART_Receiver.ncd -o UART_Receiver.twr UART_Receiver.pcf -ucf UCF.ucf 
+bitgen -intstyle ise -f UART_Receiver.ut UART_Receiver.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/Projects/UART_Receiver/UART_Receiver.xst" -ofn "E:/Xilinx/Projects/UART_Receiver/UART_Receiver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc6slx9-tqg144-2 UART_Receiver.ngc UART_Receiver.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UART_Receiver_map.ncd UART_Receiver.ngd UART_Receiver.pcf 
+par -w -intstyle ise -ol high -mt off UART_Receiver_map.ncd UART_Receiver.ncd UART_Receiver.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml UART_Receiver.twx UART_Receiver.ncd -o UART_Receiver.twr UART_Receiver.pcf -ucf UCF.ucf 
+bitgen -intstyle ise -f UART_Receiver.ut UART_Receiver.ncd 

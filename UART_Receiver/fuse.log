@@ -1,0 +1,20 @@
+Running: E:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o E:/Xilinx/Projects/UART_Receiver/UART_Receiver_isim_beh.exe -prj E:/Xilinx/Projects/UART_Receiver/UART_Receiver_beh.prj work.UART_Receiver 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "E:/Xilinx/Projects/UART_Receiver/UART_Receiver.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 182664 KB
+Fuse CPU Usage: 718 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture rtl of entity uart_receiver
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 4 VHDL Units
+Built simulation executable E:/Xilinx/Projects/UART_Receiver/UART_Receiver_isim_beh.exe
+Fuse Memory Usage: 199192 KB
+Fuse CPU Usage: 968 ms
