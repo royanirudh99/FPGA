@@ -78,6 +78,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1543501294" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1543501294">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1543501294" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-5526693172014333381" xil_pn:start_ts="1543501294">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -128,6 +129,7 @@
     <transform xil_pn:end_ts="1543501382" xil_pn:in_ck="9193845174287012918" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7930617221731630549" xil_pn:start_ts="1543501374">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <outfile xil_pn:name="UART_8_Byte.bld"/>
       <outfile xil_pn:name="UART_8_Byte.ngd"/>
       <outfile xil_pn:name="UART_8_Byte_ngdbuild.xrpt"/>
@@ -137,6 +139,8 @@
     <transform xil_pn:end_ts="1543501401" xil_pn:in_ck="9193845216905455895" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1448924893915930207" xil_pn:start_ts="1543501382">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="UART_8_Byte.pcf"/>
@@ -153,6 +157,8 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="UART_8_Byte.ncd"/>
       <outfile xil_pn:name="UART_8_Byte.pad"/>
       <outfile xil_pn:name="UART_8_Byte.par"/>
@@ -167,6 +173,8 @@
     <transform xil_pn:end_ts="1543501446" xil_pn:in_ck="-66781764771939479" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="6587536580693756888" xil_pn:start_ts="1543501425">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="UART_8_Byte.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="uart_8_byte.bgn"/>
@@ -180,6 +188,7 @@
     <transform xil_pn:end_ts="1543501425" xil_pn:in_ck="9193839591270982931" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1543501416">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="UART_8_Byte.twr"/>
       <outfile xil_pn:name="UART_8_Byte.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

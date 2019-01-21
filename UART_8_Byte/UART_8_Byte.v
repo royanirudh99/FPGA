@@ -55,8 +55,7 @@ module UART_8_Byte(input CLK, input RST, input RX, output TX, input En,output [7
                 6 : begin   DATA_T[7:0] <= T_Data[55:48]; Count_T <=  Count_T +1;  end
                 7 : begin   DATA_T[7:0] <= T_Data[63:56]; Count_T <=  Count_T +1;Rec_T<=1;   end
                 endcase 
-            end
-        
+            end        
     
 assign DATA_R_W = DATA_R;
                     

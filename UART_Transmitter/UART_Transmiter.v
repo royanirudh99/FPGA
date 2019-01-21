@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 module UART_Transmiter( input CLK, input [7:0] DATA,input RST, output TX); 
 	reg [3:0] Count;	
-	reg [8:0] IN = 199;// 250000 Bauds at 100MHz	gives ration 400, Input is half the dividing factor-1	
+	reg [8:0] IN = 199;// 250000 Bauds at 100MHz	gives ratio 400, Input is half the dividing factor-1	
 	reg TX_register;
 	wire Div_CLK;
 	Clock_Divider CD1( CLK, IN,RST, Div_CLK);

@@ -1,4 +1,4 @@
-#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
+    #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
 # This file is a .ucf for Mimas (http://www.numato.com)                                               #
 # To use it in your project :                                                                         #
 # * Remove or comment the lines corresponding to unused pins in the project.                          #

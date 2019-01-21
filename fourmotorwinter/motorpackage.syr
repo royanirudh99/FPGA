@@ -1,0 +1,1157 @@
+Release 14.7 - xst P.20160913 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: motorpackage.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "motorpackage.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "motorpackage"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-csg324
+
+---- Source Options
+Top Module Name                    : motorpackage
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/zerobit.v" into library work
+Parsing module <zerobit>.
+Analyzing Verilog file "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/pwm.v" into library work
+Parsing module <pwm>.
+Analyzing Verilog file "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/pid.v" into library work
+Parsing module <pid>.
+WARNING:HDLCompiler:327 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/pid.v" Line 42: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/pid.v" Line 47: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/pid.v" Line 53: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/pid.v" Line 58: Concatenation with unsized literal; will interpret as 32 bits
+Analyzing Verilog file "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/gatedriver.v" into library work
+Parsing module <gatedriver>.
+Analyzing Verilog file "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/directionbit.v" into library work
+Parsing module <directionbit>.
+Analyzing Verilog file "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/decoder.v" into library work
+Parsing module <decoder>.
+Analyzing Verilog file "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/clock_divider.v" into library work
+Parsing module <clock_divider>.
+Analyzing Verilog file "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/clock.v" into library work
+Parsing module <clock>.
+Analyzing Verilog file "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/uart_tx.v" into library work
+Parsing module <transmiter>.
+Analyzing Verilog file "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/txbuffer.v" into library work
+Parsing module <txbuffer>.
+Analyzing Verilog file "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/speed4motor.v" into library work
+Parsing module <speed4motor>.
+Analyzing Verilog file "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/motormodule.vf" into library work
+Parsing module <motormodule>.
+Analyzing Verilog file "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/motorpackage.vf" into library work
+Parsing module <motormodule_MUSER_motorpackage>.
+Parsing module <motorpackage>.
+Parsing VHDL file "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/UART_Receiver.vhd" into library work
+Parsing entity <UART_Receiver>.
+Parsing architecture <rtl> of entity <uart_receiver>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <motorpackage>.
+Going to vhdl side to elaborate module UART_Receiver
+
+Elaborating entity <UART_Receiver> (architecture <rtl>) with generics from library <work>.
+INFO:HDLCompiler:679 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/UART_Receiver.vhd" Line 120. Case statement is complete. others clause is never selected
+Back to verilog to continue elaboration
+
+Elaborating module <speed4motor>.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/speed4motor.v" Line 35: Result of 3-bit expression is truncated to fit in 2-bit target.
+
+Elaborating module <txbuffer>.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/txbuffer.v" Line 36: Result of 3-bit expression is truncated to fit in 2-bit target.
+
+Elaborating module <transmiter>.
+WARNING:HDLCompiler:872 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/uart_tx.v" Line 23: Using initial value of IN since it is never assigned
+
+Elaborating module <clock_divider>.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/clock_divider.v" Line 19: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:189 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/uart_tx.v" Line 27: Size mismatch in connection of port <IN>. Formal port size is 16-bit while actual signal size is 9-bit.
+
+Elaborating module <motormodule_MUSER_motorpackage>.
+WARNING:HDLCompiler:327 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/pid.v" Line 42: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/pid.v" Line 47: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/pid.v" Line 53: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/pid.v" Line 58: Concatenation with unsized literal; will interpret as 32 bits
+
+Elaborating module <pid>.
+WARNING:HDLCompiler:872 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/pid.v" Line 18: Using initial value of k1 since it is never assigned
+WARNING:HDLCompiler:872 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/pid.v" Line 19: Using initial value of k2 since it is never assigned
+WARNING:HDLCompiler:872 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/pid.v" Line 20: Using initial value of k3 since it is never assigned
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/pid.v" Line 42: Result of 770-bit expression is truncated to fit in 25-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/pid.v" Line 53: Result of 770-bit expression is truncated to fit in 25-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/pid.v" Line 72: Result of 19-bit expression is truncated to fit in 18-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/pid.v" Line 78: Result of 32-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <zerobit>.
+WARNING:HDLCompiler:634 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/zerobit.v" Line 27: Net <k[7]> does not have a driver.
+
+Elaborating module <directionbit>.
+WARNING:HDLCompiler:91 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/directionbit.v" Line 11: Signal <insignal1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <pwm>.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/pwm.v" Line 23: Result of 9-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <clock>.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/clock.v" Line 16: Result of 9-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <gatedriver>.
+WARNING:HDLCompiler:91 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/gatedriver.v" Line 28: Signal <d> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/gatedriver.v" Line 29: Signal <d> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/gatedriver.v" Line 30: Signal <d> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/gatedriver.v" Line 31: Signal <d> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/gatedriver.v" Line 32: Signal <d> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/gatedriver.v" Line 33: Signal <d> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <decoder>.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/decoder.v" Line 33: Result of 19-bit expression is truncated to fit in 18-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/decoder.v" Line 51: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:552 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/motorpackage.vf" Line 64: Input port cl is not connected on this instance
+
+Elaborating module <GND>.
+
+Elaborating module <VCC>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <motorpackage>.
+    Related source file is "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/motorpackage.vf".
+    Summary:
+	no macro.
+Unit <motorpackage> synthesized.
+
+Synthesizing Unit <UART_Receiver>.
+    Related source file is "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/UART_Receiver.vhd".
+        g_CLKS_PER_BIT = 400
+    Found 1-bit register for signal <r_RX_Data>.
+    Found 1-bit register for signal <r_RX_DV>.
+    Found 9-bit register for signal <r_Clk_Count>.
+    Found 3-bit register for signal <r_Bit_Index>.
+    Found 3-bit register for signal <r_SM_Main>.
+    Found 8-bit register for signal <r_RX_Byte>.
+    Found 1-bit register for signal <r_RX_Data_R>.
+    Found finite state machine <FSM_0> for signal <r_SM_Main>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 4                                              |
+    | Clock              | i_Clk (rising_edge)                            |
+    | Power Up State     | s_idle                                         |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit adder for signal <r_Bit_Index[2]_GND_5_o_add_11_OUT> created at line 92.
+    Found 9-bit adder for signal <r_Clk_Count[8]_GND_5_o_add_19_OUT> created at line 105.
+    Found 3-bit comparator greater for signal <r_Bit_Index[2]_PWR_5_o_LessThan_11_o> created at line 91
+    Found 9-bit comparator greater for signal <r_Clk_Count[8]_PWR_5_o_LessThan_19_o> created at line 104
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  23 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  14 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <UART_Receiver> synthesized.
+
+Synthesizing Unit <speed4motor>.
+    Related source file is "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/speed4motor.v".
+    Found 8-bit register for signal <motor2>.
+    Found 8-bit register for signal <motor3>.
+    Found 8-bit register for signal <motor4>.
+    Found 2-bit register for signal <count>.
+    Found 8-bit register for signal <motor1>.
+    Found 2-bit adder for signal <count[1]_GND_6_o_add_1_OUT> created at line 35.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  34 D-type flip-flop(s).
+Unit <speed4motor> synthesized.
+
+Synthesizing Unit <txbuffer>.
+    Related source file is "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/txbuffer.v".
+    Found 2-bit register for signal <count>.
+    Found 8-bit register for signal <serial>.
+    Found 2-bit adder for signal <count[1]_GND_7_o_add_2_OUT> created at line 36.
+    Found 8-bit 4-to-1 multiplexer for signal <count[1]_motor4[7]_wide_mux_1_OUT> created at line 30.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  10 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <txbuffer> synthesized.
+
+Synthesizing Unit <transmiter>.
+    Related source file is "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/uart_tx.v".
+    Found 1-bit register for signal <TX_register>.
+    Found 4-bit register for signal <Count>.
+    Found 1-bit register for signal <k>.
+    Found 4-bit adder for signal <Count[3]_GND_8_o_add_8_OUT> created at line 47.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   6 D-type flip-flop(s).
+	inferred  14 Multiplexer(s).
+Unit <transmiter> synthesized.
+
+Synthesizing Unit <clock_divider>.
+    Related source file is "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/clock_divider.v".
+    Found 1-bit register for signal <OUT>.
+    Found 16-bit register for signal <Counter>.
+    Found 16-bit adder for signal <Counter[15]_GND_9_o_add_0_OUT> created at line 19.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <clock_divider> synthesized.
+
+Synthesizing Unit <motormodule_MUSER_motorpackage>.
+    Related source file is "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/motorpackage.vf".
+WARNING:Xst:2898 - Port 'cl', unconnected in block instance 'XLXI_4', is tied to GND.
+    Summary:
+	no macro.
+Unit <motormodule_MUSER_motorpackage> synthesized.
+
+Synthesizing Unit <pid>.
+    Related source file is "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/pid.v".
+        N = 8
+    Found 18-bit register for signal <ticker>.
+    Found 8-bit register for signal <error>.
+    Found 32-bit register for signal <pwm_old>.
+    Found 64-bit register for signal <n0039[63:0]>.
+    Found 32-bit register for signal <pwm_mid>.
+    Found 8-bit register for signal <pwm>.
+    Found 8-bit register for signal <actual[7:0]>.
+    Found 8-bit register for signal <target[7:0]>.
+    Found 32-bit subtractor for signal <pwm_old[31]_GND_12_o_sub_17_OUT> created at line 90.
+    Found 18-bit adder for signal <ticker[17]_GND_12_o_add_5_OUT> created at line 72.
+    Found 32-bit adder for signal <pwm_old[31]_GND_12_o_add_14_OUT> created at line 90.
+    Found 8-bit subtractor for signal <target[31]_actual[31]_sub_13_OUT<7:0>> created at line 78.
+    Found 6x8-bit multiplier for signal <GND_12_o_error[7]_MuLt_13_OUT> created at line 90.
+    Found 5x32-bit multiplier for signal <n0049> created at line 90.
+    Found 32-bit comparator greater for signal <pwm_mid[31]_GND_12_o_LessThan_18_o> created at line 93
+    WARNING:Xst:2404 -  FFs/Latches <actual<31:8>> (without init value) have a constant value of 0 in block <pid>.
+    WARNING:Xst:2404 -  FFs/Latches <target<31:8>> (without init value) have a constant value of 0 in block <pid>.
+    Summary:
+	inferred   2 Multiplier(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred 178 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <pid> synthesized.
+
+Synthesizing Unit <zerobit>.
+    Related source file is "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/zerobit.v".
+WARNING:Xst:647 - Input <insignal<7:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2935 - Signal 'k<7>', unconnected in block 'zerobit', is tied to its initial value (0).
+    Summary:
+	no macro.
+Unit <zerobit> synthesized.
+
+Synthesizing Unit <directionbit>.
+    Related source file is "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/directionbit.v".
+WARNING:Xst:647 - Input <insignal1<6:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <insignal2<7:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <directionbit> synthesized.
+
+Synthesizing Unit <pwm>.
+    Related source file is "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/pwm.v".
+    Found 8-bit register for signal <tmp>.
+    Found 1-bit register for signal <k>.
+    Found 8-bit adder for signal <tmp[7]_GND_17_o_add_2_OUT> created at line 23.
+    Found 8-bit comparator greater for signal <k_tmp[7]_MUX_241_o> created at line 25
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <pwm> synthesized.
+
+Synthesizing Unit <clock>.
+    Related source file is "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/clock.v".
+    Found 8-bit register for signal <k>.
+    Found 1-bit register for signal <m>.
+    Found 8-bit adder for signal <k[7]_GND_18_o_add_3_OUT> created at line 16.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   9 D-type flip-flop(s).
+Unit <clock> synthesized.
+
+Synthesizing Unit <gatedriver>.
+    Related source file is "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/gatedriver.v".
+    Summary:
+	inferred   3 Multiplexer(s).
+Unit <gatedriver> synthesized.
+
+Synthesizing Unit <decoder>.
+    Related source file is "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/decoder.v".
+    Found 3-bit register for signal <quadB_delayed>.
+    Found 18-bit register for signal <ticker>.
+    Found 8-bit register for signal <total>.
+    Found 8-bit register for signal <count>.
+    Found 3-bit register for signal <quadA_delayed>.
+    Found 18-bit adder for signal <ticker[17]_GND_20_o_add_6_OUT> created at line 33.
+    Found 8-bit adder for signal <count[7]_GND_20_o_add_18_OUT> created at line 51.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  40 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <decoder> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 8
+ 32x5-bit multiplier                                   : 4
+ 8x6-bit multiplier                                    : 4
+# Adders/Subtractors                                   : 38
+ 16-bit adder                                          : 1
+ 18-bit adder                                          : 8
+ 2-bit adder                                           : 2
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 4
+ 32-bit subtractor                                     : 4
+ 4-bit adder                                           : 1
+ 8-bit adder                                           : 12
+ 8-bit subtractor                                      : 4
+ 9-bit adder                                           : 1
+# Registers                                            : 86
+ 1-bit register                                        : 14
+ 16-bit register                                       : 1
+ 18-bit register                                       : 8
+ 2-bit register                                        : 2
+ 3-bit register                                        : 9
+ 32-bit register                                       : 8
+ 4-bit register                                        : 1
+ 64-bit register                                       : 4
+ 8-bit register                                        : 38
+ 9-bit register                                        : 1
+# Comparators                                          : 10
+ 3-bit comparator greater                              : 1
+ 32-bit comparator greater                             : 4
+ 8-bit comparator greater                              : 4
+ 9-bit comparator greater                              : 1
+# Multiplexers                                         : 65
+ 1-bit 2-to-1 multiplexer                              : 20
+ 16-bit 2-to-1 multiplexer                             : 1
+ 18-bit 2-to-1 multiplexer                             : 8
+ 2-bit 2-to-1 multiplexer                              : 15
+ 3-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 12
+ 8-bit 4-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 4
+# FSMs                                                 : 1
+# Xors                                                 : 4
+ 1-bit xor4                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <e_prev_2_39> in Unit <XLXI_1> is equivalent to the following 24 FFs/Latches, which will be removed : <e_prev_2_40> <e_prev_2_41> <e_prev_2_42> <e_prev_2_43> <e_prev_2_44> <e_prev_2_45> <e_prev_2_46> <e_prev_2_47> <e_prev_2_48> <e_prev_2_49> <e_prev_2_50> <e_prev_2_51> <e_prev_2_52> <e_prev_2_53> <e_prev_2_54> <e_prev_2_55> <e_prev_2_56> <e_prev_2_57> <e_prev_2_58> <e_prev_2_59> <e_prev_2_60> <e_prev_2_61> <e_prev_2_62> <e_prev_2_63> 
+INFO:Xst:2261 - The FF/Latch <e_prev_2_39> in Unit <XLXI_1> is equivalent to the following 24 FFs/Latches, which will be removed : <e_prev_2_40> <e_prev_2_41> <e_prev_2_42> <e_prev_2_43> <e_prev_2_44> <e_prev_2_45> <e_prev_2_46> <e_prev_2_47> <e_prev_2_48> <e_prev_2_49> <e_prev_2_50> <e_prev_2_51> <e_prev_2_52> <e_prev_2_53> <e_prev_2_54> <e_prev_2_55> <e_prev_2_56> <e_prev_2_57> <e_prev_2_58> <e_prev_2_59> <e_prev_2_60> <e_prev_2_61> <e_prev_2_62> <e_prev_2_63> 
+INFO:Xst:2261 - The FF/Latch <e_prev_2_39> in Unit <XLXI_1> is equivalent to the following 24 FFs/Latches, which will be removed : <e_prev_2_40> <e_prev_2_41> <e_prev_2_42> <e_prev_2_43> <e_prev_2_44> <e_prev_2_45> <e_prev_2_46> <e_prev_2_47> <e_prev_2_48> <e_prev_2_49> <e_prev_2_50> <e_prev_2_51> <e_prev_2_52> <e_prev_2_53> <e_prev_2_54> <e_prev_2_55> <e_prev_2_56> <e_prev_2_57> <e_prev_2_58> <e_prev_2_59> <e_prev_2_60> <e_prev_2_61> <e_prev_2_62> <e_prev_2_63> 
+INFO:Xst:2261 - The FF/Latch <e_prev_2_39> in Unit <XLXI_1> is equivalent to the following 24 FFs/Latches, which will be removed : <e_prev_2_40> <e_prev_2_41> <e_prev_2_42> <e_prev_2_43> <e_prev_2_44> <e_prev_2_45> <e_prev_2_46> <e_prev_2_47> <e_prev_2_48> <e_prev_2_49> <e_prev_2_50> <e_prev_2_51> <e_prev_2_52> <e_prev_2_53> <e_prev_2_54> <e_prev_2_55> <e_prev_2_56> <e_prev_2_57> <e_prev_2_58> <e_prev_2_59> <e_prev_2_60> <e_prev_2_61> <e_prev_2_62> <e_prev_2_63> 
+WARNING:Xst:1710 - FF/Latch <target_7> (without init value) has a constant value of 0 in block <XLXI_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <target_7> (without init value) has a constant value of 0 in block <XLXI_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <target_7> (without init value) has a constant value of 0 in block <XLXI_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <target_7> (without init value) has a constant value of 0 in block <XLXI_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <e_prev_2_0> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_1> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_2> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_3> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_4> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_5> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_6> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_7> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_8> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_9> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_10> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_11> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_12> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_13> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_14> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_15> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_16> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_17> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_18> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_19> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_20> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_21> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_22> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_23> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_24> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_25> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_26> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_27> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_28> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_29> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_30> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_31> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <pwm_7> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_0> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_1> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_2> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_3> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_4> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_5> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_6> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_7> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_8> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_9> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_10> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_11> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_12> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_13> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_14> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_15> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_16> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_17> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_18> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_19> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_20> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_21> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_22> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_23> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_24> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_25> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_26> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_27> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_28> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_29> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_30> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_31> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <pwm_7> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_0> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_1> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_2> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_3> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_4> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_5> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_6> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_7> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_8> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_9> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_10> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_11> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_12> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_13> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_14> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_15> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_16> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_17> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_18> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_19> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_20> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_21> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_22> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_23> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_24> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_25> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_26> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_27> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_28> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_29> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_30> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_31> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <pwm_7> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_0> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_1> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_2> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_3> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_4> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_5> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_6> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_7> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_8> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_9> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_10> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_11> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_12> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_13> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_14> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_15> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_16> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_17> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_18> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_19> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_20> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_21> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_22> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_23> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_24> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_25> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_26> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_27> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_28> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_29> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_30> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <e_prev_2_31> of sequential type is unconnected in block <XLXI_1>.
+WARNING:Xst:2677 - Node <pwm_7> of sequential type is unconnected in block <XLXI_1>.
+
+Synthesizing (advanced) Unit <clock>.
+The following registers are absorbed into counter <k>: 1 register on signal <k>.
+Unit <clock> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clock_divider>.
+The following registers are absorbed into counter <Counter>: 1 register on signal <Counter>.
+Unit <clock_divider> synthesized (advanced).
+
+Synthesizing (advanced) Unit <decoder>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+The following registers are absorbed into counter <ticker>: 1 register on signal <ticker>.
+Unit <decoder> synthesized (advanced).
+
+Synthesizing (advanced) Unit <pid>.
+The following registers are absorbed into counter <ticker>: 1 register on signal <ticker>.
+	Multiplier <Mmult_GND_12_o_error[7]_MuLt_13_OUT> in block <pid> and adder/subtractor <Madd_pwm_old[31]_GND_12_o_add_14_OUT> in block <pid> are combined into a MAC<Maddsub_GND_12_o_error[7]_MuLt_13_OUT>.
+	The following registers are also absorbed by the MAC: <pwm_old> in block <pid>.
+Unit <pid> synthesized (advanced).
+
+Synthesizing (advanced) Unit <pwm>.
+The following registers are absorbed into counter <tmp>: 1 register on signal <tmp>.
+Unit <pwm> synthesized (advanced).
+
+Synthesizing (advanced) Unit <speed4motor>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <speed4motor> synthesized (advanced).
+
+Synthesizing (advanced) Unit <txbuffer>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <txbuffer> synthesized (advanced).
+WARNING:Xst:2677 - Node <e_prev_2_0> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_1> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_2> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_3> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_4> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_5> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_6> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_7> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_8> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_9> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_10> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_11> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_12> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_13> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_14> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_15> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_16> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_17> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_18> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_19> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_20> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_21> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_22> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_23> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_24> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_25> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_26> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_27> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_28> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_29> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_30> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_31> of sequential type is unconnected in block <pid>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# MACs                                                 : 4
+ 8x6-to-32-bit MAC                                     : 4
+# Multipliers                                          : 4
+ 32x5-bit multiplier                                   : 4
+# Adders/Subtractors                                   : 15
+ 3-bit adder                                           : 1
+ 32-bit subtractor                                     : 4
+ 4-bit adder                                           : 1
+ 8-bit adder                                           : 4
+ 8-bit subtractor                                      : 4
+ 9-bit adder                                           : 1
+# Counters                                             : 23
+ 16-bit up counter                                     : 1
+ 18-bit up counter                                     : 8
+ 2-bit up counter                                      : 2
+ 8-bit up counter                                      : 12
+# Registers                                            : 518
+ Flip-Flops                                            : 518
+# Comparators                                          : 10
+ 3-bit comparator greater                              : 1
+ 32-bit comparator greater                             : 4
+ 8-bit comparator greater                              : 4
+ 9-bit comparator greater                              : 1
+# Multiplexers                                         : 52
+ 1-bit 2-to-1 multiplexer                              : 20
+ 2-bit 2-to-1 multiplexer                              : 15
+ 3-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 8
+ 8-bit 4-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 4
+# FSMs                                                 : 1
+# Xors                                                 : 4
+ 1-bit xor4                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <e_prev_2_39> in Unit <pid> is equivalent to the following 24 FFs/Latches, which will be removed : <e_prev_2_40> <e_prev_2_41> <e_prev_2_42> <e_prev_2_43> <e_prev_2_44> <e_prev_2_45> <e_prev_2_46> <e_prev_2_47> <e_prev_2_48> <e_prev_2_49> <e_prev_2_50> <e_prev_2_51> <e_prev_2_52> <e_prev_2_53> <e_prev_2_54> <e_prev_2_55> <e_prev_2_56> <e_prev_2_57> <e_prev_2_58> <e_prev_2_59> <e_prev_2_60> <e_prev_2_61> <e_prev_2_62> <e_prev_2_63> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <XLXI_5/FSM_0> on signal <r_SM_Main[1:3]> with user encoding.
+----------------------------
+ State          | Encoding
+----------------------------
+ s_idle         | 000
+ s_rx_start_bit | 001
+ s_rx_data_bits | 010
+ s_rx_stop_bit  | 011
+ s_cleanup      | 100
+----------------------------
+
+Optimizing unit <motorpackage> ...
+
+Optimizing unit <pid> ...
+
+Optimizing unit <decoder> ...
+
+Optimizing unit <speed4motor> ...
+
+Optimizing unit <txbuffer> ...
+
+Optimizing unit <UART_Receiver> ...
+
+Optimizing unit <transmiter> ...
+WARNING:Xst:1710 - FF/Latch <XLXI_18/XLXI_1/target_7> (without init value) has a constant value of 0 in block <motorpackage>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_17/XLXI_1/target_7> (without init value) has a constant value of 0 in block <motorpackage>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_15/XLXI_1/target_7> (without init value) has a constant value of 0 in block <motorpackage>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_14/XLXI_1/target_7> (without init value) has a constant value of 0 in block <motorpackage>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <XLXI_18/XLXI_1/pwm_7> of sequential type is unconnected in block <motorpackage>.
+WARNING:Xst:2677 - Node <XLXI_17/XLXI_1/pwm_7> of sequential type is unconnected in block <motorpackage>.
+WARNING:Xst:2677 - Node <XLXI_15/XLXI_1/pwm_7> of sequential type is unconnected in block <motorpackage>.
+WARNING:Xst:2677 - Node <XLXI_14/XLXI_1/pwm_7> of sequential type is unconnected in block <motorpackage>.
+WARNING:Xst:1293 - FF/Latch <XLXI_13/CD1/Counter_15> has a constant value of 0 in block <motorpackage>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_13/CD1/Counter_14> has a constant value of 0 in block <motorpackage>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_13/CD1/Counter_13> has a constant value of 0 in block <motorpackage>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_13/CD1/Counter_12> has a constant value of 0 in block <motorpackage>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_13/CD1/Counter_11> has a constant value of 0 in block <motorpackage>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_13/CD1/Counter_10> has a constant value of 0 in block <motorpackage>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_13/CD1/Counter_9> has a constant value of 0 in block <motorpackage>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_13/CD1/Counter_8> has a constant value of 0 in block <motorpackage>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <XLXI_5/r_SM_Main_FSM_FFd1> in Unit <motorpackage> is equivalent to the following FF/Latch, which will be removed : <XLXI_5/r_RX_DV> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_1/ticker_0> in Unit <motorpackage> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_17/XLXI_1/ticker_0> <XLXI_15/XLXI_1/ticker_0> <XLXI_14/XLXI_1/ticker_0> <XLXI_18/XLXI_7/ticker_0> <XLXI_17/XLXI_7/ticker_0> <XLXI_15/XLXI_7/ticker_0> <XLXI_14/XLXI_7/ticker_0> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_1/ticker_1> in Unit <motorpackage> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_17/XLXI_1/ticker_1> <XLXI_15/XLXI_1/ticker_1> <XLXI_14/XLXI_1/ticker_1> <XLXI_18/XLXI_7/ticker_1> <XLXI_17/XLXI_7/ticker_1> <XLXI_15/XLXI_7/ticker_1> <XLXI_14/XLXI_7/ticker_1> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_1/ticker_2> in Unit <motorpackage> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_17/XLXI_1/ticker_2> <XLXI_15/XLXI_1/ticker_2> <XLXI_14/XLXI_1/ticker_2> <XLXI_18/XLXI_7/ticker_2> <XLXI_17/XLXI_7/ticker_2> <XLXI_15/XLXI_7/ticker_2> <XLXI_14/XLXI_7/ticker_2> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_1/ticker_3> in Unit <motorpackage> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_17/XLXI_1/ticker_3> <XLXI_15/XLXI_1/ticker_3> <XLXI_14/XLXI_1/ticker_3> <XLXI_18/XLXI_7/ticker_3> <XLXI_17/XLXI_7/ticker_3> <XLXI_15/XLXI_7/ticker_3> <XLXI_14/XLXI_7/ticker_3> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_1/ticker_4> in Unit <motorpackage> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_17/XLXI_1/ticker_4> <XLXI_15/XLXI_1/ticker_4> <XLXI_14/XLXI_1/ticker_4> <XLXI_18/XLXI_7/ticker_4> <XLXI_17/XLXI_7/ticker_4> <XLXI_15/XLXI_7/ticker_4> <XLXI_14/XLXI_7/ticker_4> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_1/ticker_5> in Unit <motorpackage> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_17/XLXI_1/ticker_5> <XLXI_15/XLXI_1/ticker_5> <XLXI_14/XLXI_1/ticker_5> <XLXI_18/XLXI_7/ticker_5> <XLXI_17/XLXI_7/ticker_5> <XLXI_15/XLXI_7/ticker_5> <XLXI_14/XLXI_7/ticker_5> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_1/ticker_6> in Unit <motorpackage> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_17/XLXI_1/ticker_6> <XLXI_15/XLXI_1/ticker_6> <XLXI_14/XLXI_1/ticker_6> <XLXI_18/XLXI_7/ticker_6> <XLXI_17/XLXI_7/ticker_6> <XLXI_15/XLXI_7/ticker_6> <XLXI_14/XLXI_7/ticker_6> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_1/ticker_7> in Unit <motorpackage> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_17/XLXI_1/ticker_7> <XLXI_15/XLXI_1/ticker_7> <XLXI_14/XLXI_1/ticker_7> <XLXI_18/XLXI_7/ticker_7> <XLXI_17/XLXI_7/ticker_7> <XLXI_15/XLXI_7/ticker_7> <XLXI_14/XLXI_7/ticker_7> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_1/ticker_8> in Unit <motorpackage> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_17/XLXI_1/ticker_8> <XLXI_15/XLXI_1/ticker_8> <XLXI_14/XLXI_1/ticker_8> <XLXI_18/XLXI_7/ticker_8> <XLXI_17/XLXI_7/ticker_8> <XLXI_15/XLXI_7/ticker_8> <XLXI_14/XLXI_7/ticker_8> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_1/ticker_9> in Unit <motorpackage> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_17/XLXI_1/ticker_9> <XLXI_15/XLXI_1/ticker_9> <XLXI_14/XLXI_1/ticker_9> <XLXI_18/XLXI_7/ticker_9> <XLXI_17/XLXI_7/ticker_9> <XLXI_15/XLXI_7/ticker_9> <XLXI_14/XLXI_7/ticker_9> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_5/m> in Unit <motorpackage> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_17/XLXI_5/m> <XLXI_15/XLXI_5/m> <XLXI_14/XLXI_5/m> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_5/k_0> in Unit <motorpackage> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_14/XLXI_5/k_0> <XLXI_17/XLXI_5/k_0> <XLXI_15/XLXI_5/k_0> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_5/k_1> in Unit <motorpackage> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_14/XLXI_5/k_1> <XLXI_17/XLXI_5/k_1> <XLXI_15/XLXI_5/k_1> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_5/k_2> in Unit <motorpackage> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_14/XLXI_5/k_2> <XLXI_17/XLXI_5/k_2> <XLXI_15/XLXI_5/k_2> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_5/k_3> in Unit <motorpackage> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_14/XLXI_5/k_3> <XLXI_17/XLXI_5/k_3> <XLXI_15/XLXI_5/k_3> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_5/k_4> in Unit <motorpackage> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_14/XLXI_5/k_4> <XLXI_17/XLXI_5/k_4> <XLXI_15/XLXI_5/k_4> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_5/k_5> in Unit <motorpackage> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_14/XLXI_5/k_5> <XLXI_17/XLXI_5/k_5> <XLXI_15/XLXI_5/k_5> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_5/k_6> in Unit <motorpackage> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_14/XLXI_5/k_6> <XLXI_17/XLXI_5/k_6> <XLXI_15/XLXI_5/k_6> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_5/k_7> in Unit <motorpackage> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_14/XLXI_5/k_7> <XLXI_17/XLXI_5/k_7> <XLXI_15/XLXI_5/k_7> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_1/ticker_10> in Unit <motorpackage> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_17/XLXI_1/ticker_10> <XLXI_15/XLXI_1/ticker_10> <XLXI_14/XLXI_1/ticker_10> <XLXI_18/XLXI_7/ticker_10> <XLXI_17/XLXI_7/ticker_10> <XLXI_15/XLXI_7/ticker_10> <XLXI_14/XLXI_7/ticker_10> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_1/ticker_11> in Unit <motorpackage> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_17/XLXI_1/ticker_11> <XLXI_15/XLXI_1/ticker_11> <XLXI_14/XLXI_1/ticker_11> <XLXI_18/XLXI_7/ticker_11> <XLXI_17/XLXI_7/ticker_11> <XLXI_15/XLXI_7/ticker_11> <XLXI_14/XLXI_7/ticker_11> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_1/ticker_12> in Unit <motorpackage> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_17/XLXI_1/ticker_12> <XLXI_15/XLXI_1/ticker_12> <XLXI_14/XLXI_1/ticker_12> <XLXI_18/XLXI_7/ticker_12> <XLXI_17/XLXI_7/ticker_12> <XLXI_15/XLXI_7/ticker_12> <XLXI_14/XLXI_7/ticker_12> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_1/ticker_13> in Unit <motorpackage> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_17/XLXI_1/ticker_13> <XLXI_15/XLXI_1/ticker_13> <XLXI_14/XLXI_1/ticker_13> <XLXI_18/XLXI_7/ticker_13> <XLXI_17/XLXI_7/ticker_13> <XLXI_15/XLXI_7/ticker_13> <XLXI_14/XLXI_7/ticker_13> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_1/ticker_14> in Unit <motorpackage> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_17/XLXI_1/ticker_14> <XLXI_15/XLXI_1/ticker_14> <XLXI_14/XLXI_1/ticker_14> <XLXI_18/XLXI_7/ticker_14> <XLXI_17/XLXI_7/ticker_14> <XLXI_15/XLXI_7/ticker_14> <XLXI_14/XLXI_7/ticker_14> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_1/ticker_15> in Unit <motorpackage> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_17/XLXI_1/ticker_15> <XLXI_15/XLXI_1/ticker_15> <XLXI_14/XLXI_1/ticker_15> <XLXI_18/XLXI_7/ticker_15> <XLXI_17/XLXI_7/ticker_15> <XLXI_15/XLXI_7/ticker_15> <XLXI_14/XLXI_7/ticker_15> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_1/ticker_16> in Unit <motorpackage> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_17/XLXI_1/ticker_16> <XLXI_15/XLXI_1/ticker_16> <XLXI_14/XLXI_1/ticker_16> <XLXI_18/XLXI_7/ticker_16> <XLXI_17/XLXI_7/ticker_16> <XLXI_15/XLXI_7/ticker_16> <XLXI_14/XLXI_7/ticker_16> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_1/ticker_17> in Unit <motorpackage> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_17/XLXI_1/ticker_17> <XLXI_15/XLXI_1/ticker_17> <XLXI_14/XLXI_1/ticker_17> <XLXI_18/XLXI_7/ticker_17> <XLXI_17/XLXI_7/ticker_17> <XLXI_15/XLXI_7/ticker_17> <XLXI_14/XLXI_7/ticker_17> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block motorpackage, actual ratio is 12.
+
+Final Macro Processing ...
+
+Processing Unit <motorpackage> :
+	Found 2-bit shift register for signal <XLXI_18/XLXI_7/quadA_delayed_1>.
+	Found 2-bit shift register for signal <XLXI_18/XLXI_7/quadB_delayed_1>.
+	Found 2-bit shift register for signal <XLXI_17/XLXI_7/quadA_delayed_1>.
+	Found 2-bit shift register for signal <XLXI_17/XLXI_7/quadB_delayed_1>.
+	Found 2-bit shift register for signal <XLXI_15/XLXI_7/quadA_delayed_1>.
+	Found 2-bit shift register for signal <XLXI_15/XLXI_7/quadB_delayed_1>.
+	Found 2-bit shift register for signal <XLXI_14/XLXI_7/quadA_delayed_1>.
+	Found 2-bit shift register for signal <XLXI_14/XLXI_7/quadB_delayed_1>.
+	Found 2-bit shift register for signal <XLXI_5/r_RX_Data>.
+Unit <motorpackage> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 369
+ Flip-Flops                                            : 369
+# Shift Registers                                      : 9
+ 2-bit shift register                                  : 9
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : motorpackage.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 794
+#      GND                         : 1
+#      INV                         : 15
+#      LUT1                        : 63
+#      LUT2                        : 85
+#      LUT3                        : 39
+#      LUT4                        : 81
+#      LUT5                        : 96
+#      LUT6                        : 70
+#      MUXCY                       : 171
+#      MUXF7                       : 2
+#      VCC                         : 1
+#      XORCY                       : 170
+# FlipFlops/Latches                : 378
+#      FD                          : 113
+#      FDE                         : 75
+#      FDR                         : 26
+#      FDRE                        : 164
+# Shift Registers                  : 9
+#      SRLC16E                     : 9
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 56
+#      IBUF                        : 25
+#      OBUF                        : 31
+# DSPs                             : 8
+#      DSP48A1                     : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             378  out of  11440     3%  
+ Number of Slice LUTs:                  458  out of   5720     8%  
+    Number used as Logic:               449  out of   5720     7%  
+    Number used as Memory:                9  out of   1440     0%  
+       Number used as SRL:                9
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    625
+   Number with an unused Flip Flop:     247  out of    625    39%  
+   Number with an unused LUT:           167  out of    625    26%  
+   Number of fully used LUT-FF pairs:   211  out of    625    33%  
+   Number of unique control sets:        26
+
+IO Utilization: 
+ Number of IOs:                          57
+ Number of bonded IOBs:                  57  out of    200    28%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+ Number of DSP48A1s:                      8  out of     16    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+XLXI_18/XLXI_5/m                   | BUFG                   | 36    |
+inc                                | BUFGP                  | 353   |
+XLXI_13/CD1/OUT                    | NONE(XLXI_13/k)        | 6     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 7.202ns (Maximum Frequency: 138.854MHz)
+   Minimum input arrival time before clock: 5.246ns
+   Maximum output required time after clock: 4.792ns
+   Maximum combinational path delay: 5.505ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_18/XLXI_5/m'
+  Clock period: 6.287ns (frequency: 159.061MHz)
+  Total number of paths / destination ports: 1936 / 36
+-------------------------------------------------------------------------
+Delay:               6.287ns (Levels of Logic = 6)
+  Source:            XLXI_18/XLXI_4/tmp_4 (FF)
+  Destination:       XLXI_18/XLXI_4/k (FF)
+  Source Clock:      XLXI_18/XLXI_5/m rising
+  Destination Clock: XLXI_18/XLXI_5/m rising
+
+  Data Path: XLXI_18/XLXI_4/tmp_4 to XLXI_18/XLXI_4/k
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              5   0.447   1.059  XLXI_18/XLXI_4/tmp_4 (XLXI_18/XLXI_4/tmp_4)
+     LUT5:I0->O           10   0.203   0.857  XLXI_18/XLXI_4/tmp[7]_GND_17_o_equal_2_o<7>11 (XLXI_18/XLXI_4/Madd_tmp[7]_GND_17_o_add_2_OUT_cy<4>)
+     LUT4:I3->O            5   0.205   0.715  XLXI_18/XLXI_4/tmp[7]_GND_17_o_equal_2_o<7>2 (XLXI_18/XLXI_4/tmp[7]_GND_17_o_equal_2_o)
+     LUT4:I3->O            2   0.205   0.721  XLXI_18/XLXI_4/Mmux_tmp[7]_tmp[7]_mux_5_OUT71 (XLXI_18/XLXI_4/tmp[7]_tmp[7]_mux_5_OUT<6>)
+     LUT6:I4->O            1   0.203   0.580  XLXI_18/XLXI_4/k_tmp[7]_MUX_241_o22 (XLXI_18/XLXI_4/k_tmp[7]_MUX_241_o21)
+     LUT6:I5->O            1   0.205   0.580  XLXI_18/XLXI_4/k_tmp[7]_MUX_241_o24 (XLXI_18/XLXI_4/k_tmp[7]_MUX_241_o23)
+     LUT6:I5->O            1   0.205   0.000  XLXI_18/XLXI_4/k_tmp[7]_MUX_241_o25 (XLXI_18/XLXI_4/k_tmp[7]_MUX_241_o)
+     FDE:D                     0.102          XLXI_18/XLXI_4/k
+    ----------------------------------------
+    Total                      6.287ns (1.775ns logic, 4.512ns route)
+                                       (28.2% logic, 71.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'inc'
+  Clock period: 7.202ns (frequency: 138.854MHz)
+  Total number of paths / destination ports: 19011 / 1116
+-------------------------------------------------------------------------
+Delay:               7.202ns (Levels of Logic = 1)
+  Source:            XLXI_18/XLXI_1/error_7 (FF)
+  Destination:       XLXI_18/XLXI_1/Msub_pwm_old[31]_GND_12_o_sub_17_OUT1 (DSP)
+  Source Clock:      inc rising
+  Destination Clock: inc rising
+
+  Data Path: XLXI_18/XLXI_1/error_7 to XLXI_18/XLXI_1/Msub_pwm_old[31]_GND_12_o_sub_17_OUT1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              12   0.447   0.908  XLXI_18/XLXI_1/error_7 (XLXI_18/XLXI_1/error_7)
+     DSP48A1:B7->PCOUT47    1   4.400   0.000  XLXI_18/XLXI_1/Maddsub_GND_12_o_error[7]_MuLt_13_OUT (XLXI_18/XLXI_1/Maddsub_GND_12_o_error[7]_MuLt_13_OUT_PCOUT_to_Msub_pwm_old[31]_GND_12_o_sub_17_OUT1_PCIN_47)
+     DSP48A1:PCIN47            1.447          XLXI_18/XLXI_1/Msub_pwm_old[31]_GND_12_o_sub_17_OUT1
+    ----------------------------------------
+    Total                      7.202ns (6.294ns logic, 0.908ns route)
+                                       (87.4% logic, 12.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_13/CD1/OUT'
+  Clock period: 2.831ns (frequency: 353.182MHz)
+  Total number of paths / destination ports: 42 / 12
+-------------------------------------------------------------------------
+Delay:               2.831ns (Levels of Logic = 2)
+  Source:            XLXI_13/Count_1 (FF)
+  Destination:       XLXI_13/TX_register (FF)
+  Source Clock:      XLXI_13/CD1/OUT rising
+  Destination Clock: XLXI_13/CD1/OUT rising
+
+  Data Path: XLXI_13/Count_1 to XLXI_13/TX_register
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              8   0.447   1.050  XLXI_13/Count_1 (XLXI_13/Count_1)
+     LUT4:I0->O            1   0.203   0.827  XLXI_13/Mmux_Count[3]_TX_register_Mux_9_o23 (XLXI_13/Mmux_Count[3]_TX_register_Mux_9_o22)
+     LUT6:I2->O            1   0.203   0.000  XLXI_13/Mmux_Count[3]_TX_register_Mux_9_o24 (XLXI_13/Count[3]_TX_register_Mux_9_o)
+     FDE:D                     0.102          XLXI_13/TX_register
+    ----------------------------------------
+    Total                      2.831ns (0.955ns logic, 1.876ns route)
+                                       (33.7% logic, 66.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_18/XLXI_5/m'
+  Total number of paths / destination ports: 36 / 36
+-------------------------------------------------------------------------
+Offset:              3.034ns (Levels of Logic = 1)
+  Source:            en (PAD)
+  Destination:       XLXI_18/XLXI_4/k (FF)
+  Destination Clock: XLXI_18/XLXI_5/m rising
+
+  Data Path: en to XLXI_18/XLXI_4/k
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            46   1.222   1.490  en_IBUF (en_IBUF)
+     FDE:CE                    0.322          XLXI_18/XLXI_4/k
+    ----------------------------------------
+    Total                      3.034ns (1.544ns logic, 1.490ns route)
+                                       (50.9% logic, 49.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'inc'
+  Total number of paths / destination ports: 231 / 231
+-------------------------------------------------------------------------
+Offset:              5.246ns (Levels of Logic = 2)
+  Source:            en (PAD)
+  Destination:       XLXI_18/XLXI_1/e_prev_2_39 (FF)
+  Destination Clock: inc rising
+
+  Data Path: en to XLXI_18/XLXI_1/e_prev_2_39
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            46   1.222   1.490  en_IBUF (en_IBUF)
+     INV:I->O            108   0.206   1.898  XLXI_18/XLXI_1/rst_n_inv1_INV_0 (XLXI_11/rst_n_inv)
+     FDRE:R                    0.430          XLXI_11/serial_0
+    ----------------------------------------
+    Total                      5.246ns (1.858ns logic, 3.388ns route)
+                                       (35.4% logic, 64.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_18/XLXI_5/m'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              4.792ns (Levels of Logic = 2)
+  Source:            XLXI_18/XLXI_4/k (FF)
+  Destination:       a1<1> (PAD)
+  Source Clock:      XLXI_18/XLXI_5/m rising
+
+  Data Path: XLXI_18/XLXI_4/k to a1<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              6   0.447   0.992  XLXI_18/XLXI_4/k (XLXI_18/XLXI_4/k)
+     LUT4:I0->O            1   0.203   0.579  XLXI_18/XLXI_6/Mmux_l21 (b1_1_OBUF)
+     OBUF:I->O                 2.571          b1_1_OBUF (b1<1>)
+    ----------------------------------------
+    Total                      4.792ns (3.221ns logic, 1.571ns route)
+                                       (67.2% logic, 32.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'inc'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              4.547ns (Levels of Logic = 2)
+  Source:            XLXI_6/motor1_7 (FF)
+  Destination:       a1<1> (PAD)
+  Source Clock:      inc rising
+
+  Data Path: XLXI_6/motor1_7 to a1<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             6   0.447   0.745  XLXI_6/motor1_7 (XLXI_6/motor1_7)
+     LUT4:I3->O            1   0.205   0.579  XLXI_18/XLXI_6/Mmux_l11 (b1_0_OBUF)
+     OBUF:I->O                 2.571          b1_0_OBUF (b1<0>)
+    ----------------------------------------
+    Total                      4.547ns (3.223ns logic, 1.324ns route)
+                                       (70.9% logic, 29.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_13/CD1/OUT'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            XLXI_13/TX_register (FF)
+  Destination:       tx (PAD)
+  Source Clock:      XLXI_13/CD1/OUT rising
+
+  Data Path: XLXI_13/TX_register to tx
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.447   0.579  XLXI_13/TX_register (XLXI_13/TX_register)
+     OBUF:I->O                 2.571          tx_OBUF (tx)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 60 / 30
+-------------------------------------------------------------------------
+Delay:               5.505ns (Levels of Logic = 3)
+  Source:            hall1<0> (PAD)
+  Destination:       a1<0> (PAD)
+
+  Data Path: hall1<0> to a1<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.222   0.931  hall1_0_IBUF (hall1_0_IBUF)
+     LUT4:I0->O            1   0.203   0.579  XLXI_18/XLXI_6/Mmux_k11 (a1_0_OBUF)
+     OBUF:I->O                 2.571          a1_0_OBUF (a1<0>)
+    ----------------------------------------
+    Total                      5.505ns (3.996ns logic, 1.509ns route)
+                                       (72.6% logic, 27.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock XLXI_13/CD1/OUT
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+XLXI_13/CD1/OUT|    2.831|         |         |         |
+inc            |    2.466|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_18/XLXI_5/m
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+XLXI_18/XLXI_5/m|    6.287|         |         |         |
+inc             |    3.303|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock inc
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+XLXI_13/CD1/OUT|    2.522|         |         |         |
+inc            |    7.202|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 21.00 secs
+Total CPU time to Xst completion: 17.20 secs
+ 
+--> 
+
+
+Total memory usage is 487464 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  224 (   0 filtered)
+Number of infos    :   34 (   0 filtered)
+
