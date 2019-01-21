@@ -1,0 +1,9 @@
+
+
+
+// Instantiate the module
+Hall_Encoder instance_name (
+    .H(H)
+    );
+
+

@@ -1,0 +1,235 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : motorpackage.vf
+// /___/   /\     Timestamp : 01/22/2019 00:59:08
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog E:/Xilinx/Projects/fourmotorwinter/motorpackage.vf -w E:/Xilinx/Projects/fourmotorwinter/motorpackage.sch
+//Design Name: motorpackage
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module motormodule_MUSER_motorpackage(clk, 
+                                      en, 
+                                      hall, 
+                                      setvalue, 
+                                      encoder, 
+                                      phase_a, 
+                                      phase_b, 
+                                      phase_c);
+
+    input clk;
+    input en;
+    input [2:0] hall;
+    input [7:0] setvalue;
+   output [7:0] encoder;
+   output [1:0] phase_a;
+   output [1:0] phase_b;
+   output [1:0] phase_c;
+   
+   wire [7:0] XLXN_3;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire [7:0] XLXN_15;
+   wire XLXN_20;
+   wire [7:0] XLXN_99;
+   wire [7:0] encoder_DUMMY;
+   
+   assign encoder[7:0] = encoder_DUMMY[7:0];
+   pid  XLXI_1 (.clk(clk), 
+               .enc(encoder_DUMMY[7:0]), 
+               .rst_n(en), 
+               .set_val(XLXN_99[7:0]), 
+               .Pwm(XLXN_3[7:0]));
+   zerobit  XLXI_2 (.insignal(setvalue[7:0]), 
+                   .outsignal(XLXN_99[7:0]));
+   directionbit  XLXI_3 (.insignal1(setvalue[7:0]), 
+                        .insignal2(XLXN_3[7:0]), 
+                        .pwmout(XLXN_15[7:0]));
+   pwm  XLXI_4 (.cl(), 
+               .clk(XLXN_6), 
+               .en1(en), 
+               .lo(XLXN_15[7:0]), 
+               .dir(XLXN_20), 
+               .out1(XLXN_7));
+   clock  XLXI_5 (.inc(clk), 
+                 .outc(XLXN_6));
+   gatedriver  XLXI_6 (.d(XLXN_20), 
+                      .h(hall[2:0]), 
+                      .pwm(XLXN_7), 
+                      .a(phase_a[1:0]), 
+                      .b(phase_b[1:0]), 
+                      .c(phase_c[1:0]));
+   Hall_Encoder  XLXI_8 (.CLK(clk), 
+                        .H(hall[2:0]), 
+                        .RST(en), 
+                        .H_Enc(encoder_DUMMY[7:0]));
+endmodule
+`timescale 1ns / 1ps
+
+module motorpackage(en, 
+                    hall1, 
+                    hall2, 
+                    hall3, 
+                    hall4, 
+                    hall5, 
+                    inc, 
+                    q1a, 
+                    q1b, 
+                    q2a, 
+                    q2b, 
+                    q3a, 
+                    q3b, 
+                    q4a, 
+                    q4b, 
+                    rxin, 
+                    a1, 
+                    a2, 
+                    a3, 
+                    a4, 
+                    a5, 
+                    b1, 
+                    b2, 
+                    b3, 
+                    b4, 
+                    b5, 
+                    c1, 
+                    c2, 
+                    c3, 
+                    c4, 
+                    c5, 
+                    tx);
+
+    input en;
+    input [2:0] hall1;
+    input [2:0] hall2;
+    input [2:0] hall3;
+    input [2:0] hall4;
+    input [2:0] hall5;
+    input inc;
+    input q1a;
+    input q1b;
+    input q2a;
+    input q2b;
+    input q3a;
+    input q3b;
+    input q4a;
+    input q4b;
+    input rxin;
+   output [1:0] a1;
+   output [1:0] a2;
+   output [1:0] a3;
+   output [1:0] a4;
+   output [1:0] a5;
+   output [1:0] b1;
+   output [1:0] b2;
+   output [1:0] b3;
+   output [1:0] b4;
+   output [1:0] b5;
+   output [1:0] c1;
+   output [1:0] c2;
+   output [1:0] c3;
+   output [1:0] c4;
+   output [1:0] c5;
+   output tx;
+   
+   wire XLXN_1;
+   wire [7:0] XLXN_2;
+   wire [7:0] XLXN_31;
+   wire [7:0] XLXN_32;
+   wire [7:0] XLXN_33;
+   wire [7:0] XLXN_34;
+   wire XLXN_38;
+   wire [7:0] XLXN_39;
+   wire [7:0] XLXN_41;
+   wire [7:0] XLXN_43;
+   wire [7:0] XLXN_44;
+   wire [7:0] XLXN_45;
+   wire XLXN_66;
+   wire XLXN_67;
+   
+   UART_Receiver  XLXI_5 (.i_Clk(inc), 
+                         .i_RX_Serial(rxin), 
+                         .o_RX_Byte(XLXN_2[7:0]), 
+                         .o_RX_DV(XLXN_1));
+   speed4motor  XLXI_6 (.clk(inc), 
+                       .received(XLXN_1), 
+                       .rst_n(en), 
+                       .serial(XLXN_2[7:0]), 
+                       .Motor1(XLXN_34[7:0]), 
+                       .Motor2(XLXN_33[7:0]), 
+                       .Motor3(XLXN_32[7:0]), 
+                       .Motor4(XLXN_31[7:0]));
+   txbuffer  XLXI_11 (.clk(inc), 
+                     .motor1(XLXN_41[7:0]), 
+                     .motor2(XLXN_43[7:0]), 
+                     .motor3(XLXN_44[7:0]), 
+                     .motor4(XLXN_45[7:0]), 
+                     .received(XLXN_38), 
+                     .rst_n(en), 
+                     .Serial(XLXN_39[7:0]));
+   transmiter  XLXI_13 (.CLK(inc), 
+                       .DATA(XLXN_39[7:0]), 
+                       .RST(XLXN_66), 
+                       .flag(XLXN_38), 
+                       .TX(tx));
+   motormodule_MUSER_motorpackage  XLXI_14 (.clk(inc), 
+                                           .en(en), 
+                                           .hall(hall4[2:0]), 
+                                           .qa(q4a), 
+                                           .qb(q4b), 
+                                           .setvalue(XLXN_31[7:0]), 
+                                           .encoder(XLXN_45[7:0]), 
+                                           .phase_a(a4[1:0]), 
+                                           .phase_b(b4[1:0]), 
+                                           .phase_c(c4[1:0]));
+   motormodule_MUSER_motorpackage  XLXI_15 (.clk(inc), 
+                                           .en(en), 
+                                           .hall(hall3[2:0]), 
+                                           .qa(q3a), 
+                                           .qb(q3b), 
+                                           .setvalue(XLXN_32[7:0]), 
+                                           .encoder(XLXN_44[7:0]), 
+                                           .phase_a(a3[1:0]), 
+                                           .phase_b(b3[1:0]), 
+                                           .phase_c(c3[1:0]));
+   motormodule_MUSER_motorpackage  XLXI_17 (.clk(inc), 
+                                           .en(en), 
+                                           .hall(hall2[2:0]), 
+                                           .qa(q2a), 
+                                           .qb(q2b), 
+                                           .setvalue(XLXN_33[7:0]), 
+                                           .encoder(XLXN_43[7:0]), 
+                                           .phase_a(a2[1:0]), 
+                                           .phase_b(b2[1:0]), 
+                                           .phase_c(c2[1:0]));
+   motormodule_MUSER_motorpackage  XLXI_18 (.clk(inc), 
+                                           .en(en), 
+                                           .hall(hall1[2:0]), 
+                                           .qa(q1a), 
+                                           .qb(q1b), 
+                                           .setvalue(XLXN_34[7:0]), 
+                                           .encoder(XLXN_41[7:0]), 
+                                           .phase_a(a1[1:0]), 
+                                           .phase_b(b1[1:0]), 
+                                           .phase_c(c1[1:0]));
+   GND  XLXI_19 (.G(XLXN_66));
+   gatedriver  XLXI_20 (.d(XLXN_67), 
+                       .h(hall5[2:0]), 
+                       .pwm(XLXN_67), 
+                       .a(a5[1:0]), 
+                       .b(b5[1:0]), 
+                       .c(c5[1:0]));
+   VCC  XLXI_21 (.P(XLXN_67));
+endmodule

@@ -10,10 +10,6 @@
         <signal name="XLXN_2(7:0)" />
         <signal name="inc" />
         <signal name="rxin" />
-        <signal name="XLXN_31(7:0)" />
-        <signal name="XLXN_32(7:0)" />
-        <signal name="XLXN_33(7:0)" />
-        <signal name="XLXN_34(7:0)" />
         <signal name="XLXN_38" />
         <signal name="XLXN_39(7:0)" />
         <signal name="XLXN_41(7:0)" />
@@ -47,12 +43,10 @@
         <signal name="a2(1:0)" />
         <signal name="b2(1:0)" />
         <signal name="c2(1:0)" />
-        <signal name="XLXN_67" />
-        <signal name="XLXN_68" />
-        <signal name="hall5(2:0)" />
-        <signal name="a5(1:0)" />
-        <signal name="b5(1:0)" />
-        <signal name="c5(1:0)" />
+        <signal name="XLXN_73(7:0)" />
+        <signal name="XLXN_74(7:0)" />
+        <signal name="XLXN_75(7:0)" />
+        <signal name="XLXN_76(7:0)" />
         <port polarity="Input" name="inc" />
         <port polarity="Input" name="rxin" />
         <port polarity="Input" name="en" />
@@ -81,10 +75,6 @@
         <port polarity="Output" name="a2(1:0)" />
         <port polarity="Output" name="b2(1:0)" />
         <port polarity="Output" name="c2(1:0)" />
-        <port polarity="Input" name="hall5(2:0)" />
-        <port polarity="Output" name="a5(1:0)" />
-        <port polarity="Output" name="b5(1:0)" />
-        <port polarity="Output" name="c5(1:0)" />
         <blockdef name="UART_Receiver">
             <timestamp>2018-12-10T15:38:17</timestamp>
             <rect width="304" x="64" y="-128" height="128" />
@@ -167,26 +157,6 @@
             <line x2="64" y1="-64" y2="-80" x1="64" />
             <line x2="64" y1="-128" y2="-96" x1="64" />
         </blockdef>
-        <blockdef name="gatedriver">
-            <timestamp>2018-12-10T15:41:39</timestamp>
-            <rect width="256" x="64" y="-192" height="192" />
-            <line x2="0" y1="-160" y2="-160" x1="64" />
-            <line x2="0" y1="-96" y2="-96" x1="64" />
-            <rect width="64" x="0" y="-44" height="24" />
-            <line x2="0" y1="-32" y2="-32" x1="64" />
-            <rect width="64" x="320" y="-172" height="24" />
-            <line x2="384" y1="-160" y2="-160" x1="320" />
-            <rect width="64" x="320" y="-108" height="24" />
-            <line x2="384" y1="-96" y2="-96" x1="320" />
-            <rect width="64" x="320" y="-44" height="24" />
-            <line x2="384" y1="-32" y2="-32" x1="320" />
-        </blockdef>
-        <blockdef name="vcc">
-            <timestamp>2000-1-1T10:10:10</timestamp>
-            <line x2="64" y1="-32" y2="-64" x1="64" />
-            <line x2="64" y1="0" y2="-32" x1="64" />
-            <line x2="32" y1="-64" y2="-64" x1="96" />
-        </blockdef>
         <block symbolname="UART_Receiver" name="XLXI_5">
             <blockpin signalname="inc" name="i_Clk" />
             <blockpin signalname="rxin" name="i_RX_Serial" />
@@ -198,10 +168,10 @@
             <blockpin signalname="inc" name="clk" />
             <blockpin signalname="en" name="rst_n" />
             <blockpin signalname="XLXN_2(7:0)" name="serial(7:0)" />
-            <blockpin signalname="XLXN_34(7:0)" name="Motor1(7:0)" />
-            <blockpin signalname="XLXN_33(7:0)" name="Motor2(7:0)" />
-            <blockpin signalname="XLXN_32(7:0)" name="Motor3(7:0)" />
-            <blockpin signalname="XLXN_31(7:0)" name="Motor4(7:0)" />
+            <blockpin signalname="XLXN_73(7:0)" name="Motor1(7:0)" />
+            <blockpin signalname="XLXN_74(7:0)" name="Motor2(7:0)" />
+            <blockpin signalname="XLXN_75(7:0)" name="Motor3(7:0)" />
+            <blockpin signalname="XLXN_76(7:0)" name="Motor4(7:0)" />
         </block>
         <block symbolname="txbuffer" name="XLXI_11">
             <blockpin signalname="XLXN_38" name="received" />
@@ -221,7 +191,7 @@
             <blockpin signalname="XLXN_38" name="flag" />
         </block>
         <block symbolname="motormodule" name="XLXI_14">
-            <blockpin signalname="XLXN_31(7:0)" name="setvalue(7:0)" />
+            <blockpin signalname="XLXN_76(7:0)" name="setvalue(7:0)" />
             <blockpin signalname="inc" name="clk" />
             <blockpin signalname="q4a" name="qa" />
             <blockpin signalname="q4b" name="qb" />
@@ -233,7 +203,7 @@
             <blockpin signalname="XLXN_45(7:0)" name="encoder(7:0)" />
         </block>
         <block symbolname="motormodule" name="XLXI_15">
-            <blockpin signalname="XLXN_32(7:0)" name="setvalue(7:0)" />
+            <blockpin signalname="XLXN_75(7:0)" name="setvalue(7:0)" />
             <blockpin signalname="inc" name="clk" />
             <blockpin signalname="q3a" name="qa" />
             <blockpin signalname="q3b" name="qb" />
@@ -245,7 +215,7 @@
             <blockpin signalname="XLXN_44(7:0)" name="encoder(7:0)" />
         </block>
         <block symbolname="motormodule" name="XLXI_17">
-            <blockpin signalname="XLXN_33(7:0)" name="setvalue(7:0)" />
+            <blockpin signalname="XLXN_73(7:0)" name="setvalue(7:0)" />
             <blockpin signalname="inc" name="clk" />
             <blockpin signalname="q2a" name="qa" />
             <blockpin signalname="q2b" name="qb" />
@@ -257,7 +227,7 @@
             <blockpin signalname="XLXN_43(7:0)" name="encoder(7:0)" />
         </block>
         <block symbolname="motormodule" name="XLXI_18">
-            <blockpin signalname="XLXN_34(7:0)" name="setvalue(7:0)" />
+            <blockpin signalname="XLXN_74(7:0)" name="setvalue(7:0)" />
             <blockpin signalname="inc" name="clk" />
             <blockpin signalname="q1a" name="qa" />
             <blockpin signalname="q1b" name="qb" />
@@ -270,17 +240,6 @@
         </block>
         <block symbolname="gnd" name="XLXI_19">
             <blockpin signalname="XLXN_66" name="G" />
-        </block>
-        <block symbolname="gatedriver" name="XLXI_20">
-            <blockpin signalname="XLXN_67" name="pwm" />
-            <blockpin signalname="XLXN_67" name="d" />
-            <blockpin signalname="hall5(2:0)" name="h(2:0)" />
-            <blockpin signalname="a5(1:0)" name="a(1:0)" />
-            <blockpin signalname="b5(1:0)" name="b(1:0)" />
-            <blockpin signalname="c5(1:0)" name="c(1:0)" />
-        </block>
-        <block symbolname="vcc" name="XLXI_21">
-            <blockpin signalname="XLXN_67" name="P" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -319,30 +278,8 @@
             <wire x2="1616" y1="208" y2="208" x1="1200" />
             <wire x2="1616" y1="208" y2="336" x1="1616" />
         </branch>
-        <branch name="XLXN_31(7:0)">
-            <wire x2="288" y1="832" y2="944" x1="288" />
-            <wire x2="368" y1="944" y2="944" x1="288" />
-            <wire x2="1616" y1="832" y2="832" x1="288" />
-            <wire x2="1616" y1="720" y2="832" x1="1616" />
-        </branch>
         <iomarker fontsize="28" x="288" y="1008" name="inc" orien="R180" />
         <iomarker fontsize="28" x="1088" y="992" name="inc" orien="R180" />
-        <branch name="XLXN_33(7:0)">
-            <wire x2="1744" y1="720" y2="928" x1="1744" />
-            <wire x2="1888" y1="928" y2="928" x1="1744" />
-        </branch>
-        <branch name="XLXN_34(7:0)">
-            <wire x2="1808" y1="720" y2="800" x1="1808" />
-            <wire x2="2528" y1="800" y2="800" x1="1808" />
-            <wire x2="2528" y1="800" y2="928" x1="2528" />
-            <wire x2="2608" y1="928" y2="928" x1="2528" />
-        </branch>
-        <branch name="XLXN_32(7:0)">
-            <wire x2="1680" y1="816" y2="816" x1="1136" />
-            <wire x2="1136" y1="816" y2="928" x1="1136" />
-            <wire x2="1152" y1="928" y2="928" x1="1136" />
-            <wire x2="1680" y1="720" y2="816" x1="1680" />
-        </branch>
         <branch name="inc">
             <wire x2="1152" y1="992" y2="992" x1="1088" />
         </branch>
@@ -534,30 +471,27 @@
             <wire x2="2336" y1="1120" y2="1120" x1="2304" />
         </branch>
         <iomarker fontsize="28" x="2336" y="1120" name="c2(1:0)" orien="R0" />
-        <instance x="2448" y="384" name="XLXI_20" orien="R0">
-        </instance>
-        <instance x="2208" y="208" name="XLXI_21" orien="R0" />
-        <branch name="XLXN_67">
-            <wire x2="2272" y1="208" y2="224" x1="2272" />
-            <wire x2="2448" y1="224" y2="224" x1="2272" />
-            <wire x2="2272" y1="224" y2="288" x1="2272" />
-            <wire x2="2448" y1="288" y2="288" x1="2272" />
+        <branch name="XLXN_73(7:0)">
+            <wire x2="1808" y1="720" y2="928" x1="1808" />
+            <wire x2="1888" y1="928" y2="928" x1="1808" />
         </branch>
-        <branch name="hall5(2:0)">
-            <wire x2="2448" y1="352" y2="352" x1="2416" />
+        <branch name="XLXN_74(7:0)">
+            <wire x2="1744" y1="720" y2="800" x1="1744" />
+            <wire x2="2544" y1="800" y2="800" x1="1744" />
+            <wire x2="2544" y1="800" y2="928" x1="2544" />
+            <wire x2="2608" y1="928" y2="928" x1="2544" />
         </branch>
-        <iomarker fontsize="28" x="2416" y="352" name="hall5(2:0)" orien="R180" />
-        <branch name="a5(1:0)">
-            <wire x2="2864" y1="224" y2="224" x1="2832" />
+        <branch name="XLXN_75(7:0)">
+            <wire x2="1088" y1="832" y2="928" x1="1088" />
+            <wire x2="1152" y1="928" y2="928" x1="1088" />
+            <wire x2="1680" y1="832" y2="832" x1="1088" />
+            <wire x2="1680" y1="720" y2="832" x1="1680" />
         </branch>
-        <iomarker fontsize="28" x="2864" y="224" name="a5(1:0)" orien="R0" />
-        <branch name="b5(1:0)">
-            <wire x2="2864" y1="288" y2="288" x1="2832" />
+        <branch name="XLXN_76(7:0)">
+            <wire x2="304" y1="848" y2="944" x1="304" />
+            <wire x2="368" y1="944" y2="944" x1="304" />
+            <wire x2="1616" y1="848" y2="848" x1="304" />
+            <wire x2="1616" y1="720" y2="848" x1="1616" />
         </branch>
-        <iomarker fontsize="28" x="2864" y="288" name="b5(1:0)" orien="R0" />
-        <branch name="c5(1:0)">
-            <wire x2="2864" y1="352" y2="352" x1="2832" />
-        </branch>
-        <iomarker fontsize="28" x="2864" y="352" name="c5(1:0)" orien="R0" />
     </sheet>
 </drawing>

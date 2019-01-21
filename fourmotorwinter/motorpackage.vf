@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : motorpackage.vf
-// /___/   /\     Timestamp : 12/11/2018 09:38:44
+// /___/   /\     Timestamp : 01/12/2019 03:56:28
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -88,7 +88,6 @@ module motorpackage(en,
                     hall2, 
                     hall3, 
                     hall4, 
-                    hall5, 
                     inc, 
                     q1a, 
                     q1b, 
@@ -103,17 +102,14 @@ module motorpackage(en,
                     a2, 
                     a3, 
                     a4, 
-                    a5, 
                     b1, 
                     b2, 
                     b3, 
                     b4, 
-                    b5, 
                     c1, 
                     c2, 
                     c3, 
                     c4, 
-                    c5, 
                     tx);
 
     input en;
@@ -121,7 +117,6 @@ module motorpackage(en,
     input [2:0] hall2;
     input [2:0] hall3;
     input [2:0] hall4;
-    input [2:0] hall5;
     input inc;
     input q1a;
     input q1b;
@@ -136,25 +131,18 @@ module motorpackage(en,
    output [1:0] a2;
    output [1:0] a3;
    output [1:0] a4;
-   output [1:0] a5;
    output [1:0] b1;
    output [1:0] b2;
    output [1:0] b3;
    output [1:0] b4;
-   output [1:0] b5;
    output [1:0] c1;
    output [1:0] c2;
    output [1:0] c3;
    output [1:0] c4;
-   output [1:0] c5;
    output tx;
    
    wire XLXN_1;
    wire [7:0] XLXN_2;
-   wire [7:0] XLXN_31;
-   wire [7:0] XLXN_32;
-   wire [7:0] XLXN_33;
-   wire [7:0] XLXN_34;
    wire XLXN_38;
    wire [7:0] XLXN_39;
    wire [7:0] XLXN_41;
@@ -162,7 +150,10 @@ module motorpackage(en,
    wire [7:0] XLXN_44;
    wire [7:0] XLXN_45;
    wire XLXN_66;
-   wire XLXN_67;
+   wire [7:0] XLXN_73;
+   wire [7:0] XLXN_74;
+   wire [7:0] XLXN_75;
+   wire [7:0] XLXN_76;
    
    UART_Receiver  XLXI_5 (.i_Clk(inc), 
                          .i_RX_Serial(rxin), 
@@ -172,10 +163,10 @@ module motorpackage(en,
                        .received(XLXN_1), 
                        .rst_n(en), 
                        .serial(XLXN_2[7:0]), 
-                       .Motor1(XLXN_34[7:0]), 
-                       .Motor2(XLXN_33[7:0]), 
-                       .Motor3(XLXN_32[7:0]), 
-                       .Motor4(XLXN_31[7:0]));
+                       .Motor1(XLXN_73[7:0]), 
+                       .Motor2(XLXN_74[7:0]), 
+                       .Motor3(XLXN_75[7:0]), 
+                       .Motor4(XLXN_76[7:0]));
    txbuffer  XLXI_11 (.clk(inc), 
                      .motor1(XLXN_41[7:0]), 
                      .motor2(XLXN_43[7:0]), 
@@ -194,7 +185,7 @@ module motorpackage(en,
                                            .hall(hall4[2:0]), 
                                            .qa(q4a), 
                                            .qb(q4b), 
-                                           .setvalue(XLXN_31[7:0]), 
+                                           .setvalue(XLXN_76[7:0]), 
                                            .encoder(XLXN_45[7:0]), 
                                            .phase_a(a4[1:0]), 
                                            .phase_b(b4[1:0]), 
@@ -204,7 +195,7 @@ module motorpackage(en,
                                            .hall(hall3[2:0]), 
                                            .qa(q3a), 
                                            .qb(q3b), 
-                                           .setvalue(XLXN_32[7:0]), 
+                                           .setvalue(XLXN_75[7:0]), 
                                            .encoder(XLXN_44[7:0]), 
                                            .phase_a(a3[1:0]), 
                                            .phase_b(b3[1:0]), 
@@ -214,7 +205,7 @@ module motorpackage(en,
                                            .hall(hall2[2:0]), 
                                            .qa(q2a), 
                                            .qb(q2b), 
-                                           .setvalue(XLXN_33[7:0]), 
+                                           .setvalue(XLXN_73[7:0]), 
                                            .encoder(XLXN_43[7:0]), 
                                            .phase_a(a2[1:0]), 
                                            .phase_b(b2[1:0]), 
@@ -224,17 +215,10 @@ module motorpackage(en,
                                            .hall(hall1[2:0]), 
                                            .qa(q1a), 
                                            .qb(q1b), 
-                                           .setvalue(XLXN_34[7:0]), 
+                                           .setvalue(XLXN_74[7:0]), 
                                            .encoder(XLXN_41[7:0]), 
                                            .phase_a(a1[1:0]), 
                                            .phase_b(b1[1:0]), 
                                            .phase_c(c1[1:0]));
    GND  XLXI_19 (.G(XLXN_66));
-   gatedriver  XLXI_20 (.d(XLXN_67), 
-                       .h(hall5[2:0]), 
-                       .pwm(XLXN_67), 
-                       .a(a5[1:0]), 
-                       .b(b5[1:0]), 
-                       .c(c5[1:0]));
-   VCC  XLXI_21 (.P(XLXN_67));
 endmodule

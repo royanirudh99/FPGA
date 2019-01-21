@@ -15,5 +15,3 @@ MODULE motorpackage
 		INSTANCE XLXI_17
 	SUBMODULE motormodule
 		INSTANCE XLXI_18
-	SUBMODULE gatedriver
-		INSTANCE XLXI_20

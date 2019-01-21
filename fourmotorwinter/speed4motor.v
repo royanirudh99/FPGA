@@ -20,7 +20,8 @@ reg  [7 : 0] motor1 ;
 reg  [7 : 0] motor2 ;
 reg  [7 : 0] motor3 ;
 reg  [7 : 0] motor4 ;
-reg [1 : 0] count;
+reg [7:0]key;
+reg [2 : 0] count;
 //reg [1 : 0] delayed_count;
 
 always @ (posedge clk)
@@ -30,15 +31,21 @@ always @ (posedge clk)
 		motor2 <= 0;
 		motor3 <= 0;
 		motor4 <= 0;
+		count <=0;
+		key<=0;
 		end
 	else	if(received)	begin
 			count <= count + 1 ;
 //			delayed_count <= count ;
+
+	  
 			case (count)
-				2'b00 : motor1 <= serial ;
-				2'b01 : motor2 <= serial ;
-				2'b10 : motor3 <= serial ;
-				2'b11 : motor4 <= serial ;
+			   3'b000 : key <= serial;				
+				3'b001 : if(key == 8'b11111111) begin motor1 <= serial ;end
+				3'b010 : if(key == 8'b11111111) begin motor2 <= serial ;end
+				3'b011 : if(key == 8'b11111111) begin motor3 <= serial ;end
+				3'b100 : if(key == 8'b11111111) begin  motor4 <= serial ; key<=8'b00000000; count <=0; end
+		
 			endcase
 			end
 	end

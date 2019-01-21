@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-01-21T22:00:54</DateModified>
+  <DateModified>2019-01-22T01:03:04</DateModified>
   <ModuleName>motorpackage</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2019-01-22T00:59:20</SummaryTimeStamp>
   <SavedFilePath>E:/Xilinx/Projects/fourmotorwinter/iseconfig/motorpackage.xreport</SavedFilePath>
   <ImplementationReportsDirectory>E:/Xilinx/Projects/fourmotorwinter\</ImplementationReportsDirectory>
   <DateInitialized>2019-01-06T01:10:15</DateInitialized>

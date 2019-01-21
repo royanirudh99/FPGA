@@ -1,0 +1,30 @@
+//! **************************************************************************
+// Written by: Map P.20160913 on Tue Dec 11 09:39:55 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+CONFIG VCCAUX = "3.3";
+COMP "en" LOCATE = SITE "M18" LEVEL 1;
+COMP "q1a" LOCATE = SITE "V8" LEVEL 1;
+COMP "q1b" LOCATE = SITE "U8" LEVEL 1;
+COMP "q2a" LOCATE = SITE "H17" LEVEL 1;
+COMP "q2b" LOCATE = SITE "H18" LEVEL 1;
+COMP "inc" LOCATE = SITE "V10" LEVEL 1;
+COMP "rxin" LOCATE = SITE "U7" LEVEL 1;
+COMP "a1<0>" LOCATE = SITE "T9" LEVEL 1;
+COMP "a1<1>" LOCATE = SITE "V9" LEVEL 1;
+COMP "a2<0>" LOCATE = SITE "L15" LEVEL 1;
+COMP "a2<1>" LOCATE = SITE "L16" LEVEL 1;
+COMP "b1<0>" LOCATE = SITE "R5" LEVEL 1;
+COMP "b1<1>" LOCATE = SITE "T5" LEVEL 1;
+COMP "c1<0>" LOCATE = SITE "R8" LEVEL 1;
+COMP "c1<1>" LOCATE = SITE "T8" LEVEL 1;
+COMP "hall1<0>" LOCATE = SITE "T3" LEVEL 1;
+COMP "hall1<1>" LOCATE = SITE "R3" LEVEL 1;
+COMP "hall1<2>" LOCATE = SITE "V5" LEVEL 1;
+COMP "hall2<0>" LOCATE = SITE "V11" LEVEL 1;
+COMP "hall2<1>" LOCATE = SITE "U11" LEVEL 1;
+COMP "hall2<2>" LOCATE = SITE "V13" LEVEL 1;
+NET "inc_BUFGP/IBUFG" PERIOD = 10 ns HIGH 50%;
+SCHEMATIC END;
+

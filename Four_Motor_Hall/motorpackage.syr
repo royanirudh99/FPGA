@@ -1,0 +1,233 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> Reading design: motorpackage.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "motorpackage.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "motorpackage"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-csg324
+
+---- Source Options
+Top Module Name                    : motorpackage
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\Xilinx\Projects\Clock_Divider\Clock_Divider.v" into library work
+Parsing module <Clock_Divider>.
+Analyzing Verilog file "E:\Xilinx\Projects\Hall_Encoder\Hall_Encoder.v" into library work
+Parsing module <Hall_Encoder>.
+Analyzing Verilog file "E:\Xilinx\Projects\fourmotorwinter\zerobit.v" into library work
+Parsing module <zerobit>.
+Analyzing Verilog file "E:\Xilinx\Projects\fourmotorwinter\pwm.v" into library work
+Parsing module <pwm>.
+Analyzing Verilog file "E:\Xilinx\Projects\fourmotorwinter\pid.v" into library work
+Parsing module <pid>.
+WARNING:HDLCompiler:327 - "E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 42: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 47: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 53: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 58: Concatenation with unsized literal; will interpret as 32 bits
+Analyzing Verilog file "E:\Xilinx\Projects\fourmotorwinter\gatedriver.v" into library work
+Parsing module <gatedriver>.
+Analyzing Verilog file "E:\Xilinx\Projects\fourmotorwinter\directionbit.v" into library work
+Parsing module <directionbit>.
+Analyzing Verilog file "E:\Xilinx\Projects\fourmotorwinter\clock_divider.v" into library work
+Parsing module <clock_divider>.
+Analyzing Verilog file "E:\Xilinx\Projects\fourmotorwinter\clock.v" into library work
+Parsing module <clock>.
+Analyzing Verilog file "E:\Xilinx\Projects\fourmotorwinter\uart_tx.v" into library work
+Parsing module <transmiter>.
+Analyzing Verilog file "E:\Xilinx\Projects\fourmotorwinter\txbuffer.v" into library work
+Parsing module <txbuffer>.
+Analyzing Verilog file "E:\Xilinx\Projects\fourmotorwinter\speed4motor.v" into library work
+Parsing module <speed4motor>.
+Analyzing Verilog file "E:\Xilinx\Projects\fourmotorwinter\motormodule.vf" into library work
+Parsing module <motormodule>.
+Analyzing Verilog file "E:\Xilinx\Projects\fourmotorwinter\motorpackage.vf" into library work
+Parsing module <motormodule_MUSER_motorpackage>.
+Parsing module <motorpackage>.
+Parsing VHDL file "E:\Xilinx\Projects\fourmotorwinter\UART_Receiver.vhd" into library work
+Parsing entity <UART_Receiver>.
+Parsing architecture <rtl> of entity <uart_receiver>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:25 - "E:\Xilinx\Projects\fourmotorwinter\motorpackage.vf" Line 190: Module <motormodule_MUSER_motorpackage> does not have a port named <qa>.
+WARNING:HDLCompiler:25 - "E:\Xilinx\Projects\fourmotorwinter\motorpackage.vf" Line 191: Module <motormodule_MUSER_motorpackage> does not have a port named <qb>.
+WARNING:HDLCompiler:25 - "E:\Xilinx\Projects\fourmotorwinter\motorpackage.vf" Line 200: Module <motormodule_MUSER_motorpackage> does not have a port named <qa>.
+WARNING:HDLCompiler:25 - "E:\Xilinx\Projects\fourmotorwinter\motorpackage.vf" Line 201: Module <motormodule_MUSER_motorpackage> does not have a port named <qb>.
+WARNING:HDLCompiler:25 - "E:\Xilinx\Projects\fourmotorwinter\motorpackage.vf" Line 210: Module <motormodule_MUSER_motorpackage> does not have a port named <qa>.
+WARNING:HDLCompiler:25 - "E:\Xilinx\Projects\fourmotorwinter\motorpackage.vf" Line 211: Module <motormodule_MUSER_motorpackage> does not have a port named <qb>.
+WARNING:HDLCompiler:25 - "E:\Xilinx\Projects\fourmotorwinter\motorpackage.vf" Line 220: Module <motormodule_MUSER_motorpackage> does not have a port named <qa>.
+WARNING:HDLCompiler:25 - "E:\Xilinx\Projects\fourmotorwinter\motorpackage.vf" Line 221: Module <motormodule_MUSER_motorpackage> does not have a port named <qb>.
+
+Elaborating module <motorpackage>.
+Going to vhdl side to elaborate module UART_Receiver
+
+Elaborating entity <UART_Receiver> (architecture <rtl>) with generics from library <work>.
+INFO:HDLCompiler:679 - "E:\Xilinx\Projects\fourmotorwinter\UART_Receiver.vhd" Line 120. Case statement is complete. others clause is never selected
+Back to verilog to continue elaboration
+
+Elaborating module <speed4motor>.
+WARNING:HDLCompiler:413 - "E:\Xilinx\Projects\fourmotorwinter\speed4motor.v" Line 35: Result of 3-bit expression is truncated to fit in 2-bit target.
+
+Elaborating module <txbuffer>.
+WARNING:HDLCompiler:413 - "E:\Xilinx\Projects\fourmotorwinter\txbuffer.v" Line 36: Result of 3-bit expression is truncated to fit in 2-bit target.
+
+Elaborating module <transmiter>.
+WARNING:HDLCompiler:872 - "E:\Xilinx\Projects\fourmotorwinter\uart_tx.v" Line 23: Using initial value of IN since it is never assigned
+
+Elaborating module <clock_divider>.
+WARNING:HDLCompiler:413 - "E:\Xilinx\Projects\fourmotorwinter\clock_divider.v" Line 19: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:189 - "E:\Xilinx\Projects\fourmotorwinter\uart_tx.v" Line 27: Size mismatch in connection of port <IN>. Formal port size is 16-bit while actual signal size is 9-bit.
+
+Elaborating module <motormodule_MUSER_motorpackage>.
+WARNING:HDLCompiler:327 - "E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 42: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 47: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 53: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 58: Concatenation with unsized literal; will interpret as 32 bits
+
+Elaborating module <pid>.
+WARNING:HDLCompiler:872 - "E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 18: Using initial value of k1 since it is never assigned
+WARNING:HDLCompiler:872 - "E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 19: Using initial value of k2 since it is never assigned
+WARNING:HDLCompiler:872 - "E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 20: Using initial value of k3 since it is never assigned
+WARNING:HDLCompiler:413 - "E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 42: Result of 770-bit expression is truncated to fit in 25-bit target.
+WARNING:HDLCompiler:413 - "E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 53: Result of 770-bit expression is truncated to fit in 25-bit target.
+WARNING:HDLCompiler:413 - "E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 72: Result of 19-bit expression is truncated to fit in 18-bit target.
+WARNING:HDLCompiler:413 - "E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 78: Result of 32-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <zerobit>.
+WARNING:HDLCompiler:634 - "E:\Xilinx\Projects\fourmotorwinter\zerobit.v" Line 27: Net <k[7]> does not have a driver.
+
+Elaborating module <directionbit>.
+WARNING:HDLCompiler:91 - "E:\Xilinx\Projects\fourmotorwinter\directionbit.v" Line 11: Signal <insignal1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <pwm>.
+WARNING:HDLCompiler:413 - "E:\Xilinx\Projects\fourmotorwinter\pwm.v" Line 23: Result of 9-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <clock>.
+WARNING:HDLCompiler:413 - "E:\Xilinx\Projects\fourmotorwinter\clock.v" Line 16: Result of 9-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <gatedriver>.
+WARNING:HDLCompiler:91 - "E:\Xilinx\Projects\fourmotorwinter\gatedriver.v" Line 28: Signal <d> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\Xilinx\Projects\fourmotorwinter\gatedriver.v" Line 29: Signal <d> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\Xilinx\Projects\fourmotorwinter\gatedriver.v" Line 30: Signal <d> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\Xilinx\Projects\fourmotorwinter\gatedriver.v" Line 31: Signal <d> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\Xilinx\Projects\fourmotorwinter\gatedriver.v" Line 32: Signal <d> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\Xilinx\Projects\fourmotorwinter\gatedriver.v" Line 33: Signal <d> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <Hall_Encoder>.
+WARNING:HDLCompiler:872 - "E:\Xilinx\Projects\Hall_Encoder\Hall_Encoder.v" Line 22: Using initial value of Time since it is never assigned
+
+Elaborating module <Clock_Divider>.
+WARNING:HDLCompiler:413 - "E:\Xilinx\Projects\Clock_Divider\Clock_Divider.v" Line 19: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "E:\Xilinx\Projects\Hall_Encoder\Hall_Encoder.v" Line 50: Result of 9-bit expression is truncated to fit in 8-bit target.
+ERROR:HDLCompiler:658 - "E:\Xilinx\Projects\Hall_Encoder\Hall_Encoder.v" Line 60: No support for synthesis of mixed edge and level triggers.
+Module Hall_Encoder remains a blackbox, due to errors in its contents
+WARNING:HDLCompiler:1499 - "E:\Xilinx\Projects\Hall_Encoder\Hall_Encoder.v" Line 21: Empty module <Hall_Encoder> remains a black box.
+WARNING:HDLCompiler:552 - "E:\Xilinx\Projects\fourmotorwinter\motorpackage.vf" Line 60: Input port cl is not connected on this instance
+ERROR:HDLCompiler:267 - "E:\Xilinx\Projects\fourmotorwinter\motorpackage.vf" Line 190: Cannot find port qa on this module
+ERROR:HDLCompiler:267 - "E:\Xilinx\Projects\fourmotorwinter\motorpackage.vf" Line 191: Cannot find port qb on this module
+Module motorpackage remains a blackbox, due to errors in its contents
+WARNING:HDLCompiler:1499 - "E:\Xilinx\Projects\fourmotorwinter\motorpackage.vf" Line 81: Empty module <motorpackage> remains a black box.
+--> 
+
+Total memory usage is 203420 kilobytes
+
+Number of errors   :    3 (   0 filtered)
+Number of warnings :   44 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

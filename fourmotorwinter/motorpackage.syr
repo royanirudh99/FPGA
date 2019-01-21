@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 Reading design: motorpackage.prj
@@ -49,7 +49,7 @@ Ignore Synthesis Constraint File   : NO
 ---- Target Parameters
 Output File Name                   : "motorpackage"
 Output Format                      : NGC
-Target Device                      : xc6slx9-3-csg324
+Target Device                      : xc6slx9-3-tqg144
 
 ---- Source Options
 Top Module Name                    : motorpackage
@@ -155,7 +155,7 @@ INFO:HDLCompiler:679 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwi
 Back to verilog to continue elaboration
 
 Elaborating module <speed4motor>.
-WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/speed4motor.v" Line 35: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/speed4motor.v" Line 38: Result of 4-bit expression is truncated to fit in 3-bit target.
 
 Elaborating module <txbuffer>.
 WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/txbuffer.v" Line 36: Result of 3-bit expression is truncated to fit in 2-bit target.
@@ -195,12 +195,12 @@ Elaborating module <clock>.
 WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/clock.v" Line 16: Result of 9-bit expression is truncated to fit in 8-bit target.
 
 Elaborating module <gatedriver>.
-WARNING:HDLCompiler:91 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/gatedriver.v" Line 28: Signal <d> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 WARNING:HDLCompiler:91 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/gatedriver.v" Line 29: Signal <d> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 WARNING:HDLCompiler:91 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/gatedriver.v" Line 30: Signal <d> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 WARNING:HDLCompiler:91 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/gatedriver.v" Line 31: Signal <d> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 WARNING:HDLCompiler:91 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/gatedriver.v" Line 32: Signal <d> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 WARNING:HDLCompiler:91 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/gatedriver.v" Line 33: Signal <d> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/gatedriver.v" Line 34: Signal <d> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 
 Elaborating module <decoder>.
 WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/decoder.v" Line 33: Result of 19-bit expression is truncated to fit in 18-bit target.
@@ -208,8 +208,6 @@ WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/not my codes/fourmoto
 WARNING:HDLCompiler:552 - "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/motorpackage.vf" Line 64: Input port cl is not connected on this instance
 
 Elaborating module <GND>.
-
-Elaborating module <VCC>.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -223,10 +221,10 @@ Unit <motorpackage> synthesized.
 
 Synthesizing Unit <UART_Receiver>.
     Related source file is "/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/UART_Receiver.vhd".
-        g_CLKS_PER_BIT = 400
+        g_CLKS_PER_BIT = 115
     Found 1-bit register for signal <r_RX_Data>.
     Found 1-bit register for signal <r_RX_DV>.
-    Found 9-bit register for signal <r_Clk_Count>.
+    Found 7-bit register for signal <r_Clk_Count>.
     Found 3-bit register for signal <r_Bit_Index>.
     Found 3-bit register for signal <r_SM_Main>.
     Found 8-bit register for signal <r_RX_Byte>.
@@ -243,12 +241,12 @@ Synthesizing Unit <UART_Receiver>.
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Found 3-bit adder for signal <r_Bit_Index[2]_GND_5_o_add_11_OUT> created at line 92.
-    Found 9-bit adder for signal <r_Clk_Count[8]_GND_5_o_add_19_OUT> created at line 105.
+    Found 7-bit adder for signal <r_Clk_Count[6]_GND_5_o_add_19_OUT> created at line 105.
     Found 3-bit comparator greater for signal <r_Bit_Index[2]_PWR_5_o_LessThan_11_o> created at line 91
-    Found 9-bit comparator greater for signal <r_Clk_Count[8]_PWR_5_o_LessThan_19_o> created at line 104
+    Found 7-bit comparator greater for signal <r_Clk_Count[6]_PWR_5_o_LessThan_19_o> created at line 104
     Summary:
 	inferred   2 Adder/Subtractor(s).
-	inferred  23 D-type flip-flop(s).
+	inferred  21 D-type flip-flop(s).
 	inferred   2 Comparator(s).
 	inferred  14 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
@@ -259,12 +257,14 @@ Synthesizing Unit <speed4motor>.
     Found 8-bit register for signal <motor2>.
     Found 8-bit register for signal <motor3>.
     Found 8-bit register for signal <motor4>.
-    Found 2-bit register for signal <count>.
+    Found 3-bit register for signal <count>.
+    Found 8-bit register for signal <key>.
     Found 8-bit register for signal <motor1>.
-    Found 2-bit adder for signal <count[1]_GND_6_o_add_1_OUT> created at line 35.
+    Found 3-bit adder for signal <count[2]_GND_6_o_add_1_OUT> created at line 38.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  34 D-type flip-flop(s).
+	inferred  43 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
 Unit <speed4motor> synthesized.
 
 Synthesizing Unit <txbuffer>.
@@ -358,7 +358,7 @@ Synthesizing Unit <pwm>.
     Found 8-bit register for signal <tmp>.
     Found 1-bit register for signal <k>.
     Found 8-bit adder for signal <tmp[7]_GND_17_o_add_2_OUT> created at line 23.
-    Found 8-bit comparator greater for signal <k_tmp[7]_MUX_241_o> created at line 25
+    Found 8-bit comparator greater for signal <k_tmp[7]_MUX_237_o> created at line 25
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   9 D-type flip-flop(s).
@@ -407,40 +407,40 @@ Macro Statistics
 # Adders/Subtractors                                   : 38
  16-bit adder                                          : 1
  18-bit adder                                          : 8
- 2-bit adder                                           : 2
- 3-bit adder                                           : 1
+ 2-bit adder                                           : 1
+ 3-bit adder                                           : 2
  32-bit adder                                          : 4
  32-bit subtractor                                     : 4
  4-bit adder                                           : 1
+ 7-bit adder                                           : 1
  8-bit adder                                           : 12
  8-bit subtractor                                      : 4
- 9-bit adder                                           : 1
-# Registers                                            : 86
+# Registers                                            : 87
  1-bit register                                        : 14
  16-bit register                                       : 1
  18-bit register                                       : 8
- 2-bit register                                        : 2
- 3-bit register                                        : 9
+ 2-bit register                                        : 1
+ 3-bit register                                        : 10
  32-bit register                                       : 8
  4-bit register                                        : 1
  64-bit register                                       : 4
- 8-bit register                                        : 38
- 9-bit register                                        : 1
+ 7-bit register                                        : 1
+ 8-bit register                                        : 39
 # Comparators                                          : 10
  3-bit comparator greater                              : 1
  32-bit comparator greater                             : 4
+ 7-bit comparator greater                              : 1
  8-bit comparator greater                              : 4
- 9-bit comparator greater                              : 1
 # Multiplexers                                         : 65
  1-bit 2-to-1 multiplexer                              : 20
  16-bit 2-to-1 multiplexer                             : 1
  18-bit 2-to-1 multiplexer                             : 8
- 2-bit 2-to-1 multiplexer                              : 15
- 3-bit 2-to-1 multiplexer                              : 2
+ 2-bit 2-to-1 multiplexer                              : 12
+ 3-bit 2-to-1 multiplexer                              : 4
  4-bit 2-to-1 multiplexer                              : 2
- 8-bit 2-to-1 multiplexer                              : 12
+ 7-bit 2-to-1 multiplexer                              : 4
+ 8-bit 2-to-1 multiplexer                              : 13
  8-bit 4-to-1 multiplexer                              : 1
- 9-bit 2-to-1 multiplexer                              : 4
 # FSMs                                                 : 1
 # Xors                                                 : 4
  1-bit xor4                                            : 4
@@ -615,10 +615,6 @@ Synthesizing (advanced) Unit <pwm>.
 The following registers are absorbed into counter <tmp>: 1 register on signal <tmp>.
 Unit <pwm> synthesized (advanced).
 
-Synthesizing (advanced) Unit <speed4motor>.
-The following registers are absorbed into counter <count>: 1 register on signal <count>.
-Unit <speed4motor> synthesized (advanced).
-
 Synthesizing (advanced) Unit <txbuffer>.
 The following registers are absorbed into counter <count>: 1 register on signal <count>.
 Unit <txbuffer> synthesized (advanced).
@@ -663,33 +659,33 @@ Macro Statistics
  8x6-to-32-bit MAC                                     : 4
 # Multipliers                                          : 4
  32x5-bit multiplier                                   : 4
-# Adders/Subtractors                                   : 15
- 3-bit adder                                           : 1
+# Adders/Subtractors                                   : 16
+ 3-bit adder                                           : 2
  32-bit subtractor                                     : 4
  4-bit adder                                           : 1
+ 7-bit adder                                           : 1
  8-bit adder                                           : 4
  8-bit subtractor                                      : 4
- 9-bit adder                                           : 1
-# Counters                                             : 23
+# Counters                                             : 22
  16-bit up counter                                     : 1
  18-bit up counter                                     : 8
- 2-bit up counter                                      : 2
+ 2-bit up counter                                      : 1
  8-bit up counter                                      : 12
-# Registers                                            : 518
- Flip-Flops                                            : 518
+# Registers                                            : 527
+ Flip-Flops                                            : 527
 # Comparators                                          : 10
  3-bit comparator greater                              : 1
  32-bit comparator greater                             : 4
+ 7-bit comparator greater                              : 1
  8-bit comparator greater                              : 4
- 9-bit comparator greater                              : 1
 # Multiplexers                                         : 52
  1-bit 2-to-1 multiplexer                              : 20
- 2-bit 2-to-1 multiplexer                              : 15
- 3-bit 2-to-1 multiplexer                              : 2
+ 2-bit 2-to-1 multiplexer                              : 12
+ 3-bit 2-to-1 multiplexer                              : 4
  4-bit 2-to-1 multiplexer                              : 2
- 8-bit 2-to-1 multiplexer                              : 8
+ 7-bit 2-to-1 multiplexer                              : 4
+ 8-bit 2-to-1 multiplexer                              : 9
  8-bit 4-to-1 multiplexer                              : 1
- 9-bit 2-to-1 multiplexer                              : 4
 # FSMs                                                 : 1
 # Xors                                                 : 4
  1-bit xor4                                            : 4
@@ -753,14 +749,14 @@ INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_1/ticker_7> in Unit <motorpackage> is
 INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_1/ticker_8> in Unit <motorpackage> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_17/XLXI_1/ticker_8> <XLXI_15/XLXI_1/ticker_8> <XLXI_14/XLXI_1/ticker_8> <XLXI_18/XLXI_7/ticker_8> <XLXI_17/XLXI_7/ticker_8> <XLXI_15/XLXI_7/ticker_8> <XLXI_14/XLXI_7/ticker_8> 
 INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_1/ticker_9> in Unit <motorpackage> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_17/XLXI_1/ticker_9> <XLXI_15/XLXI_1/ticker_9> <XLXI_14/XLXI_1/ticker_9> <XLXI_18/XLXI_7/ticker_9> <XLXI_17/XLXI_7/ticker_9> <XLXI_15/XLXI_7/ticker_9> <XLXI_14/XLXI_7/ticker_9> 
 INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_5/m> in Unit <motorpackage> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_17/XLXI_5/m> <XLXI_15/XLXI_5/m> <XLXI_14/XLXI_5/m> 
-INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_5/k_0> in Unit <motorpackage> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_14/XLXI_5/k_0> <XLXI_17/XLXI_5/k_0> <XLXI_15/XLXI_5/k_0> 
-INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_5/k_1> in Unit <motorpackage> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_14/XLXI_5/k_1> <XLXI_17/XLXI_5/k_1> <XLXI_15/XLXI_5/k_1> 
-INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_5/k_2> in Unit <motorpackage> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_14/XLXI_5/k_2> <XLXI_17/XLXI_5/k_2> <XLXI_15/XLXI_5/k_2> 
-INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_5/k_3> in Unit <motorpackage> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_14/XLXI_5/k_3> <XLXI_17/XLXI_5/k_3> <XLXI_15/XLXI_5/k_3> 
-INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_5/k_4> in Unit <motorpackage> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_14/XLXI_5/k_4> <XLXI_17/XLXI_5/k_4> <XLXI_15/XLXI_5/k_4> 
-INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_5/k_5> in Unit <motorpackage> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_14/XLXI_5/k_5> <XLXI_17/XLXI_5/k_5> <XLXI_15/XLXI_5/k_5> 
-INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_5/k_6> in Unit <motorpackage> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_14/XLXI_5/k_6> <XLXI_17/XLXI_5/k_6> <XLXI_15/XLXI_5/k_6> 
-INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_5/k_7> in Unit <motorpackage> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_14/XLXI_5/k_7> <XLXI_17/XLXI_5/k_7> <XLXI_15/XLXI_5/k_7> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_5/k_0> in Unit <motorpackage> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_17/XLXI_5/k_0> <XLXI_15/XLXI_5/k_0> <XLXI_14/XLXI_5/k_0> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_5/k_1> in Unit <motorpackage> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_17/XLXI_5/k_1> <XLXI_15/XLXI_5/k_1> <XLXI_14/XLXI_5/k_1> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_5/k_2> in Unit <motorpackage> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_17/XLXI_5/k_2> <XLXI_15/XLXI_5/k_2> <XLXI_14/XLXI_5/k_2> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_5/k_3> in Unit <motorpackage> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_17/XLXI_5/k_3> <XLXI_15/XLXI_5/k_3> <XLXI_14/XLXI_5/k_3> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_5/k_4> in Unit <motorpackage> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_17/XLXI_5/k_4> <XLXI_15/XLXI_5/k_4> <XLXI_14/XLXI_5/k_4> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_5/k_5> in Unit <motorpackage> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_17/XLXI_5/k_5> <XLXI_15/XLXI_5/k_5> <XLXI_14/XLXI_5/k_5> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_5/k_6> in Unit <motorpackage> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_17/XLXI_5/k_6> <XLXI_15/XLXI_5/k_6> <XLXI_14/XLXI_5/k_6> 
+INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_5/k_7> in Unit <motorpackage> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_17/XLXI_5/k_7> <XLXI_15/XLXI_5/k_7> <XLXI_14/XLXI_5/k_7> 
 INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_1/ticker_10> in Unit <motorpackage> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_17/XLXI_1/ticker_10> <XLXI_15/XLXI_1/ticker_10> <XLXI_14/XLXI_1/ticker_10> <XLXI_18/XLXI_7/ticker_10> <XLXI_17/XLXI_7/ticker_10> <XLXI_15/XLXI_7/ticker_10> <XLXI_14/XLXI_7/ticker_10> 
 INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_1/ticker_11> in Unit <motorpackage> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_17/XLXI_1/ticker_11> <XLXI_15/XLXI_1/ticker_11> <XLXI_14/XLXI_1/ticker_11> <XLXI_18/XLXI_7/ticker_11> <XLXI_17/XLXI_7/ticker_11> <XLXI_15/XLXI_7/ticker_11> <XLXI_14/XLXI_7/ticker_11> 
 INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_1/ticker_12> in Unit <motorpackage> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_17/XLXI_1/ticker_12> <XLXI_15/XLXI_1/ticker_12> <XLXI_14/XLXI_1/ticker_12> <XLXI_18/XLXI_7/ticker_12> <XLXI_17/XLXI_7/ticker_12> <XLXI_15/XLXI_7/ticker_12> <XLXI_14/XLXI_7/ticker_12> 
@@ -772,7 +768,7 @@ INFO:Xst:2261 - The FF/Latch <XLXI_18/XLXI_1/ticker_17> in Unit <motorpackage> i
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block motorpackage, actual ratio is 12.
+Found area constraint ratio of 100 (+ 5) on block motorpackage, actual ratio is 13.
 
 Final Macro Processing ...
 
@@ -792,8 +788,8 @@ Unit <motorpackage> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 369
- Flip-Flops                                            : 369
+# Registers                                            : 376
+ Flip-Flops                                            : 376
 # Shift Registers                                      : 9
  2-bit shift register                                  : 9
 
@@ -818,58 +814,57 @@ Top Level Output File Name         : motorpackage.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 794
+# BELS                             : 787
 #      GND                         : 1
-#      INV                         : 15
+#      INV                         : 14
 #      LUT1                        : 63
-#      LUT2                        : 85
-#      LUT3                        : 39
-#      LUT4                        : 81
-#      LUT5                        : 96
-#      LUT6                        : 70
+#      LUT2                        : 87
+#      LUT3                        : 32
+#      LUT4                        : 82
+#      LUT5                        : 102
+#      LUT6                        : 64
 #      MUXCY                       : 171
-#      MUXF7                       : 2
 #      VCC                         : 1
 #      XORCY                       : 170
-# FlipFlops/Latches                : 378
+# FlipFlops/Latches                : 385
 #      FD                          : 113
-#      FDE                         : 75
+#      FDE                         : 71
 #      FDR                         : 26
-#      FDRE                        : 164
+#      FDRE                        : 175
 # Shift Registers                  : 9
 #      SRLC16E                     : 9
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 56
-#      IBUF                        : 25
-#      OBUF                        : 31
+# IO Buffers                       : 47
+#      IBUF                        : 22
+#      OBUF                        : 25
 # DSPs                             : 8
 #      DSP48A1                     : 8
 
 Device utilization summary:
 ---------------------------
 
-Selected Device : 6slx9csg324-3 
+Selected Device : 6slx9tqg144-3 
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             378  out of  11440     3%  
- Number of Slice LUTs:                  458  out of   5720     8%  
-    Number used as Logic:               449  out of   5720     7%  
+ Number of Slice Registers:             385  out of  11440     3%  
+ Number of Slice LUTs:                  453  out of   5720     7%  
+    Number used as Logic:               444  out of   5720     7%  
     Number used as Memory:                9  out of   1440     0%  
        Number used as SRL:                9
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    625
-   Number with an unused Flip Flop:     247  out of    625    39%  
-   Number with an unused LUT:           167  out of    625    26%  
-   Number of fully used LUT-FF pairs:   211  out of    625    33%  
-   Number of unique control sets:        26
+ Number of LUT Flip Flop pairs used:    626
+   Number with an unused Flip Flop:     241  out of    626    38%  
+   Number with an unused LUT:           173  out of    626    27%  
+   Number of fully used LUT-FF pairs:   212  out of    626    33%  
+   Number of unique control sets:        27
 
 IO Utilization: 
- Number of IOs:                          57
- Number of bonded IOBs:                  57  out of    200    28%  
+ Number of IOs:                          48
+ Number of bonded IOBs:                  48  out of    102    47%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
@@ -897,7 +892,7 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
 XLXI_18/XLXI_5/m                   | BUFG                   | 36    |
-inc                                | BUFGP                  | 353   |
+inc                                | BUFGP                  | 360   |
 XLXI_13/CD1/OUT                    | NONE(XLXI_13/k)        | 6     |
 -----------------------------------+------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -911,7 +906,7 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: 7.202ns (Maximum Frequency: 138.854MHz)
-   Minimum input arrival time before clock: 5.246ns
+   Minimum input arrival time before clock: 5.260ns
    Maximum output required time after clock: 4.792ns
    Maximum combinational path delay: 5.505ns
 
@@ -938,9 +933,9 @@ Delay:               6.287ns (Levels of Logic = 6)
      LUT5:I0->O           10   0.203   0.857  XLXI_18/XLXI_4/tmp[7]_GND_17_o_equal_2_o<7>11 (XLXI_18/XLXI_4/Madd_tmp[7]_GND_17_o_add_2_OUT_cy<4>)
      LUT4:I3->O            5   0.205   0.715  XLXI_18/XLXI_4/tmp[7]_GND_17_o_equal_2_o<7>2 (XLXI_18/XLXI_4/tmp[7]_GND_17_o_equal_2_o)
      LUT4:I3->O            2   0.205   0.721  XLXI_18/XLXI_4/Mmux_tmp[7]_tmp[7]_mux_5_OUT71 (XLXI_18/XLXI_4/tmp[7]_tmp[7]_mux_5_OUT<6>)
-     LUT6:I4->O            1   0.203   0.580  XLXI_18/XLXI_4/k_tmp[7]_MUX_241_o22 (XLXI_18/XLXI_4/k_tmp[7]_MUX_241_o21)
-     LUT6:I5->O            1   0.205   0.580  XLXI_18/XLXI_4/k_tmp[7]_MUX_241_o24 (XLXI_18/XLXI_4/k_tmp[7]_MUX_241_o23)
-     LUT6:I5->O            1   0.205   0.000  XLXI_18/XLXI_4/k_tmp[7]_MUX_241_o25 (XLXI_18/XLXI_4/k_tmp[7]_MUX_241_o)
+     LUT6:I4->O            1   0.203   0.580  XLXI_18/XLXI_4/k_tmp[7]_MUX_237_o22 (XLXI_18/XLXI_4/k_tmp[7]_MUX_237_o21)
+     LUT6:I5->O            1   0.205   0.580  XLXI_18/XLXI_4/k_tmp[7]_MUX_237_o24 (XLXI_18/XLXI_4/k_tmp[7]_MUX_237_o23)
+     LUT6:I5->O            1   0.205   0.000  XLXI_18/XLXI_4/k_tmp[7]_MUX_237_o25 (XLXI_18/XLXI_4/k_tmp[7]_MUX_237_o)
      FDE:D                     0.102          XLXI_18/XLXI_4/k
     ----------------------------------------
     Total                      6.287ns (1.775ns logic, 4.512ns route)
@@ -949,7 +944,7 @@ Delay:               6.287ns (Levels of Logic = 6)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'inc'
   Clock period: 7.202ns (frequency: 138.854MHz)
-  Total number of paths / destination ports: 19011 / 1116
+  Total number of paths / destination ports: 19248 / 1130
 -------------------------------------------------------------------------
 Delay:               7.202ns (Levels of Logic = 1)
   Source:            XLXI_18/XLXI_1/error_7 (FF)
@@ -995,7 +990,7 @@ Delay:               2.831ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_18/XLXI_5/m'
   Total number of paths / destination ports: 36 / 36
 -------------------------------------------------------------------------
-Offset:              3.034ns (Levels of Logic = 1)
+Offset:              3.020ns (Levels of Logic = 1)
   Source:            en (PAD)
   Destination:       XLXI_18/XLXI_4/k (FF)
   Destination Clock: XLXI_18/XLXI_5/m rising
@@ -1004,17 +999,17 @@ Offset:              3.034ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            46   1.222   1.490  en_IBUF (en_IBUF)
+     IBUF:I->O            45   1.222   1.476  en_IBUF (en_IBUF)
      FDE:CE                    0.322          XLXI_18/XLXI_4/k
     ----------------------------------------
-    Total                      3.034ns (1.544ns logic, 1.490ns route)
-                                       (50.9% logic, 49.1% route)
+    Total                      3.020ns (1.544ns logic, 1.476ns route)
+                                       (51.1% logic, 48.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'inc'
-  Total number of paths / destination ports: 231 / 231
+  Total number of paths / destination ports: 240 / 240
 -------------------------------------------------------------------------
-Offset:              5.246ns (Levels of Logic = 2)
+Offset:              5.260ns (Levels of Logic = 2)
   Source:            en (PAD)
   Destination:       XLXI_18/XLXI_1/e_prev_2_39 (FF)
   Destination Clock: inc rising
@@ -1023,12 +1018,12 @@ Offset:              5.246ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            46   1.222   1.490  en_IBUF (en_IBUF)
-     INV:I->O            108   0.206   1.898  XLXI_18/XLXI_1/rst_n_inv1_INV_0 (XLXI_11/rst_n_inv)
+     IBUF:I->O            45   1.222   1.476  en_IBUF (en_IBUF)
+     INV:I->O            119   0.206   1.927  XLXI_18/XLXI_1/rst_n_inv1_INV_0 (XLXI_11/rst_n_inv)
      FDRE:R                    0.430          XLXI_11/serial_0
     ----------------------------------------
-    Total                      5.246ns (1.858ns logic, 3.388ns route)
-                                       (35.4% logic, 64.6% route)
+    Total                      5.260ns (1.858ns logic, 3.402ns route)
+                                       (35.3% logic, 64.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_18/XLXI_5/m'
@@ -1055,15 +1050,15 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'inc'
   Total number of paths / destination ports: 24 / 24
 -------------------------------------------------------------------------
 Offset:              4.547ns (Levels of Logic = 2)
-  Source:            XLXI_6/motor1_7 (FF)
+  Source:            XLXI_6/motor2_7 (FF)
   Destination:       a1<1> (PAD)
   Source Clock:      inc rising
 
-  Data Path: XLXI_6/motor1_7 to a1<1>
+  Data Path: XLXI_6/motor2_7 to a1<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             6   0.447   0.745  XLXI_6/motor1_7 (XLXI_6/motor1_7)
+     FDRE:C->Q             6   0.447   0.745  XLXI_6/motor2_7 (XLXI_6/motor2_7)
      LUT4:I3->O            1   0.205   0.579  XLXI_18/XLXI_6/Mmux_l11 (b1_0_OBUF)
      OBUF:I->O                 2.571          b1_0_OBUF (b1<0>)
     ----------------------------------------
@@ -1091,7 +1086,7 @@ Offset:              3.597ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 60 / 30
+  Total number of paths / destination ports: 48 / 24
 -------------------------------------------------------------------------
 Delay:               5.505ns (Levels of Logic = 3)
   Source:            hall1<0> (PAD)
@@ -1143,13 +1138,13 @@ inc            |    7.202|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 21.00 secs
-Total CPU time to Xst completion: 17.20 secs
+Total REAL time to Xst completion: 29.00 secs
+Total CPU time to Xst completion: 23.57 secs
  
 --> 
 
 
-Total memory usage is 487464 kilobytes
+Total memory usage is 487460 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  224 (   0 filtered)

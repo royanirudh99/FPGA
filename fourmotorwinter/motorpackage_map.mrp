@@ -3,31 +3,31 @@ Xilinx Mapping Report File for Design 'motorpackage'
 
 Design Information
 ------------------
-Command Line   : map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol
+Command Line   : map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol
 high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
 -pr off -lc off -power off -o motorpackage_map.ncd motorpackage.ngd
 motorpackage.pcf 
 Target Device  : xc6slx9
-Target Package : csg324
+Target Package : tqg144
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Tue Dec 11 09:39:25 2018
+Mapped Date    : Sat Jan 12 07:48:19 2019
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    0
 Slice Logic Utilization:
-  Number of Slice Registers:                   378 out of  11,440    3%
-    Number used as Flip Flops:                 378
+  Number of Slice Registers:                   385 out of  11,440    3%
+    Number used as Flip Flops:                 385
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        396 out of   5,720    6%
-    Number used as logic:                      377 out of   5,720    6%
-      Number using O6 output only:             209
+  Number of Slice LUTs:                        390 out of   5,720    6%
+    Number used as logic:                      370 out of   5,720    6%
+      Number using O6 output only:             200
       Number using O5 output only:              52
-      Number using O5 and O6:                  116
+      Number using O5 and O6:                  118
       Number used as ROM:                        0
     Number used as Memory:                       5 out of   1,440    1%
       Number used as Dual Port RAM:              0
@@ -36,21 +36,21 @@ Slice Logic Utilization:
         Number using O6 output only:             1
         Number using O5 output only:             0
         Number using O5 and O6:                  4
-    Number used exclusively as route-thrus:     14
-      Number with same-slice register load:      3
+    Number used exclusively as route-thrus:     15
+      Number with same-slice register load:      4
       Number with same-slice carry load:        11
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   178 out of   1,430   12%
+  Number of occupied Slices:                   170 out of   1,430   11%
   Number of MUXCYs used:                       212 out of   2,860    7%
-  Number of LUT Flip Flop pairs used:          536
-    Number with an unused Flip Flop:           196 out of     536   36%
-    Number with an unused LUT:                 140 out of     536   26%
-    Number of fully used LUT-FF pairs:         200 out of     536   37%
-    Number of unique control sets:              26
+  Number of LUT Flip Flop pairs used:          527
+    Number with an unused Flip Flop:           178 out of     527   33%
+    Number with an unused LUT:                 137 out of     527   25%
+    Number of fully used LUT-FF pairs:         212 out of     527   40%
+    Number of unique control sets:              27
     Number of slice register sites lost
-      to control set restrictions:              53 out of  11,440    1%
+      to control set restrictions:              46 out of  11,440    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -59,8 +59,8 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        57 out of     200   28%
-    Number of LOCed IOBs:                       21 out of      57   36%
+  Number of bonded IOBs:                        48 out of     102   47%
+    Number of LOCed IOBs:                       48 out of      48  100%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -89,9 +89,9 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                2.82
 
-Peak Memory Usage:  764 MB
-Total REAL time to MAP completion:  31 secs 
-Total CPU time to MAP completion:   29 secs 
+Peak Memory Usage:  765 MB
+Total REAL time to MAP completion:  34 secs 
+Total CPU time to MAP completion:   32 secs 
 
 Table of Contents
 -----------------
@@ -122,17 +122,12 @@ Section 3 - Informational
 -------------------------
 INFO:Security:54 - 'xc6slx9' is a WebPack part.
 INFO:MapLib:562 - No environment variables are currently set.
-INFO:MapLib:159 - Net Timing constraints on signal inc are pushed forward
-   through input buffer.
 INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
    0.000 to 85.000 Celsius)
 INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
    1.260 Volts)
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
-INFO:Place:834 - Only a subset of IOs are locked. Out of 57 IOs, 21 are locked
-   and 36 are not locked. If you would like to print the names of these IOs,
-   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
 INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
@@ -145,7 +140,7 @@ Section 5 - Removed Logic
 Optimized Block(s):
 TYPE 		BLOCK
 GND 		XLXI_19
-VCC 		XLXI_21
+VCC 		XST_VCC
 
 To enable printing of redundant blocks removed and signals merged, set the
 detailed map report option and rerun map.
@@ -161,32 +156,26 @@ Section 6 - IOB Properties
 | a1<1>                              | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          |          |
 | a2<0>                              | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          |          |
 | a2<1>                              | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          |          |
-| a3<0>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| a3<1>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| a4<0>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| a4<1>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| a5<0>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| a5<1>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| a3<0>                              | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          |          |
+| a3<1>                              | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          |          |
+| a4<0>                              | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          |          |
+| a4<1>                              | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          |          |
 | b1<0>                              | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          |          |
 | b1<1>                              | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          |          |
-| b2<0>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| b2<1>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| b3<0>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| b3<1>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| b4<0>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| b4<1>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| b5<0>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| b5<1>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| b2<0>                              | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          |          |
+| b2<1>                              | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          |          |
+| b3<0>                              | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          |          |
+| b3<1>                              | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          |          |
+| b4<0>                              | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          |          |
+| b4<1>                              | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          |          |
 | c1<0>                              | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          |          |
 | c1<1>                              | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          |          |
-| c2<0>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| c2<1>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| c3<0>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| c3<1>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| c4<0>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| c4<1>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| c5<0>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| c5<1>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| c2<0>                              | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          |          |
+| c2<1>                              | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          |          |
+| c3<0>                              | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          |          |
+| c3<1>                              | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          |          |
+| c4<0>                              | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          |          |
+| c4<1>                              | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          |          |
 | en                                 | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
 | hall1<0>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | hall1<1>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
@@ -194,26 +183,23 @@ Section 6 - IOB Properties
 | hall2<0>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | hall2<1>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | hall2<2>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| hall3<0>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| hall3<1>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| hall3<2>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| hall4<0>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| hall4<1>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| hall4<2>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| hall5<0>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| hall5<1>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| hall5<2>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| inc                                | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| hall3<0>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| hall3<1>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| hall3<2>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| hall4<0>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| hall4<1>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| hall4<2>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| inc                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | q1a                                | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | q1b                                | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | q2a                                | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | q2b                                | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| q3a                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| q3b                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| q4a                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| q4b                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| q3a                                | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| q3b                                | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| q4a                                | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| q4b                                | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | rxin                               | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| tx                                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| tx                                 | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          |          |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Section 7 - RPMs

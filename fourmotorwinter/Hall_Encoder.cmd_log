@@ -1,0 +1,15 @@
+vhdtdtfi -lib work E:/Xilinx/Projects/Hall_Encoder/Hall_Encoder.v -lang verilog -prj fourmotorwinter -o Hall_Encoder.spl -module Hall_Encoder -template E:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Hall_Encoder.spl E:/Xilinx/Projects/fourmotorwinter/Hall_Encoder.sym 
+vhdtdtfi -lib work E:/Xilinx/Projects/Hall_Encoder/Hall_Encoder.v -lang verilog -prj fourmotorwinter -o Hall_Encoder.spl -module Hall_Encoder -template E:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Hall_Encoder.spl E:/Xilinx/Projects/fourmotorwinter/Hall_Encoder.sym 
+vhdtdtfi -lib work E:/Xilinx/Projects/Hall_Encoder/Hall_Encoder.v -lang verilog -prj fourmotorwinter -o Hall_Encoder.spl -module Hall_Encoder -template E:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Hall_Encoder.spl E:/Xilinx/Projects/fourmotorwinter/Hall_Encoder.sym 
+vhdtdtfi -lib work E:/Xilinx/Projects/Hall_Encoder/Hall_Encoder.v -lang verilog -prj fourmotorwinter -o Hall_Encoder.spl -module Hall_Encoder -template E:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Hall_Encoder.spl E:/Xilinx/Projects/fourmotorwinter/Hall_Encoder.sym 
+vhdtdtfi -lib work E:/Xilinx/Projects/Hall_Encoder/Hall_Encoder.v -lang verilog -prj fourmotorwinter -o Hall_Encoder.spl -module Hall_Encoder -template E:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Hall_Encoder.spl E:/Xilinx/Projects/fourmotorwinter/Hall_Encoder.sym 
+vhdtdtfi -lib work E:/Xilinx/Projects/Hall_Encoder/Hall_Encoder.v -lang verilog -prj fourmotorwinter -o Hall_Encoder.spl -module Hall_Encoder -template E:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Hall_Encoder.spl E:/Xilinx/Projects/fourmotorwinter/Hall_Encoder.sym 
+vhdtdtfi -lang verilog -prj fourmotorwinter -o E:/Xilinx/Projects/fourmotorwinter/Hall_Encoder.tfi -lib work E:/Xilinx/Projects/Hall_Encoder//Hall_Encoder.v -module Hall_Encoder -template E:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lib work E:/Xilinx/Projects/Hall_Encoder/Hall_Encoder.v -lang verilog -prj fourmotorwinter -o Hall_Encoder.spl -module Hall_Encoder -template E:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Hall_Encoder.spl E:/Xilinx/Projects/fourmotorwinter/Hall_Encoder.sym 

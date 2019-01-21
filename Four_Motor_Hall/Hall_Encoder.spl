@@ -1,0 +1,10 @@
+[Inputs]
+CLK
+RST
+=H[2:0]=
+[Outputs]
+=H_Enc[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Hall_Encoder
+

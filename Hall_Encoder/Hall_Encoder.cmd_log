@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/Xilinx/Projects/Hall_Encoder/Hall_Encoder.v -lang verilog -prj Hall_Encoder -o Hall_Encoder.spl -module Hall_Encoder -template E:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Hall_Encoder.spl E:/Xilinx/Projects/Hall_Encoder/Hall_Encoder.sym 

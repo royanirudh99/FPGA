@@ -17,7 +17,7 @@
 <msg type="warning" file="HDLCompiler" num="327" delta="old" >"/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/pid.v" Line 58: Concatenation with unsized literal; will interpret as 32 bits
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/speed4motor.v" Line 35: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/speed4motor.v" Line 38: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/txbuffer.v" Line 36: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
@@ -77,9 +77,6 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/clock.v" Line 16: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/gatedriver.v" Line 28: Signal &lt;<arg fmt="%s" index="1">d</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-</msg>
-
 <msg type="warning" file="HDLCompiler" num="91" delta="old" >"/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/gatedriver.v" Line 29: Signal &lt;<arg fmt="%s" index="1">d</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
@@ -93,6 +90,9 @@
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="91" delta="old" >"/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/gatedriver.v" Line 33: Signal &lt;<arg fmt="%s" index="1">d</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/gatedriver.v" Line 34: Signal &lt;<arg fmt="%s" index="1">d</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/decoder.v" Line 33: Result of <arg fmt="%d" index="1">19</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">18</arg>-bit target.
@@ -728,28 +728,28 @@
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">XLXI_18/XLXI_5/m</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">motorpackage</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;XLXI_17/XLXI_5/m&gt; &lt;XLXI_15/XLXI_5/m&gt; &lt;XLXI_14/XLXI_5/m&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">XLXI_18/XLXI_5/k_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">motorpackage</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;XLXI_14/XLXI_5/k_0&gt; &lt;XLXI_17/XLXI_5/k_0&gt; &lt;XLXI_15/XLXI_5/k_0&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">XLXI_18/XLXI_5/k_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">motorpackage</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;XLXI_17/XLXI_5/k_0&gt; &lt;XLXI_15/XLXI_5/k_0&gt; &lt;XLXI_14/XLXI_5/k_0&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">XLXI_18/XLXI_5/k_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">motorpackage</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;XLXI_14/XLXI_5/k_1&gt; &lt;XLXI_17/XLXI_5/k_1&gt; &lt;XLXI_15/XLXI_5/k_1&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">XLXI_18/XLXI_5/k_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">motorpackage</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;XLXI_17/XLXI_5/k_1&gt; &lt;XLXI_15/XLXI_5/k_1&gt; &lt;XLXI_14/XLXI_5/k_1&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">XLXI_18/XLXI_5/k_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">motorpackage</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;XLXI_14/XLXI_5/k_2&gt; &lt;XLXI_17/XLXI_5/k_2&gt; &lt;XLXI_15/XLXI_5/k_2&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">XLXI_18/XLXI_5/k_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">motorpackage</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;XLXI_17/XLXI_5/k_2&gt; &lt;XLXI_15/XLXI_5/k_2&gt; &lt;XLXI_14/XLXI_5/k_2&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">XLXI_18/XLXI_5/k_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">motorpackage</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;XLXI_14/XLXI_5/k_3&gt; &lt;XLXI_17/XLXI_5/k_3&gt; &lt;XLXI_15/XLXI_5/k_3&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">XLXI_18/XLXI_5/k_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">motorpackage</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;XLXI_17/XLXI_5/k_3&gt; &lt;XLXI_15/XLXI_5/k_3&gt; &lt;XLXI_14/XLXI_5/k_3&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">XLXI_18/XLXI_5/k_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">motorpackage</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;XLXI_14/XLXI_5/k_4&gt; &lt;XLXI_17/XLXI_5/k_4&gt; &lt;XLXI_15/XLXI_5/k_4&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">XLXI_18/XLXI_5/k_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">motorpackage</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;XLXI_17/XLXI_5/k_4&gt; &lt;XLXI_15/XLXI_5/k_4&gt; &lt;XLXI_14/XLXI_5/k_4&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">XLXI_18/XLXI_5/k_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">motorpackage</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;XLXI_14/XLXI_5/k_5&gt; &lt;XLXI_17/XLXI_5/k_5&gt; &lt;XLXI_15/XLXI_5/k_5&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">XLXI_18/XLXI_5/k_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">motorpackage</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;XLXI_17/XLXI_5/k_5&gt; &lt;XLXI_15/XLXI_5/k_5&gt; &lt;XLXI_14/XLXI_5/k_5&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">XLXI_18/XLXI_5/k_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">motorpackage</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;XLXI_14/XLXI_5/k_6&gt; &lt;XLXI_17/XLXI_5/k_6&gt; &lt;XLXI_15/XLXI_5/k_6&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">XLXI_18/XLXI_5/k_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">motorpackage</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;XLXI_17/XLXI_5/k_6&gt; &lt;XLXI_15/XLXI_5/k_6&gt; &lt;XLXI_14/XLXI_5/k_6&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">XLXI_18/XLXI_5/k_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">motorpackage</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;XLXI_14/XLXI_5/k_7&gt; &lt;XLXI_17/XLXI_5/k_7&gt; &lt;XLXI_15/XLXI_5/k_7&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">XLXI_18/XLXI_5/k_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">motorpackage</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;XLXI_17/XLXI_5/k_7&gt; &lt;XLXI_15/XLXI_5/k_7&gt; &lt;XLXI_14/XLXI_5/k_7&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">XLXI_18/XLXI_1/ticker_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">motorpackage</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;XLXI_17/XLXI_1/ticker_10&gt; &lt;XLXI_15/XLXI_1/ticker_10&gt; &lt;XLXI_14/XLXI_1/ticker_10&gt; &lt;XLXI_18/XLXI_7/ticker_10&gt; &lt;XLXI_17/XLXI_7/ticker_10&gt; &lt;XLXI_15/XLXI_7/ticker_10&gt; &lt;XLXI_14/XLXI_7/ticker_10&gt; </arg>

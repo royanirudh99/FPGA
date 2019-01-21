@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="327" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 42: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="327" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 47: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="327" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 53: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="327" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 58: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="25" delta="new" >"E:\Xilinx\Projects\fourmotorwinter\motorpackage.vf" Line 190: Module &lt;<arg fmt="%s" index="1">motormodule_MUSER_motorpackage</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">qa</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="25" delta="new" >"E:\Xilinx\Projects\fourmotorwinter\motorpackage.vf" Line 191: Module &lt;<arg fmt="%s" index="1">motormodule_MUSER_motorpackage</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">qb</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="25" delta="new" >"E:\Xilinx\Projects\fourmotorwinter\motorpackage.vf" Line 200: Module &lt;<arg fmt="%s" index="1">motormodule_MUSER_motorpackage</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">qa</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="25" delta="new" >"E:\Xilinx\Projects\fourmotorwinter\motorpackage.vf" Line 201: Module &lt;<arg fmt="%s" index="1">motormodule_MUSER_motorpackage</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">qb</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="25" delta="new" >"E:\Xilinx\Projects\fourmotorwinter\motorpackage.vf" Line 210: Module &lt;<arg fmt="%s" index="1">motormodule_MUSER_motorpackage</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">qa</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="25" delta="new" >"E:\Xilinx\Projects\fourmotorwinter\motorpackage.vf" Line 211: Module &lt;<arg fmt="%s" index="1">motormodule_MUSER_motorpackage</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">qb</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="25" delta="new" >"E:\Xilinx\Projects\fourmotorwinter\motorpackage.vf" Line 220: Module &lt;<arg fmt="%s" index="1">motormodule_MUSER_motorpackage</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">qa</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="25" delta="new" >"E:\Xilinx\Projects\fourmotorwinter\motorpackage.vf" Line 221: Module &lt;<arg fmt="%s" index="1">motormodule_MUSER_motorpackage</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">qb</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\speed4motor.v" Line 35: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\txbuffer.v" Line 36: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\uart_tx.v" Line 23: Using initial value of <arg fmt="%s" index="1">IN</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\clock_divider.v" Line 19: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\uart_tx.v" Line 27: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">9</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="327" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 42: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="327" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 47: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="327" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 53: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="327" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 58: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 18: Using initial value of <arg fmt="%s" index="1">k1</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 19: Using initial value of <arg fmt="%s" index="1">k2</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 20: Using initial value of <arg fmt="%s" index="1">k3</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 42: Result of <arg fmt="%d" index="1">770</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">25</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 53: Result of <arg fmt="%d" index="1">770</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">25</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 72: Result of <arg fmt="%d" index="1">19</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">18</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\pid.v" Line 78: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\zerobit.v" Line 27: Net &lt;<arg fmt="%s" index="1">k[7]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\directionbit.v" Line 11: Signal &lt;<arg fmt="%s" index="1">insignal1</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\pwm.v" Line 23: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\clock.v" Line 16: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\gatedriver.v" Line 28: Signal &lt;<arg fmt="%s" index="1">d</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\gatedriver.v" Line 29: Signal &lt;<arg fmt="%s" index="1">d</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\gatedriver.v" Line 30: Signal &lt;<arg fmt="%s" index="1">d</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\gatedriver.v" Line 31: Signal &lt;<arg fmt="%s" index="1">d</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\gatedriver.v" Line 32: Signal &lt;<arg fmt="%s" index="1">d</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\gatedriver.v" Line 33: Signal &lt;<arg fmt="%s" index="1">d</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="new" >"E:\Xilinx\Projects\Hall_Encoder\Hall_Encoder.v" Line 22: Using initial value of <arg fmt="%s" index="1">Time</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\Xilinx\Projects\Clock_Divider\Clock_Divider.v" Line 19: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\Xilinx\Projects\Hall_Encoder\Hall_Encoder.v" Line 50: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="658" delta="new" >"E:\Xilinx\Projects\Hall_Encoder\Hall_Encoder.v" Line 60: No support for synthesis of mixed edge and level triggers.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"E:\Xilinx\Projects\Hall_Encoder\Hall_Encoder.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">Hall_Encoder</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"E:\Xilinx\Projects\fourmotorwinter\motorpackage.vf" Line 60: Input port <arg fmt="%s" index="1">cl</arg> is not connected on this instance
+</msg>
+
+<msg type="error" file="HDLCompiler" num="267" delta="new" >"E:\Xilinx\Projects\fourmotorwinter\motorpackage.vf" Line 190: Cannot find port <arg fmt="%s" index="1">qa</arg> on this module
+</msg>
+
+<msg type="error" file="HDLCompiler" num="267" delta="new" >"E:\Xilinx\Projects\fourmotorwinter\motorpackage.vf" Line 191: Cannot find port <arg fmt="%s" index="1">qb</arg> on this module
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"E:\Xilinx\Projects\fourmotorwinter\motorpackage.vf" Line 81: Empty module &lt;<arg fmt="%s" index="1">motorpackage</arg>&gt; remains a black box.
+</msg>
+
+</messages>
+
