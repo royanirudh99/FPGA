@@ -22,7 +22,7 @@
 		reg [7:0] Clock_Cntr=0;
 		reg [7:0] Count_val,Out_reg;
 		reg en=0;
-		reg [15:0] cd = 4999;
+		reg [15:0] cd = 3200;
 		wire OUT_CLK;
 		Clock_Divider CD (CLK,cd,RST,OUT_CLK);
 		always @(posedge OUT_CLK or posedge RST )
@@ -36,7 +36,7 @@
 				
 				else 
 					begin
-						if( Clock_Cntr == 29)
+						if( Clock_Cntr == 20)
 							begin
 								Clock_Cntr<=0;
 								Out_reg <= Count_val;

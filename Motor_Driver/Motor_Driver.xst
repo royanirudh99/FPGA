@@ -4,7 +4,7 @@ run
 -ifn Motor_Driver.prj
 -ofn Motor_Driver
 -ofmt NGC
--p xc6slx9-3-tqg144
+-p xc6slx9-3-csg324
 -top Motor_Driver
 -opt_mode Speed
 -opt_level 1

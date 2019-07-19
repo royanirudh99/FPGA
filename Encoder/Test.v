@@ -29,7 +29,7 @@ module Test;
 	
 	reg RST;
 	reg A;
-	
+	reg En=0;
 
 	// Outputs
 	wire [7:0] Count;
@@ -41,7 +41,8 @@ module Test;
 		.CLK(CLK),		 
 		.RST(RST), 
 		.A(A), 
-		.Count(Count)
+		.Count(Count),
+		.En(En)
 		
 	);
 	

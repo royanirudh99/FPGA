@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-MSI::  Thu Oct 04 01:08:18 2018
+MSI::  Fri Feb 08 23:24:26 2019
 
 par -w -intstyle ise -ol high -mt off Motor_Driver_map.ncd Motor_Driver.ncd
 Motor_Driver.pcf 
@@ -9,7 +9,7 @@ Motor_Driver.pcf
 
 Constraints file: Motor_Driver.pcf.
 Loading device for application Rf_Device from file '6slx9.nph' in environment E:\Xilinx\14.7\ISE_DS\ISE\.
-   "Motor_Driver" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -3
+   "Motor_Driver" is an NCD, version 3.2, device xc6slx9, package csg324, speed -3
 
 Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
 Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
@@ -37,7 +37,7 @@ Slice Logic Utilization:
     Number used as Memory:                       0 out of   1,440    0%
 
 Slice Logic Distribution:
-  Number of occupied Slices:                     1 out of   1,430    1%
+  Number of occupied Slices:                     2 out of   1,430    1%
   Number of MUXCYs used:                         0 out of   2,860    0%
   Number of LUT Flip Flop pairs used:            3
     Number with an unused Flip Flop:             3 out of       3  100%
@@ -53,7 +53,7 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                         9 out of     102    8%
+  Number of bonded IOBs:                         9 out of     200    4%
     Number of LOCed IOBs:                        9 out of       9  100%
 
 Specific Feature Utilization:
@@ -89,28 +89,28 @@ Finished initial Timing Analysis.  REAL time: 7 secs
 Starting Router
 
 
-Phase  1  : 18 unrouted;      REAL time: 8 secs 
+Phase  1  : 18 unrouted;      REAL time: 7 secs 
 
-Phase  2  : 18 unrouted;      REAL time: 8 secs 
+Phase  2  : 18 unrouted;      REAL time: 7 secs 
 
-Phase  3  : 2 unrouted;      REAL time: 8 secs 
+Phase  3  : 11 unrouted;      REAL time: 7 secs 
 
-Phase  4  : 2 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
+Phase  4  : 11 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
 
 Updating file: Motor_Driver.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
-Total REAL time to Router completion: 9 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Total REAL time to Router completion: 8 secs 
 Total CPU time to Router completion: 7 secs 
 
 Partition Implementation Status
@@ -133,7 +133,7 @@ All signals are completely routed.
 Total REAL time to PAR completion: 9 secs 
 Total CPU time to PAR completion: 7 secs 
 
-Peak Memory Usage:  356 MB
+Peak Memory Usage:  331 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

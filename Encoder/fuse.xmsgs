@@ -5,5 +5,8 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="329" delta="unknown" >"E:/Xilinx/Projects/Encoder/Test.v" Line 45: Target &lt;<arg fmt="%s" index="1">En</arg>&gt; of concurrent assignment or output port connection should be a net type.
+</msg>
+
 </messages>
 

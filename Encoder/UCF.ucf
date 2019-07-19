@@ -37,7 +37,7 @@ NET "RST" 			  LOC = P124	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
 ###################################################################################################################################################
 #                                                   HEADER P1                                                                                     #
 ###################################################################################################################################################
-NET "A"    CLOCK_DEDICATED_ROUTE=FALSE |               LOC = P35      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L1P_3           	        Sch = GPIO-P18 
+#NET "A"    CLOCK_DEDICATED_ROUTE=FALSE |               LOC = P35      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L1P_3           	        Sch = GPIO-P18 
 #NET "IO_P1[4]"                   LOC = P34      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L1N_VREF_3      		    Sch = GPIO-N18 
 #NET "IO_P1[5]"                   LOC = P33      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L2P_3	   		            Sch = GPIO-P17 
 #NET "IO_P1[6]"                   LOC = P32      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L2N_3           		    Sch = GPIO-N17 
@@ -112,5 +112,5 @@ NET "A"    CLOCK_DEDICATED_ROUTE=FALSE |               LOC = P35      | IOSTANDA
 #NET "IO_P2[35]"                  LOC = P101     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L32N_1	   		            Sch = GPIO-N20
 #NET "IO_P2[36]"                  LOC = P102     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L32P_1			            Sch = GPIO-P20
 #NET "IO_P2[37]"                  LOC = P104     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L1N_VREF_1       	        Sch = GPIO-N21
-#NET "IO_P2[38]"                  LOC = P105     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L1P_1			            Sch = GPIO-P21
+NET "A"                  CLOCK_DEDICATED_ROUTE=FALSE | LOC = P105     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L1P_1			            Sch = GPIO-P21
 ###################################################################################################################################################

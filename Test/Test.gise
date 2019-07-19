@@ -83,10 +83,14 @@
     <transform xil_pn:end_ts="1543501294" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-5526693172014333381" xil_pn:start_ts="1543501294">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="InputAdded"/>
     </transform>
     <transform xil_pn:end_ts="1543501294" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-8919699388262478870" xil_pn:start_ts="1543501294">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1543501294" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1543501294">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -95,103 +99,87 @@
     <transform xil_pn:end_ts="1543501294" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-2415150657144554243" xil_pn:start_ts="1543501294">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1543501294" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745955965653" xil_pn:start_ts="1543501294">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1543501294" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="4316003527510332276" xil_pn:start_ts="1543501294">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1543501358" xil_pn:in_ck="-8763245622698623378" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-1091373136667761095" xil_pn:start_ts="1543501345">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="UART_8_Byte.lso"/>
-      <outfile xil_pn:name="UART_8_Byte.ngc"/>
-      <outfile xil_pn:name="UART_8_Byte.ngr"/>
-      <outfile xil_pn:name="UART_8_Byte.prj"/>
-      <outfile xil_pn:name="UART_8_Byte.stx"/>
-      <outfile xil_pn:name="UART_8_Byte.syr"/>
-      <outfile xil_pn:name="UART_8_Byte.xst"/>
-      <outfile xil_pn:name="UART_8_Byte_xst.xrpt"/>
-      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
-      <outfile xil_pn:name="xst"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1543501305" xil_pn:in_ck="112481647050" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-5853883267546521560" xil_pn:start_ts="1543501305">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1543501382" xil_pn:in_ck="9193845174287012918" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7930617221731630549" xil_pn:start_ts="1543501374">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <outfile xil_pn:name="UART_8_Byte.bld"/>
-      <outfile xil_pn:name="UART_8_Byte.ngd"/>
-      <outfile xil_pn:name="UART_8_Byte_ngdbuild.xrpt"/>
-      <outfile xil_pn:name="_ngo"/>
-      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1543501401" xil_pn:in_ck="9193845216905455895" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1448924893915930207" xil_pn:start_ts="1543501382">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="UART_8_Byte.pcf"/>
-      <outfile xil_pn:name="UART_8_Byte_map.map"/>
-      <outfile xil_pn:name="UART_8_Byte_map.mrp"/>
-      <outfile xil_pn:name="UART_8_Byte_map.ncd"/>
-      <outfile xil_pn:name="UART_8_Byte_map.ngm"/>
-      <outfile xil_pn:name="UART_8_Byte_map.xrpt"/>
-      <outfile xil_pn:name="UART_8_Byte_summary.xml"/>
-      <outfile xil_pn:name="UART_8_Byte_usage.xml"/>
-      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1543501425" xil_pn:in_ck="8668132225678016656" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="93661965788626211" xil_pn:start_ts="1543501401">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="UART_8_Byte.ncd"/>
-      <outfile xil_pn:name="UART_8_Byte.pad"/>
-      <outfile xil_pn:name="UART_8_Byte.par"/>
-      <outfile xil_pn:name="UART_8_Byte.ptwx"/>
-      <outfile xil_pn:name="UART_8_Byte.unroutes"/>
-      <outfile xil_pn:name="UART_8_Byte.xpi"/>
-      <outfile xil_pn:name="UART_8_Byte_pad.csv"/>
-      <outfile xil_pn:name="UART_8_Byte_pad.txt"/>
-      <outfile xil_pn:name="UART_8_Byte_par.xrpt"/>
-      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1543501446" xil_pn:in_ck="-66781764771939479" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="6587536580693756888" xil_pn:start_ts="1543501425">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="UART_8_Byte.ut"/>
-      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
-      <outfile xil_pn:name="uart_8_byte.bgn"/>
-      <outfile xil_pn:name="uart_8_byte.bin"/>
-      <outfile xil_pn:name="uart_8_byte.bit"/>
-      <outfile xil_pn:name="uart_8_byte.drc"/>
-      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
-      <outfile xil_pn:name="webtalk.log"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1543501425" xil_pn:in_ck="9193839591270982931" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1543501416">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="UART_8_Byte.twr"/>
-      <outfile xil_pn:name="UART_8_Byte.twx"/>
-      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 

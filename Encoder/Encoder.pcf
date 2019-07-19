@@ -1,10 +1,10 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Aug 16 22:37:46 2018
+// Written by: Map P.20131013 on Fri May 24 16:41:46 2019
 //! **************************************************************************
 
 SCHEMATIC START;
 COMP "Count<7>" LOCATE = SITE "P111" LEVEL 1;
-COMP "A" LOCATE = SITE "P35" LEVEL 1;
+COMP "A" LOCATE = SITE "P105" LEVEL 1;
 PIN A_pin<0> = BEL "A" PINNAME PAD;
 PIN "A_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
 COMP "RST" LOCATE = SITE "P124" LEVEL 1;

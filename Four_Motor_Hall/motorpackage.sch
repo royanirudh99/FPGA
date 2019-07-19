@@ -44,6 +44,7 @@
         <signal name="a5(1:0)" />
         <signal name="b5(1:0)" />
         <signal name="c5(1:0)" />
+        <signal name="XLXN_68" />
         <port polarity="Input" name="inc" />
         <port polarity="Input" name="rxin" />
         <port polarity="Input" name="en" />
@@ -93,23 +94,6 @@
             <line x2="384" y1="-96" y2="-96" x1="320" />
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
-        </blockdef>
-        <blockdef name="txbuffer">
-            <timestamp>2018-12-10T16:14:12</timestamp>
-            <rect width="256" x="64" y="-448" height="448" />
-            <line x2="0" y1="-416" y2="-416" x1="64" />
-            <line x2="0" y1="-352" y2="-352" x1="64" />
-            <line x2="0" y1="-288" y2="-288" x1="64" />
-            <rect width="64" x="0" y="-236" height="24" />
-            <line x2="0" y1="-224" y2="-224" x1="64" />
-            <rect width="64" x="0" y="-172" height="24" />
-            <line x2="0" y1="-160" y2="-160" x1="64" />
-            <rect width="64" x="0" y="-108" height="24" />
-            <line x2="0" y1="-96" y2="-96" x1="64" />
-            <rect width="64" x="0" y="-44" height="24" />
-            <line x2="0" y1="-32" y2="-32" x1="64" />
-            <rect width="64" x="320" y="-428" height="24" />
-            <line x2="384" y1="-416" y2="-416" x1="320" />
         </blockdef>
         <blockdef name="transmiter">
             <timestamp>2018-12-10T17:18:33</timestamp>
@@ -184,16 +168,6 @@
             <blockpin signalname="XLXN_32(7:0)" name="Motor3(7:0)" />
             <blockpin signalname="XLXN_31(7:0)" name="Motor4(7:0)" />
         </block>
-        <block symbolname="txbuffer" name="XLXI_11">
-            <blockpin signalname="XLXN_38" name="received" />
-            <blockpin signalname="inc" name="clk" />
-            <blockpin signalname="en" name="rst_n" />
-            <blockpin signalname="XLXN_41(7:0)" name="motor1(7:0)" />
-            <blockpin signalname="XLXN_43(7:0)" name="motor2(7:0)" />
-            <blockpin signalname="XLXN_44(7:0)" name="motor3(7:0)" />
-            <blockpin signalname="XLXN_45(7:0)" name="motor4(7:0)" />
-            <blockpin signalname="XLXN_39(7:0)" name="Serial(7:0)" />
-        </block>
         <block symbolname="transmiter" name="XLXI_13">
             <blockpin signalname="inc" name="CLK" />
             <blockpin signalname="XLXN_66" name="RST" />
@@ -219,7 +193,7 @@
             <blockpin signalname="a3(1:0)" name="phase_a(1:0)" />
             <blockpin signalname="b3(1:0)" name="phase_b(1:0)" />
             <blockpin signalname="c3(1:0)" name="phase_c(1:0)" />
-            <blockpin signalname="XLXN_44(7:0)" name="encoder(7:0)" />
+            <blockpin signalname="XLXN_39(7:0)" name="encoder(7:0)" />
         </block>
         <block symbolname="motormodule" name="XLXI_17">
             <blockpin signalname="XLXN_33(7:0)" name="setvalue(7:0)" />
@@ -319,8 +293,6 @@
             <wire x2="1136" y1="992" y2="992" x1="1088" />
             <wire x2="1152" y1="992" y2="992" x1="1136" />
         </branch>
-        <instance x="1408" y="1904" name="XLXI_11" orien="R90">
-        </instance>
         <branch name="inc">
             <wire x2="1760" y1="1872" y2="1904" x1="1760" />
         </branch>
@@ -334,8 +306,16 @@
         <instance x="2096" y="2368" name="XLXI_13" orien="R0">
         </instance>
         <branch name="XLXN_39(7:0)">
+            <wire x2="1504" y1="1504" y2="1904" x1="1504" />
+            <wire x2="1504" y1="1904" y2="2048" x1="1504" />
+            <wire x2="1680" y1="2048" y2="2048" x1="1504" />
+            <wire x2="1824" y1="2048" y2="2048" x1="1680" />
+            <wire x2="1824" y1="2048" y2="2288" x1="1824" />
             <wire x2="1824" y1="2288" y2="2336" x1="1824" />
             <wire x2="2096" y1="2336" y2="2336" x1="1824" />
+            <wire x2="1632" y1="1504" y2="1504" x1="1504" />
+            <wire x2="1632" y1="1216" y2="1216" x1="1568" />
+            <wire x2="1632" y1="1216" y2="1504" x1="1632" />
         </branch>
         <branch name="XLXN_41(7:0)">
             <wire x2="1632" y1="1696" y2="1904" x1="1632" />
@@ -348,12 +328,6 @@
             <wire x2="2368" y1="1664" y2="1664" x1="1568" />
             <wire x2="2368" y1="1216" y2="1216" x1="2304" />
             <wire x2="2368" y1="1216" y2="1664" x1="2368" />
-        </branch>
-        <branch name="XLXN_44(7:0)">
-            <wire x2="1504" y1="1504" y2="1904" x1="1504" />
-            <wire x2="1632" y1="1504" y2="1504" x1="1504" />
-            <wire x2="1632" y1="1216" y2="1216" x1="1568" />
-            <wire x2="1632" y1="1216" y2="1504" x1="1632" />
         </branch>
         <branch name="XLXN_45(7:0)">
             <wire x2="848" y1="1232" y2="1232" x1="784" />

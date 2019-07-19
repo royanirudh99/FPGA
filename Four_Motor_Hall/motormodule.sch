@@ -20,6 +20,7 @@
         <signal name="phase_c(1:0)" />
         <signal name="hall(2:0)" />
         <signal name="encoder(7:0)" />
+        <signal name="XLXN_100" />
         <port polarity="Input" name="setvalue(7:0)" />
         <port polarity="Input" name="clk" />
         <port polarity="Input" name="en" />
@@ -228,31 +229,29 @@
         <iomarker fontsize="28" x="3136" y="1264" name="phase_b(1:0)" orien="R0" />
         <iomarker fontsize="28" x="3136" y="1328" name="phase_c(1:0)" orien="R0" />
         <iomarker fontsize="28" x="2688" y="1328" name="hall(2:0)" orien="R180" />
-        <iomarker fontsize="28" x="976" y="1824" name="encoder(7:0)" orien="R90" />
         <iomarker fontsize="28" x="368" y="1872" name="clk" orien="R180" />
         <iomarker fontsize="28" x="368" y="1936" name="en" orien="R180" />
         <iomarker fontsize="28" x="368" y="2000" name="hall(2:0)" orien="R180" />
-        <branch name="encoder(7:0)">
-            <wire x2="848" y1="1872" y2="1872" x1="784" />
-            <wire x2="976" y1="1440" y2="1440" x1="848" />
-            <wire x2="976" y1="1440" y2="1456" x1="976" />
-            <wire x2="976" y1="1456" y2="1824" x1="976" />
-            <wire x2="1152" y1="1456" y2="1456" x1="976" />
-            <wire x2="848" y1="1440" y2="1872" x1="848" />
-        </branch>
         <branch name="hall(2:0)">
-            <wire x2="384" y1="2000" y2="2000" x1="368" />
-            <wire x2="400" y1="2000" y2="2000" x1="384" />
+            <wire x2="400" y1="2000" y2="2000" x1="368" />
         </branch>
         <branch name="en">
-            <wire x2="384" y1="1936" y2="1936" x1="368" />
-            <wire x2="400" y1="1936" y2="1936" x1="384" />
+            <wire x2="400" y1="1936" y2="1936" x1="368" />
         </branch>
         <branch name="clk">
-            <wire x2="384" y1="1872" y2="1872" x1="368" />
-            <wire x2="400" y1="1872" y2="1872" x1="384" />
+            <wire x2="400" y1="1872" y2="1872" x1="368" />
         </branch>
         <instance x="400" y="1840" name="XLXI_8" orien="R0">
         </instance>
+        <branch name="encoder(7:0)">
+            <wire x2="848" y1="1872" y2="1872" x1="784" />
+            <wire x2="1120" y1="1872" y2="1872" x1="848" />
+            <wire x2="848" y1="1440" y2="1872" x1="848" />
+            <wire x2="976" y1="1440" y2="1440" x1="848" />
+            <wire x2="976" y1="1440" y2="1456" x1="976" />
+            <wire x2="1152" y1="1456" y2="1456" x1="976" />
+            <wire x2="1120" y1="1856" y2="1872" x1="1120" />
+        </branch>
+        <iomarker fontsize="28" x="1120" y="1856" name="encoder(7:0)" orien="R270" />
     </sheet>
 </drawing>

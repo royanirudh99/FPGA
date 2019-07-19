@@ -3,15 +3,15 @@ Xilinx Mapping Report File for Design 'Motor_Driver'
 
 Design Information
 ------------------
-Command Line   : map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol
+Command Line   : map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol
 high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
 -pr off -lc off -power off -o Motor_Driver_map.ncd Motor_Driver.ngd
 Motor_Driver.pcf 
 Target Device  : xc6slx9
-Target Package : tqg144
+Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Thu Oct 04 01:07:53 2018
+Mapped Date    : Fri Feb 08 23:24:15 2019
 
 Design Summary
 --------------
@@ -28,7 +28,7 @@ Slice Logic Utilization:
     Number used as Memory:                       0 out of   1,440    0%
 
 Slice Logic Distribution:
-  Number of occupied Slices:                     1 out of   1,430    1%
+  Number of occupied Slices:                     2 out of   1,430    1%
   Number of MUXCYs used:                         0 out of   2,860    0%
   Number of LUT Flip Flop pairs used:            3
     Number with an unused Flip Flop:             3 out of       3  100%
@@ -44,7 +44,7 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                         9 out of     102    8%
+  Number of bonded IOBs:                         9 out of     200    4%
     Number of LOCed IOBs:                        9 out of       9  100%
 
 Specific Feature Utilization:
@@ -72,9 +72,9 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                1.67
 
-Peak Memory Usage:  355 MB
-Total REAL time to MAP completion:  20 secs 
-Total CPU time to MAP completion:   9 secs 
+Peak Memory Usage:  330 MB
+Total REAL time to MAP completion:  8 secs 
+Total CPU time to MAP completion:   7 secs 
 
 Table of Contents
 -----------------

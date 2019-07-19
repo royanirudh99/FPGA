@@ -52,14 +52,25 @@
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="directionbit.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="directionbit.xst"/>
     <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="driver_4_drc.vf"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="gatedriver.prj"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="gatedriver.spl"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="gatedriver.stx"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="gatedriver.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="gatedriver.xst"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="motor_4_drc.vf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="motormodule.sym" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="motormodule.vf"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="motormodule.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="motormodule_Test_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="motormodule_Test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="motormodule_Test_isim_beh.wdb"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="motormodule_isim_beh.exe"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="motorpackage.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_BIN" xil_pn:name="motorpackage.bin"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="motorpackage.bit" xil_pn:subbranch="FPGAConfiguration"/>
@@ -136,8 +147,10 @@
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="uart_tx.stx"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="uart_tx.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="uart_tx.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="zerobit.prj"/>
@@ -148,98 +161,204 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1544229054" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1544229054">
+    <transform xil_pn:end_ts="1548420992" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1548420992">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1548098950" xil_pn:name="TRAN_schematicsToHdl" xil_pn:start_ts="1548098943">
+    <transform xil_pn:end_ts="1548423096" xil_pn:in_ck="-2696252030339135617" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1548423096">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="UART_Receiver.vhd"/>
+      <outfile xil_pn:name="clock.v"/>
+      <outfile xil_pn:name="clock_divider.v"/>
+      <outfile xil_pn:name="directionbit.v"/>
+      <outfile xil_pn:name="gatedriver.v"/>
+      <outfile xil_pn:name="motormodule_Test.v"/>
+      <outfile xil_pn:name="pid.v"/>
+      <outfile xil_pn:name="pwm.v"/>
+      <outfile xil_pn:name="remote_sources/_/Hall_Encoder/Hall_Encoder.v"/>
+      <outfile xil_pn:name="speed4motor.v"/>
+      <outfile xil_pn:name="txbuffer.v"/>
+      <outfile xil_pn:name="uart_tx.v"/>
+      <outfile xil_pn:name="zerobit.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1548421883" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="3571180929714905005" xil_pn:start_ts="1548421883">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1548421886" xil_pn:in_ck="3160642502430527020" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="8590336847616684395" xil_pn:start_ts="1548421883">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="motormodule.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1548420994" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="3372714115712086306" xil_pn:start_ts="1548420994">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1548423096" xil_pn:in_ck="6600494135586151712" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1548423096">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="UART_Receiver.vhd"/>
+      <outfile xil_pn:name="clock.v"/>
+      <outfile xil_pn:name="clock_divider.v"/>
+      <outfile xil_pn:name="directionbit.v"/>
+      <outfile xil_pn:name="gatedriver.v"/>
+      <outfile xil_pn:name="motormodule.vf"/>
+      <outfile xil_pn:name="motormodule_Test.v"/>
+      <outfile xil_pn:name="pid.v"/>
+      <outfile xil_pn:name="pwm.v"/>
+      <outfile xil_pn:name="remote_sources/_/Hall_Encoder/Hall_Encoder.v"/>
+      <outfile xil_pn:name="speed4motor.v"/>
+      <outfile xil_pn:name="txbuffer.v"/>
+      <outfile xil_pn:name="uart_tx.v"/>
+      <outfile xil_pn:name="zerobit.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1548423100" xil_pn:in_ck="6600494135586151712" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="5099137901765439897" xil_pn:start_ts="1548423096">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="motormodule_Test_beh.prj"/>
+      <outfile xil_pn:name="motormodule_Test_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1548423101" xil_pn:in_ck="-3139162460386227221" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6605898272999478180" xil_pn:start_ts="1548423100">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="motormodule_Test_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1548348509" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1548348509">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1548348516" xil_pn:in_ck="3160642502430527020" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-63672087966322926" xil_pn:start_ts="1548348509">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="motormodule.vf"/>
       <outfile xil_pn:name="motorpackage.vf"/>
     </transform>
-    <transform xil_pn:end_ts="1544514341" xil_pn:name="TRAN_regenerateCores" xil_pn:start_ts="1544514341">
+    <transform xil_pn:end_ts="1548348516" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="3372714115712086306" xil_pn:start_ts="1548348516">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1544229058" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1544229058">
+    <transform xil_pn:end_ts="1548348516" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1548348516">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1544229058" xil_pn:name="TRAN_xawsTohdl" xil_pn:start_ts="1544229058">
+    <transform xil_pn:end_ts="1548348516" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-8063233539520921068" xil_pn:start_ts="1548348516">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1544514341" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:start_ts="1544514341">
+    <transform xil_pn:end_ts="1548348516" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745955965653" xil_pn:start_ts="1548348516">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
-    <transform xil_pn:end_ts="1544514341" xil_pn:name="TRAN_platgen" xil_pn:start_ts="1544514341">
+    <transform xil_pn:end_ts="1548348516" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-2570947432814384660" xil_pn:start_ts="1548348516">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
-    <transform xil_pn:end_ts="1548098960" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:start_ts="1548098950">
-      <status xil_pn:value="FailedRun"/>
+    <transform xil_pn:end_ts="1548524971" xil_pn:in_ck="-7167424994997671379" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-2770721542450886159" xil_pn:start_ts="1548524920">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="motorpackage.jhd"/>
+      <outfile xil_pn:name="motorpackage.lso"/>
+      <outfile xil_pn:name="motorpackage.ngc"/>
+      <outfile xil_pn:name="motorpackage.ngr"/>
+      <outfile xil_pn:name="motorpackage.prj"/>
+      <outfile xil_pn:name="motorpackage.stx"/>
+      <outfile xil_pn:name="motorpackage.syr"/>
+      <outfile xil_pn:name="motorpackage.xst"/>
+      <outfile xil_pn:name="motorpackage_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1544521149" xil_pn:name="TRAN_compileBCD2" xil_pn:start_ts="1544521149">
+    <transform xil_pn:end_ts="1548348547" xil_pn:in_ck="-2287320108441222293" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-7425627056596222785" xil_pn:start_ts="1548348547">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
-    <transform xil_pn:end_ts="1544521162" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:start_ts="1544521149">
+    <transform xil_pn:end_ts="1548524985" xil_pn:in_ck="-1796577644674294482" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="4936360519513943171" xil_pn:start_ts="1548524971">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="motorpackage.bld"/>
+      <outfile xil_pn:name="motorpackage.ngd"/>
+      <outfile xil_pn:name="motorpackage_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1544521198" xil_pn:name="TRANEXT_map_spartan6" xil_pn:start_ts="1544521162">
+    <transform xil_pn:end_ts="1548525030" xil_pn:in_ck="-1796577644674294481" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="6093601622908603872" xil_pn:start_ts="1548524985">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="motorpackage.pcf"/>
+      <outfile xil_pn:name="motorpackage_map.map"/>
+      <outfile xil_pn:name="motorpackage_map.mrp"/>
+      <outfile xil_pn:name="motorpackage_map.ncd"/>
+      <outfile xil_pn:name="motorpackage_map.ngm"/>
+      <outfile xil_pn:name="motorpackage_map.xrpt"/>
+      <outfile xil_pn:name="motorpackage_summary.xml"/>
+      <outfile xil_pn:name="motorpackage_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1544521236" xil_pn:name="TRANEXT_par_spartan6" xil_pn:start_ts="1544521198">
+    <transform xil_pn:end_ts="1548525063" xil_pn:in_ck="-216434243980121144" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="93661965788626211" xil_pn:start_ts="1548525030">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="motorpackage.ncd"/>
+      <outfile xil_pn:name="motorpackage.pad"/>
+      <outfile xil_pn:name="motorpackage.par"/>
+      <outfile xil_pn:name="motorpackage.ptwx"/>
+      <outfile xil_pn:name="motorpackage.unroutes"/>
+      <outfile xil_pn:name="motorpackage.xpi"/>
+      <outfile xil_pn:name="motorpackage_pad.csv"/>
+      <outfile xil_pn:name="motorpackage_pad.txt"/>
+      <outfile xil_pn:name="motorpackage_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1544521252" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:start_ts="1544521236">
-      <status xil_pn:value="AbortedRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputRemoved"/>
-    </transform>
-    <transform xil_pn:end_ts="1544521236" xil_pn:name="TRAN_postRouteTrce" xil_pn:start_ts="1544521223">
+    <transform xil_pn:end_ts="1548525091" xil_pn:in_ck="4988402740445029184" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="6587536580693756888" xil_pn:start_ts="1548525063">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="motorpackage.bgn"/>
+      <outfile xil_pn:name="motorpackage.bin"/>
+      <outfile xil_pn:name="motorpackage.bit"/>
+      <outfile xil_pn:name="motorpackage.drc"/>
+      <outfile xil_pn:name="motorpackage.ut"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1548525063" xil_pn:in_ck="-1796577644674294613" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1548525053">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="motorpackage.twr"/>
+      <outfile xil_pn:name="motorpackage.twx"/>
     </transform>
   </transforms>
 

@@ -137,6 +137,7 @@
     <transform xil_pn:end_ts="1533919059" xil_pn:in_ck="-6898275437949744443" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="8128001791102323340" xil_pn:start_ts="1533919055">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="PWM_Test_beh.prj"/>
@@ -149,6 +150,7 @@
     <transform xil_pn:end_ts="1533919060" xil_pn:in_ck="-7746042665842626319" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-929027594722276913" xil_pn:start_ts="1533919059">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="PWM_Test_isim_beh.wdb"/>
@@ -187,6 +189,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Motor_PWM.lso"/>
@@ -208,6 +211,7 @@
     <transform xil_pn:end_ts="1533918358" xil_pn:in_ck="-7046435450624077718" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="5896401762479136330" xil_pn:start_ts="1533918350">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Motor_PWM.bld"/>
       <outfile xil_pn:name="Motor_PWM.ngd"/>
       <outfile xil_pn:name="Motor_PWM_ngdbuild.xrpt"/>
@@ -217,6 +221,7 @@
     <transform xil_pn:end_ts="1533918380" xil_pn:in_ck="-7346313678304228853" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="6093601622908603872" xil_pn:start_ts="1533918358">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Motor_PWM.pcf"/>
@@ -232,6 +237,7 @@
     <transform xil_pn:end_ts="1533918401" xil_pn:in_ck="-6480889668171774140" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-6780099238861732004" xil_pn:start_ts="1533918380">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Motor_PWM.ncd"/>
       <outfile xil_pn:name="Motor_PWM.pad"/>
       <outfile xil_pn:name="Motor_PWM.par"/>
@@ -246,6 +252,7 @@
     <transform xil_pn:end_ts="1533918421" xil_pn:in_ck="5093437281645821415" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="4970201210546912173" xil_pn:start_ts="1533918401">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Motor_PWM.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="motor_pwm.bgn"/>
@@ -260,6 +267,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
@@ -300,6 +308,7 @@
     <transform xil_pn:end_ts="1533918401" xil_pn:in_ck="-4655875771943382265" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1533918393">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Motor_PWM.twr"/>
       <outfile xil_pn:name="Motor_PWM.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

@@ -8,5 +8,3 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# run all
-Stopped at time : 31528485 ns : File "E:/Xilinx/Projects/Encoder/Test.v" Line 63

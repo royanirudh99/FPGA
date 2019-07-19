@@ -11,7 +11,7 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\Xilinx\Projects\Clock_Divider\Clock_Divider.v" Line 19: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\Xilinx\Projects\Encoder\Encoder.v" Line 46: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\Xilinx\Projects\Encoder\Encoder.v" Line 46: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\Xilinx\Projects\Encoder\Encoder.v" Line 54: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.

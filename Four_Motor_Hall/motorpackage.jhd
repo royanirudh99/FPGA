@@ -3,8 +3,6 @@ MODULE motorpackage
 		INSTANCE XLXI_5
 	SUBMODULE speed4motor
 		INSTANCE XLXI_6
-	SUBMODULE txbuffer
-		INSTANCE XLXI_11
 	SUBMODULE transmiter
 		INSTANCE XLXI_13
 	SUBMODULE motormodule

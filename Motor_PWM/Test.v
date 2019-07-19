@@ -23,6 +23,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 module Test;
+integer i=0;
 
 	// Inputs
 	reg [3:0] Input;
@@ -62,9 +63,10 @@ module Test;
 
 	end
 	always begin
-	
-	#1000 H=H+1;
-			
+	for(i;i<10000;i++)
+		begin
+		#1000 H=H+1;
+		end	
 	end
 	always begin
 	# 5 CLK =~ CLK;

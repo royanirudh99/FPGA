@@ -19,9 +19,9 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module Hall_Encoder( input [2:0] H, input CLK, input RST, output [7:0] H_Enc );
-reg [15:0] Time =49;
+reg [15:0] Time =499999; // Dividig by E6, assuming 5000 RPM and 24 ticks/rev
 wire OUT_CLK;
-Clock_Divider CD(CLK,Time,RST,OUT_CLK);
+clock_divider CD(CLK,Time,!RST,OUT_CLK);
 reg [7:0] Clock_Cntr=0;
 reg [7:0] Count_val,Out_reg;
 reg en=0;
@@ -38,7 +38,7 @@ always @(negedge OUT_CLK or negedge RST )
 				
 		else 
 			begin
-				if( Clock_Cntr == 25)
+				if( Clock_Cntr == 6)
 					begin
 						Clock_Cntr<=0;
 						Out_reg <= Count_val;
@@ -57,7 +57,7 @@ always @(negedge OUT_CLK or negedge RST )
 
 
 
-always @(H or posedge en)
+always @(H or  en)
     begin
         if(en)
             begin
@@ -65,7 +65,7 @@ always @(H or posedge en)
             end
         else
             begin
-                Count_val = Count_val+1;
+                Count_val <= Count_val+1;
             end
     end
 

@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : motormodule.vf
-// /___/   /\     Timestamp : 01/22/2019 00:59:06
+// /___/   /\     Timestamp : 01/24/2019 22:18:31
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family spartan6 -verilog E:/Xilinx/Projects/fourmotorwinter/motormodule.vf -w E:/Xilinx/Projects/fourmotorwinter/motormodule.sch
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog E:/Xilinx/Projects/Four_Motor_Hall/motormodule.vf -w E:/Xilinx/Projects/Four_Motor_Hall/motormodule.sch
 //Design Name: motormodule
 //Device: spartan6
 //Purpose:

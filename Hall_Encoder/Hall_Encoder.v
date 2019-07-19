@@ -18,18 +18,19 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Hall_Encoder( input [2:0] H, input CLK, input RST, output [7:0] H_Enc );
-reg [15:0] Time =49;
+module Hall_Encoder( input [2:0] H, input CLK, input RST, output [7:0] H_Enc);
+reg [15:0] Time =499999;
 wire OUT_CLK;
 Clock_Divider CD(CLK,Time,RST,OUT_CLK);
 reg [7:0] Clock_Cntr=0;
-reg [7:0] Count_val,Out_reg;
+reg [7:0] Count_val;
+reg [7:0] Out_reg;
 reg en=0;
 
 
-always @(negedge OUT_CLK or negedge RST )
+always @(posedge OUT_CLK or posedge RST )
 	begin
-		if(!RST)
+		if(RST)
 			begin 
 				Clock_Cntr<=0;
 						//Count_val=0;
@@ -38,7 +39,7 @@ always @(negedge OUT_CLK or negedge RST )
 				
 		else 
 			begin
-				if( Clock_Cntr == 25)
+				if( Clock_Cntr == 6)
 					begin
 						Clock_Cntr<=0;
 						Out_reg <= Count_val;
@@ -56,8 +57,7 @@ always @(negedge OUT_CLK or negedge RST )
 
 
 
-
-always @(H or posedge en)
+always @(H or en)
     begin
         if(en)
             begin
@@ -65,11 +65,11 @@ always @(H or posedge en)
             end
         else
             begin
-                Count_val = Count_val+1;
+                Count_val <= Count_val+1;
             end
     end
 
 assign H_Enc = Out_reg;
-
-
+//assign En = en;
+//assign Cntr=Clock_Cntr;	
 endmodule

@@ -4,7 +4,7 @@ run
 -ifn motorpackage.prj
 -ofn motorpackage
 -ofmt NGC
--p xc6slx9-3-csg324
+-p xc6slx9-3-tqg144
 -top motorpackage
 -opt_mode Speed
 -opt_level 1
